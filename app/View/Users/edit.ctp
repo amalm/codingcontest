@@ -31,6 +31,12 @@ echo $this->Form->create('User', array('class'=>'form-horizontal', 'role' => 'fo
 	?>
 </div>
 
+<div class="form-group">
+	<label for="Accepted" class="col-sm-1 control-label">Aktiviert</label>
+    <?php 
+		echo $this->Form->input('Accepted', array('id'=>'Accepted', 'type'=>'checkbox','class'=>'input-group-addon','label' => FALSE,'div' => array('class'=>'col-sm-6')));
+	?>
+</div>
 
 <div class="form-group">
   <p> <button type="submit" class="btn btn-default">Submit</button> 

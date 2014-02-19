@@ -5,6 +5,7 @@
     <tr><td>Nachname:</td><td><?php echo $user['User']['Family name']; ?></td></tr>
     <tr><td>E-Mail:</td><td><?php echo $user['User']['Mail']; ?></td></tr>
     <tr><td>Registriert am:</td><td><?php echo $user['User']['Registered']; ?></td></tr>
+     <tr><td>Aktiviert:</td><td><?php if($user['User']['Accepted'] == 1){echo '<span class="glyphicon glyphicon-ok" style="font-size:15px;"></span>';} else {echo '<span class="glyphicon glyphicon-remove" style="font-size:15px;"></span>';} ?></td></tr>
   </table>
 </div>
 
