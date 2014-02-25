@@ -1,7 +1,7 @@
 <h2> Benutzerverwaltung </h2>
 
 <table class="table table-hover">
- 
+<thead>
 	<tr>
 	<th> Benutzername </th>
     <th> Mail </th>
@@ -9,6 +9,8 @@
     <th> Status </th>
     <th> Aktion </th>
 	</tr>
+</thead>
+    
 	<?php foreach($users as $user): ?>
     <tr>
 		<td><?php echo $user['User']['First name']." ".$user['User']['Family name'];?></td>
@@ -19,7 +21,7 @@
 		<td>
 		<?php echo $this->HTML->link('<span class="glyphicon glyphicon-folder-open" style="font-size:20px;"></span>', array('action'=>'view', $user['User']['ID']), array('escape'=>false)); ?>
 		<?php echo $this->HTML->link('<span class="glyphicon glyphicon-pencil" style="font-size:20px;"></span>', array('action'=>'edit', $user['User']['ID']), array('escape'=>false)); ?>
-        	<?php echo $this->Form->postLink('<span class="glyphicon glyphicon-remove" style="font-size:20px;"></span>', array('action'=>'delete', $user['User']['ID']), array('confirm'=>'Soll der Benutzer tatsächlich gelöscht werden?', "escape" => false)); ?></td>
+        	<?php echo $this->Form->postLink('<span class="glyphicon glyphicon-eye-open" style="font-size:20px;"></span>', array('action'=>'delete', $user['User']['ID']), array('confirm'=>'Soll der Benutzer tatsächlich gelöscht werden?', "escape" => false)); ?></td>
 	</tr>
 	<?php endforeach?>
 </table>
