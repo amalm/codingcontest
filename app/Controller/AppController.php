@@ -23,7 +23,7 @@ class AppController extends Controller {
     
     public function beforeFilter() {						//Hier sage ich welche Funktionen die UNAGEMELDETEN User sehen dürfen
         $this->Auth->allow('');
-        //$this->set('logged_in', $this->Auth->loggedIn());
-        //$this->set('current_user', $this->Auth->user());	
+        $this->set('logged_in', $this->Auth->loggedIn());
+        $this->set('current_user', $this->Auth->user());	
     }
 }

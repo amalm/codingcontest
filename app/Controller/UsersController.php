@@ -23,7 +23,7 @@
 	public function login() {
 	    if ($this->request->is('post')) {
 	         if ($this->Auth->login()) {
-	            $this->redirect($this->Auth->redirect());  
+	            $this->redirect($this->Auth->redirect('index'));  
 	        } else {
 	            $this->Session->setFlash('Your username/password combination was incorrect');
 	        }
@@ -85,15 +85,15 @@
 			
 			if (!$this->User->exists()) 
 			{
-				throw new NotFoundException('Invalid user');
+				throw new NotFoundException('Ungültiger User');
 			}
 		
 			if ($this->request->is('post') || $this->request->is('put')) 
 			{
 				if ($this->User->save($this->request->data)) 
 				{
-					//$this->Session->setFlash('Der Benutzer wurde gespeichert!');
-					$this->Session->setFlash($message,'success',array('alert'=>'info'));
+					$this->Session->setFlash('Der Benutzer wurde gespeichert!');
+					//$this->Session->setFlash($message,'success',array('alert'=>'info'));
 					$this->redirect(array('action' => 'index'));
 				}
 				 else 
@@ -103,26 +103,38 @@
 			} 
 			else 
 			{
+				$this->set('user', $this->User->read());
 				$this->request->data = $this->User->read();
 			}
 		}
 	
-		public function delete($id = null) 
+		public function activate($id = null) 
 		{
-			if ($this->request->is('get')) {
-				throw new MethodNotAllowedException();
-			}
+			$this->User->id = $id;
 			
-			if (!$id) {
-				$this->Session->setFlash('Ungültige ID für den user');
-				$this->redirect(array('action'=>'index'));
+			if (!$this->User->exists()) 
+			{
+				throw new NotFoundException('Ungültiger User');
 			}
-			if ($this->User->delete($id)) {
-				$this->Session->setFlash('Benutzer wurde gelöscht!');
-				$this->redirect(array('action'=>'index'));
+		
+			if ($this->request->is('post') || $this->request->is('put')) 
+			{
+				if ($this->User->save($this->request->data)) 
+				{
+					$this->Session->setFlash('Der Benutzer wurde aktiviert!');
+					//$this->Session->setFlash($message,'success',array('alert'=>'info'));
+					$this->redirect(array('action' => 'index'));
+				}
+				 else 
+				 {
+					$this->Session->setFlash('Der Benutzer konnte nicht aktiviert werden.');
+					$this->redirect(array('action' => 'index'));
+				  }
+			} 
+			else 
+			{
+				$this->request->data = $this->User->read();
 			}
-			$this->Session->setFlash('Benutzer konnte nicht gelöscht werden!');
-			$this->redirect(array('action' => 'index'));
 		}
 	}
 ?>

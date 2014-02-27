@@ -1762,3 +1762,113 @@ Request URL: /codingcontest/favicon.ico
 Stack Trace:
 #0 C:\xampp\htdocs\codingcontest\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2014-02-27 17:34:46 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /codingcontest/favicon.ico
+Stack Trace:
+#0 C:\xampp\htdocs\codingcontest\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-02-27 17:34:47 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /codingcontest/favicon.ico
+Stack Trace:
+#0 C:\xampp\htdocs\codingcontest\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-02-27 17:34:47 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /codingcontest/favicon.ico
+Stack Trace:
+#0 C:\xampp\htdocs\codingcontest\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-02-27 17:34:47 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /codingcontest/favicon.ico
+Stack Trace:
+#0 C:\xampp\htdocs\codingcontest\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-02-27 17:34:59 Error: [MissingActionException] Action UsersController::inex() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'inex',
+)
+Request URL: /codingcontest/users/inex
+Stack Trace:
+#0 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\codingcontest\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-02-27 18:18:00 Error: [MissingActionException] Action UsersController::active() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'active',
+)
+Request URL: /codingcontest/users/active
+Stack Trace:
+#0 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\codingcontest\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-02-27 18:18:14 Error: [NotFoundException] Ungültiger User
+Request URL: /codingcontest/users/activate
+Stack Trace:
+#0 [internal function]: UsersController->activate()
+#1 C:\xampp\htdocs\codingcontest\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\codingcontest\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-02-27 18:18:44 Error: [NotFoundException] Ungültiger User
+Request URL: /codingcontest/users/activate
+Stack Trace:
+#0 [internal function]: UsersController->activate()
+#1 C:\xampp\htdocs\codingcontest\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\codingcontest\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-02-27 23:17:14 Error: [ConfigureException] C:\xampp\htdocs\codingcontest\app\Config\email.php not found.
+Request URL: /codingcontest/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\codingcontest\lib\Cake\Network\Email\CakeEmail.php(1099): CakeEmail->_applyConfig('gmail')
+#1 C:\xampp\htdocs\codingcontest\lib\Cake\Network\Email\CakeEmail.php(351): CakeEmail->config('gmail')
+#2 C:\xampp\htdocs\codingcontest\app\Controller\UsersController.php(67): CakeEmail->__construct('gmail')
+#3 [internal function]: UsersController->add()
+#4 C:\xampp\htdocs\codingcontest\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#7 C:\xampp\htdocs\codingcontest\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2014-02-27 23:21:04 Error: [MissingActionException] Action UsersController::delete() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'delete',
+)
+Request URL: /codingcontest/users/delete/22
+Stack Trace:
+#0 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\codingcontest\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-02-27 23:21:14 Error: [MissingActionException] Action UsersController::delete() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'delete',
+)
+Request URL: /codingcontest/users/delete/22
+Stack Trace:
+#0 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\codingcontest\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
