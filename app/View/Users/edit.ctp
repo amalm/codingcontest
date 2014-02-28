@@ -32,9 +32,24 @@ echo $this->Form->create('User', array('class'=>'form-horizontal', 'role' => 'fo
 </div>
 
 <div class="form-group">
-	<label for="Accepted" class="col-sm-1 control-label">Aktiviert</label>
+	<label for="Accepted" class="col-sm-1 control-label">Bestätigt</label>
+    <div>
     <?php 
-		echo $this->Form->input('Accepted', array('id'=>'Accepted', 'type'=>'checkbox','class'=>'input-group-addon','label' => FALSE,'div' => array('class'=>'col-sm-6')));
+ 	if($user['User']['Accepted'] == 1){
+	 	echo '<span class="glyphicon glyphicon-ok" style="font-size:15px;"></span>';
+	 } 
+	 
+	else {
+		echo '<span class="glyphicon glyphicon-remove" style="font-size:15px;"></span>';
+		 }
+	?>
+    </div>
+</div>
+
+<div class="form-group">
+	<label for="Active" class="col-sm-1 control-label">Aktiviert</label>
+    <?php 
+		echo $this->Form->input('Active', array('id'=>'Active', 'type'=>'checkbox','class'=>'input-group-addon','label' => FALSE,'div' => array('class'=>'col-sm-6')));
 	?>
 </div>
 
