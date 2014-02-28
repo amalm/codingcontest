@@ -1872,3 +1872,321 @@ Stack Trace:
 #1 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
 #2 C:\xampp\htdocs\codingcontest\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2014-02-28 12:34:33 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /codingcontest/favicon.ico
+Stack Trace:
+#0 C:\xampp\htdocs\codingcontest\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-02-28 12:34:33 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /codingcontest/favicon.ico
+Stack Trace:
+#0 C:\xampp\htdocs\codingcontest\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-02-28 12:34:34 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /codingcontest/favicon.ico
+Stack Trace:
+#0 C:\xampp\htdocs\codingcontest\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-02-28 12:34:34 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /codingcontest/favicon.ico
+Stack Trace:
+#0 C:\xampp\htdocs\codingcontest\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-02-28 12:52:35 Error: [MissingActionException] Action UsersController::benutzerview() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'benutzerview',
+)
+Request URL: /codingcontest/users/benutzerview/19
+Stack Trace:
+#0 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\codingcontest\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-02-28 12:52:48 Error: [MissingActionException] Action UsersController::benutzerview() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'benutzerview',
+)
+Request URL: /codingcontest/users/benutzerview/19
+Stack Trace:
+#0 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\codingcontest\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-02-28 13:08:10 Error: [NotFoundException] Ungültiger User
+Request URL: /codingcontest/users/edit
+Stack Trace:
+#0 [internal function]: UsersController->edit()
+#1 C:\xampp\htdocs\codingcontest\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\codingcontest\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-02-28 13:08:28 Error: [NotFoundException] Ungültiger User
+Request URL: /codingcontest/users/edit
+Stack Trace:
+#0 [internal function]: UsersController->edit()
+#1 C:\xampp\htdocs\codingcontest\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\codingcontest\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-02-28 13:08:32 Error: [NotFoundException] Ungültiger User
+Request URL: /codingcontest/users/edit
+Stack Trace:
+#0 [internal function]: UsersController->edit()
+#1 C:\xampp\htdocs\codingcontest\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\codingcontest\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-02-28 13:09:00 Error: [NotFoundException] Ungültiger User
+Request URL: /codingcontest/users/edit
+Stack Trace:
+#0 [internal function]: UsersController->edit()
+#1 C:\xampp\htdocs\codingcontest\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\codingcontest\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-02-28 13:09:10 Error: [NotFoundException] Ungültiger User
+Request URL: /codingcontest/users/edit
+Stack Trace:
+#0 [internal function]: UsersController->edit()
+#1 C:\xampp\htdocs\codingcontest\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\codingcontest\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-02-28 13:49:35 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [C:\xampp\htdocs\codingcontest\app\Controller\UsersController.php, line 125]
+2014-02-28 13:49:35 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /codingcontest/users/activate/19
+Stack Trace:
+#0 C:\xampp\htdocs\codingcontest\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 125)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 125, Array)
+#2 C:\xampp\htdocs\codingcontest\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 125, Array)
+#3 C:\xampp\htdocs\codingcontest\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-28 14:02:28 Error: [NotFoundException] Ungültiger User
+Request URL: /codingcontest/users/edit
+Stack Trace:
+#0 [internal function]: UsersController->edit()
+#1 C:\xampp\htdocs\codingcontest\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\codingcontest\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-02-28 14:02:36 Error: [NotFoundException] Ungültiger User
+Request URL: /codingcontest/users/edit
+Stack Trace:
+#0 [internal function]: UsersController->edit()
+#1 C:\xampp\htdocs\codingcontest\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\codingcontest\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-02-28 14:02:48 Error: [NotFoundException] Ungültiger User
+Request URL: /codingcontest/users/edit
+Stack Trace:
+#0 [internal function]: UsersController->edit()
+#1 C:\xampp\htdocs\codingcontest\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\codingcontest\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-02-28 14:03:15 Error: [NotFoundException] Ungültiger User
+Request URL: /codingcontest/users/edit
+Stack Trace:
+#0 [internal function]: UsersController->edit()
+#1 C:\xampp\htdocs\codingcontest\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\codingcontest\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-02-28 14:03:20 Error: [NotFoundException] Ungültiger User
+Request URL: /codingcontest/users/edit
+Stack Trace:
+#0 [internal function]: UsersController->edit()
+#1 C:\xampp\htdocs\codingcontest\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\codingcontest\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-02-28 14:03:53 Error: [NotFoundException] Ungültiger User
+Request URL: /codingcontest/users/edit
+Stack Trace:
+#0 [internal function]: UsersController->edit()
+#1 C:\xampp\htdocs\codingcontest\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\codingcontest\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-02-28 14:51:09 Error: [SocketException] SMTP Error: 534 5.7.9 https://support.google.com/mail/bin/answer.py?answer=78754 43sm10707170eeh.13 - gsmtp
+Request URL: /codingcontest/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\codingcontest\lib\Cake\Network\Email\SmtpTransport.php(146): SmtpTransport->_smtpSend('QXVsMTIzNCE=', '235')
+#1 C:\xampp\htdocs\codingcontest\lib\Cake\Network\Email\SmtpTransport.php(62): SmtpTransport->_auth()
+#2 C:\xampp\htdocs\codingcontest\lib\Cake\Network\Email\CakeEmail.php(1124): SmtpTransport->send(Object(CakeEmail))
+#3 C:\xampp\htdocs\codingcontest\app\Controller\UsersController.php(71): CakeEmail->send('Eine Nachricht ...')
+#4 [internal function]: UsersController->add()
+#5 C:\xampp\htdocs\codingcontest\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#8 C:\xampp\htdocs\codingcontest\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2014-02-28 14:51:57 Error: [SocketException] SMTP Error: 534 5.7.9 https://support.google.com/mail/bin/answer.py?answer=78754 u6sm10721181eep.11 - gsmtp
+Request URL: /codingcontest/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\codingcontest\lib\Cake\Network\Email\SmtpTransport.php(146): SmtpTransport->_smtpSend('QXVsMTIzNCE=', '235')
+#1 C:\xampp\htdocs\codingcontest\lib\Cake\Network\Email\SmtpTransport.php(62): SmtpTransport->_auth()
+#2 C:\xampp\htdocs\codingcontest\lib\Cake\Network\Email\CakeEmail.php(1124): SmtpTransport->send(Object(CakeEmail))
+#3 C:\xampp\htdocs\codingcontest\app\Controller\UsersController.php(71): CakeEmail->send('Eine Nachricht ...')
+#4 [internal function]: UsersController->add()
+#5 C:\xampp\htdocs\codingcontest\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#8 C:\xampp\htdocs\codingcontest\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2014-02-28 14:57:31 Error: [SocketException] SMTP Error: 534 5.7.9 https://support.google.com/mail/bin/answer.py?answer=78754 m8sm10769964eef.14 - gsmtp
+Request URL: /codingcontest/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\codingcontest\lib\Cake\Network\Email\SmtpTransport.php(146): SmtpTransport->_smtpSend('QXVsMTIzNCE=', '235')
+#1 C:\xampp\htdocs\codingcontest\lib\Cake\Network\Email\SmtpTransport.php(62): SmtpTransport->_auth()
+#2 C:\xampp\htdocs\codingcontest\lib\Cake\Network\Email\CakeEmail.php(1124): SmtpTransport->send(Object(CakeEmail))
+#3 C:\xampp\htdocs\codingcontest\app\Controller\UsersController.php(71): CakeEmail->send('Eine Nachricht ...')
+#4 [internal function]: UsersController->add()
+#5 C:\xampp\htdocs\codingcontest\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#8 C:\xampp\htdocs\codingcontest\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2014-02-28 14:58:29 Error: [SocketException] SMTP Error: 534 5.7.9 https://support.google.com/mail/bin/answer.py?answer=78754 a2sm10770624eem.18 - gsmtp
+Request URL: /codingcontest/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\codingcontest\lib\Cake\Network\Email\SmtpTransport.php(146): SmtpTransport->_smtpSend('QXVsMTIzNCE=', '235')
+#1 C:\xampp\htdocs\codingcontest\lib\Cake\Network\Email\SmtpTransport.php(62): SmtpTransport->_auth()
+#2 C:\xampp\htdocs\codingcontest\lib\Cake\Network\Email\CakeEmail.php(1124): SmtpTransport->send(Object(CakeEmail))
+#3 C:\xampp\htdocs\codingcontest\app\Controller\UsersController.php(71): CakeEmail->send('Eine Nachricht ...')
+#4 [internal function]: UsersController->add()
+#5 C:\xampp\htdocs\codingcontest\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#8 C:\xampp\htdocs\codingcontest\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2014-02-28 14:59:45 Error: [SocketException] SMTP Error: 534 5.7.9 https://support.google.com/mail/bin/answer.py?answer=78754 j41sm10793030eeg.10 - gsmtp
+Request URL: /codingcontest/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\codingcontest\lib\Cake\Network\Email\SmtpTransport.php(146): SmtpTransport->_smtpSend('QXVsMTIzNCE=', '235')
+#1 C:\xampp\htdocs\codingcontest\lib\Cake\Network\Email\SmtpTransport.php(62): SmtpTransport->_auth()
+#2 C:\xampp\htdocs\codingcontest\lib\Cake\Network\Email\CakeEmail.php(1124): SmtpTransport->send(Object(CakeEmail))
+#3 C:\xampp\htdocs\codingcontest\app\Controller\UsersController.php(71): CakeEmail->send('Eine Nachricht ...')
+#4 [internal function]: UsersController->add()
+#5 C:\xampp\htdocs\codingcontest\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#8 C:\xampp\htdocs\codingcontest\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2014-02-28 15:29:25 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\codingcontest\app\Controller\UsersController.php, line 107]
+2014-02-28 15:29:25 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /codingcontest/users/edit/19
+Stack Trace:
+#0 C:\xampp\htdocs\codingcontest\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 107)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 107, Array)
+#2 C:\xampp\htdocs\codingcontest\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 107, Array)
+#3 C:\xampp\htdocs\codingcontest\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-28 15:29:43 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\codingcontest\app\Controller\UsersController.php, line 107]
+2014-02-28 15:29:43 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /codingcontest/users/edit/19
+Stack Trace:
+#0 C:\xampp\htdocs\codingcontest\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 107)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 107, Array)
+#2 C:\xampp\htdocs\codingcontest\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 107, Array)
+#3 C:\xampp\htdocs\codingcontest\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-28 15:30:21 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\xampp\htdocs\codingcontest\app\Controller\UsersController.php, line 106]
+2014-02-28 15:30:21 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /codingcontest/users/edit/19
+Stack Trace:
+#0 C:\xampp\htdocs\codingcontest\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 106)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 106, Array)
+#2 C:\xampp\htdocs\codingcontest\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 106, Array)
+#3 C:\xampp\htdocs\codingcontest\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-28 15:55:05 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\codingcontest\app\Controller\UsersController.php, line 93]
+2014-02-28 15:55:05 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /codingcontest/users/edit/19
+Stack Trace:
+#0 C:\xampp\htdocs\codingcontest\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 93)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 93, Array)
+#2 C:\xampp\htdocs\codingcontest\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 93, Array)
+#3 C:\xampp\htdocs\codingcontest\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-28 15:55:17 Error: Fatal Error (1): Call to a member function validate() on a non-object in [C:\xampp\htdocs\codingcontest\app\Controller\UsersController.php, line 93]
+2014-02-28 15:55:17 Error: [FatalErrorException] Call to a member function validate() on a non-object
+Request URL: /codingcontest/users/edit/19
+Stack Trace:
+#0 C:\xampp\htdocs\codingcontest\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 93)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 93, Array)
+#2 C:\xampp\htdocs\codingcontest\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 93, Array)
+#3 C:\xampp\htdocs\codingcontest\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-28 15:55:27 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'validate' at line 1
+Request URL: /codingcontest/users/edit/19
+Stack Trace:
+#0 C:\xampp\htdocs\codingcontest\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\codingcontest\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('validate', Array)
+#2 C:\xampp\htdocs\codingcontest\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('validate', Array, Array)
+#3 C:\xampp\htdocs\codingcontest\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('validate', Array, Array)
+#4 C:\xampp\htdocs\codingcontest\lib\Cake\Model\Model.php(801): DboSource->query('validate', Array, Object(User))
+#5 C:\xampp\htdocs\codingcontest\app\Controller\UsersController.php(93): Model->__call('validate', Array)
+#6 C:\xampp\htdocs\codingcontest\app\Controller\UsersController.php(93): User->validate()
+#7 [internal function]: UsersController->edit('19')
+#8 C:\xampp\htdocs\codingcontest\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\codingcontest\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\codingcontest\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-02-28 15:56:21 Error: Fatal Error (4): syntax error, unexpected ')', expecting ']' in [C:\xampp\htdocs\codingcontest\app\Controller\UsersController.php, line 93]
+2014-02-28 15:56:21 Error: [FatalErrorException] syntax error, unexpected ')', expecting ']'
+Request URL: /codingcontest/users/edit/19
+Stack Trace:
+#0 C:\xampp\htdocs\codingcontest\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 93)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 93, Array)
+#2 C:\xampp\htdocs\codingcontest\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 93, Array)
+#3 C:\xampp\htdocs\codingcontest\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-28 16:00:09 Error: Fatal Error (4): syntax error, unexpected ';', expecting ',' or ')' in [C:\xampp\htdocs\codingcontest\app\Controller\UsersController.php, line 96]
+2014-02-28 16:00:09 Error: [FatalErrorException] syntax error, unexpected ';', expecting ',' or ')'
+Request URL: /codingcontest/users/edit/19
+Stack Trace:
+#0 C:\xampp\htdocs\codingcontest\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 96)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 96, Array)
+#2 C:\xampp\htdocs\codingcontest\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 96, Array)
+#3 C:\xampp\htdocs\codingcontest\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

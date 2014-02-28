@@ -90,6 +90,77 @@
 		
 			if ($this->request->is('post') || $this->request->is('put')) 
 			{
+				if($this->request->data('User')['Password'] == ""){
+					unset($this->User->validate['Password']);
+					unset($this->request->data('User')['Password']);
+				}
+				
+				if ($this->User->save($this->request->data)) 
+				{
+					$this->Session->setFlash('Der Benutzer wurde gespeichert!');
+					//$this->Session->setFlash($message,'success',array('alert'=>'info'));
+					$this->redirect(array('action' => 'index'));
+				}
+				 else 
+				 {
+					$this->Session->setFlash('Der Benutzer konnte nicht gespeichert werden. ');
+				  }
+			} 
+			else 
+			{
+				    $userdata = $this->User->read();
+					unset($userdata['User']['Password']);
+					
+				$this->set('user', $userdata);
+				$this->request->data = $userdata;
+			}
+		}
+	
+		public function activate($id = null) 
+		{
+			$this->User->id = $id;
+			
+			if (!$this->User->exists()) {
+				throw new NotFoundException('Ungültiger User');
+			}
+			$userdata = $this->User->read();
+		
+			if($userdata['User']['Active'] == 1){
+				$this->User->saveField('Active', '0');						//saveField --> schreibt in DB
+			} else {
+				$this->User->saveField('Active', '1');
+			}
+			$this->redirect(array('action' => 'index'));
+		}
+		
+//////////////////////////////////////////////////////////////////Funktionen für den Benutzer/////////////////////////////////////////////////
+
+		public function Benutzerview($id = null) 
+		{
+			$this->User->id = $id;
+			
+			if (!$this->User->exists()) {
+				throw new NotFoundException('Ungültiger User');
+			}
+			
+			if (!$id) {
+				$this->Session->setFlash('Ungültiger User');
+				$this->redirect(array('action' => 'index'));
+			}
+			$this->set('user', $this->User->read());
+		}
+		
+		public function Benutzeredit($id = null) 
+		{
+			$this->User->id = $id;
+			
+			if (!$this->User->exists()) 
+			{
+				throw new NotFoundException('Ungültiger User');
+			}
+		
+			if ($this->request->is('post') || $this->request->is('put')) 
+			{
 				if ($this->User->save($this->request->data)) 
 				{
 					$this->Session->setFlash('Der Benutzer wurde gespeichert!');
@@ -104,35 +175,6 @@
 			else 
 			{
 				$this->set('user', $this->User->read());
-				$this->request->data = $this->User->read();
-			}
-		}
-	
-		public function activate($id = null) 
-		{
-			$this->User->id = $id;
-			
-			if (!$this->User->exists()) 
-			{
-				throw new NotFoundException('Ungültiger User');
-			}
-		
-			if ($this->request->is('post') || $this->request->is('put')) 
-			{
-				if ($this->User->save($this->request->data)) 
-				{
-					$this->Session->setFlash('Der Benutzer wurde aktiviert!');
-					//$this->Session->setFlash($message,'success',array('alert'=>'info'));
-					$this->redirect(array('action' => 'index'));
-				}
-				 else 
-				 {
-					$this->Session->setFlash('Der Benutzer konnte nicht aktiviert werden.');
-					$this->redirect(array('action' => 'index'));
-				  }
-			} 
-			else 
-			{
 				$this->request->data = $this->User->read();
 			}
 		}

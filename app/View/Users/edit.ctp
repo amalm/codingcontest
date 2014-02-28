@@ -1,6 +1,6 @@
 <h2> Benutzer bearbeiten </h2>
 <?php
-echo $this->Form->create('User', array('class'=>'form-horizontal', 'role' => 'form'));
+echo $this->Form->create('User', array('class'=>'form-horizontal', 'novalidate' => true, 'role' => 'form'));
 ?>
 
   <div class="form-group">
@@ -25,25 +25,10 @@ echo $this->Form->create('User', array('class'=>'form-horizontal', 'role' => 'fo
 </div>
   
 <div class="form-group">
-	<label for="Password" class="col-sm-1 control-label">Passwort</label>
+	<label for="Password" class="col-sm-1 control-label">Neues Passwort</label>
 	<?php 
-		echo $this->Form->input('Password', array('id'=>'Password', 'type'=>'password','class'=>'form-control', 'placeholder'=>'Passwort','label' => FALSE,'div' => array('class'=>'col-sm-5')));
+		echo $this->Form->input('Password', array('id'=>'Password', 'type'=>'text','class'=>'form-control', 'placeholder'=>'Passwort','label' => FALSE,'div' => array('class'=>'col-sm-5')));
 	?>
-</div>
-
-<div class="form-group">
-	<label for="Accepted" class="col-sm-1 control-label">Bestätigt</label>
-    <div>
-    <?php 
- 	if($user['User']['Accepted'] == 1){
-	 	echo '<span class="glyphicon glyphicon-ok" style="font-size:15px;"></span>';
-	 } 
-	 
-	else {
-		echo '<span class="glyphicon glyphicon-remove" style="font-size:15px;"></span>';
-		 }
-	?>
-    </div>
 </div>
 
 <div class="form-group">
@@ -54,8 +39,8 @@ echo $this->Form->create('User', array('class'=>'form-horizontal', 'role' => 'fo
 </div>
 
 <div class="form-group">
-  <p> <button type="submit" class="btn btn-default">Submit</button> 
- <a href="../" class="btn btn-default" role="button">Return</a></p>
+  <p> <button type="submit" class="btn btn-default">Speichern</button> 
+ <a href="../" class="btn btn-default" role="button">Zurück</a></p>
 </div>
 </form>
 

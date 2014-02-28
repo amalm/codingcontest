@@ -20,19 +20,19 @@
 
 		<td>
 		<?php 
-			echo $this->HTML->link('<span class="glyphicon glyphicon-folder-open" style="font-size:20px;"></span>', array('action'=>'view', $user['User']['ID']), array('escape'=>false)); ?>
+			echo $this->HTML->link('<span class="glyphicon glyphicon-folder-open" style="font-size:20px" data-toggle="tooltip" data-placement="left" title="Benutzer ansehen"></span>', array('action'=>'view', $user['User']['ID']), array('escape'=>false)); ?>
 		<?php 
-			echo $this->HTML->link('<span class="glyphicon glyphicon-pencil" style="font-size:20px;"></span>', array('action'=>'edit', $user['User']['ID']), array('escape'=>false)); ?>
+			echo $this->HTML->link('<span class="glyphicon glyphicon-pencil" style="font-size:20px" data-toggle="tooltip" data-placement="left" title="Benutzer bearbeiten"></span>', array('action'=>'edit', $user['User']['ID']), array('escape'=>false)); ?>
         
         	<?php 
 			
 			if($user['User']['Active'] == 0){
 			
-				echo $this->Form->link('<span class="glyphicon glyphicon-eye-open" style="font-size:20px;"></span>', array('action'=>'activate', $user['User']['ID']), array('confirm'=>'Soll der Benutzer aktiviert werden?', "escape" => false)); 
+				echo $this->Form->PostLink('<span class="glyphicon glyphicon-eye-open" style="font-size:20px" data-toggle="tooltip" data-placement="left" title="Benutzer aktivieren"></span>', array('action'=>'activate', $user['User']['ID']), array('confirm'=>'Soll der Benutzer aktiviert werden?', "escape" => false)); 
 				}
 				
 			else{
-				echo $this->Form->postLink('<span class="glyphicon glyphicon-eye-close" style="font-size:20px;"></span>', array('action'=>'activate', $user['User']['ID']), array('confirm'=>'Soll der Benutzer deaktiviert werden?', "escape" => false)); 
+				echo $this->Form->PostLink('<span class="glyphicon glyphicon-eye-close" style="font-size:20px" data-toggle="tooltip" data-placement="left" title="Benutzer deaktivieren"></span>', array('action'=>'activate', $user['User']['ID']), array('confirm'=>'Soll der Benutzer deaktiviert werden?', "escape" => false)); 
 				}
 				
 				endforeach

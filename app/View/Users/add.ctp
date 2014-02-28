@@ -28,7 +28,7 @@ echo $this->Form->input('ID', array('type'=>'hidden'));
 <div class="form-group">
 	<label for="Password" class="col-sm-1 control-label">Passwort</label>
 	<?php 
-		echo $this->Form->input('Password', array('id'=>'Password', 'type'=>'password','class'=>'form-control', 'placeholder'=>'Passwort','label' => FALSE,'div' => array('class'=>'col-sm-5')));
+		echo $this->Form->input('Password', array('id'=>'Password', 'type'=>'text','class'=>'form-control', 'placeholder'=>'Passwort','label' => FALSE,'div' => array('class'=>'col-sm-5')));
 	?>
 </div>
   
