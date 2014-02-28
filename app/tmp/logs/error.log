@@ -1,0 +1,258 @@
+2014-02-28 12:38:27 Error: Fatal Error (1): Call to a member function exists() on a non-object in [C:\Users\Reuf\Dropbox\project\app\Controller\LevelsController.php, line 8]
+2014-02-28 12:38:27 Error: [FatalErrorException] Call to a member function exists() on a non-object
+Request URL: /project/levels
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\Users\Reuf\D...', 8)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\Users\Reuf\D...', 8, Array)
+#2 C:\Users\Reuf\Dropbox\project\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\Users\Reuf\D...', 8, Array)
+#3 C:\Users\Reuf\Dropbox\project\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-28 12:38:27 Error: Fatal Error (1): Call to a member function exists() on a non-object in [C:\Users\Reuf\Dropbox\project\app\Controller\LevelsController.php, line 8]
+2014-02-28 12:38:27 Error: [FatalErrorException] Call to a member function exists() on a non-object
+Request URL: /project/levels
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\Users\Reuf\D...', 8)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\Users\Reuf\D...', 8, Array)
+#2 C:\Users\Reuf\Dropbox\project\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\Users\Reuf\D...', 8, Array)
+#3 C:\Users\Reuf\Dropbox\project\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-28 12:38:34 Error: [MissingActionException] Action LevelsController::1() could not be found.
+Exception Attributes: array (
+  'controller' => 'LevelsController',
+  'action' => '1',
+)
+Request URL: /project/levels/1
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LevelsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-02-28 12:38:46 Error: Fatal Error (1): Call to a member function exists() on a non-object in [C:\Users\Reuf\Dropbox\project\app\Controller\LevelsController.php, line 8]
+2014-02-28 12:38:46 Error: [FatalErrorException] Call to a member function exists() on a non-object
+Request URL: /project/levels/index
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\Users\Reuf\D...', 8)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\Users\Reuf\D...', 8, Array)
+#2 C:\Users\Reuf\Dropbox\project\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\Users\Reuf\D...', 8, Array)
+#3 C:\Users\Reuf\Dropbox\project\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-28 12:38:46 Error: Fatal Error (1): Call to a member function exists() on a non-object in [C:\Users\Reuf\Dropbox\project\app\Controller\LevelsController.php, line 8]
+2014-02-28 12:38:46 Error: [FatalErrorException] Call to a member function exists() on a non-object
+Request URL: /project/levels/index
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\Users\Reuf\D...', 8)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\Users\Reuf\D...', 8, Array)
+#2 C:\Users\Reuf\Dropbox\project\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\Users\Reuf\D...', 8, Array)
+#3 C:\Users\Reuf\Dropbox\project\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-28 12:38:52 Error: Fatal Error (1): Call to a member function exists() on a non-object in [C:\Users\Reuf\Dropbox\project\app\Controller\LevelsController.php, line 8]
+2014-02-28 12:38:52 Error: [FatalErrorException] Call to a member function exists() on a non-object
+Request URL: /project/levels/index/1
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\Users\Reuf\D...', 8)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\Users\Reuf\D...', 8, Array)
+#2 C:\Users\Reuf\Dropbox\project\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\Users\Reuf\D...', 8, Array)
+#3 C:\Users\Reuf\Dropbox\project\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-28 12:38:52 Error: Fatal Error (1): Call to a member function exists() on a non-object in [C:\Users\Reuf\Dropbox\project\app\Controller\LevelsController.php, line 8]
+2014-02-28 12:38:52 Error: [FatalErrorException] Call to a member function exists() on a non-object
+Request URL: /project/levels/index/1
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\Users\Reuf\D...', 8)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\Users\Reuf\D...', 8, Array)
+#2 C:\Users\Reuf\Dropbox\project\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\Users\Reuf\D...', 8, Array)
+#3 C:\Users\Reuf\Dropbox\project\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-28 12:39:13 Error: Fatal Error (1): Call to a member function read() on a non-object in [C:\Users\Reuf\Dropbox\project\app\Controller\LevelsController.php, line 11]
+2014-02-28 12:39:13 Error: [FatalErrorException] Call to a member function read() on a non-object
+Request URL: /project/levels/index/1
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\Users\Reuf\D...', 11)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\Users\Reuf\D...', 11, Array)
+#2 C:\Users\Reuf\Dropbox\project\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\Users\Reuf\D...', 11, Array)
+#3 C:\Users\Reuf\Dropbox\project\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-28 12:39:31 Error: Fatal Error (1): Call to a member function read() on a non-object in [C:\Users\Reuf\Dropbox\project\app\Controller\LevelsController.php, line 11]
+2014-02-28 12:39:31 Error: [FatalErrorException] Call to a member function read() on a non-object
+Request URL: /project/levels/index/1
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\Users\Reuf\D...', 11)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\Users\Reuf\D...', 11, Array)
+#2 C:\Users\Reuf\Dropbox\project\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\Users\Reuf\D...', 11, Array)
+#3 C:\Users\Reuf\Dropbox\project\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-28 12:40:06 Error: [NotFoundException] Ung&uuml;ltige Aufgabe
+Request URL: /project/levels/index/1000
+Stack Trace:
+#0 [internal function]: LevelsController->index('1000')
+#1 C:\Users\Reuf\Dropbox\project\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LevelsController), Array)
+#2 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LevelsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-02-28 12:40:15 Error: [NotFoundException] Ung&uuml;ltige Aufgabe
+Request URL: /project/levels/index/12
+Stack Trace:
+#0 [internal function]: LevelsController->index('12')
+#1 C:\Users\Reuf\Dropbox\project\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LevelsController), Array)
+#2 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LevelsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-02-28 12:40:39 Error: [NotFoundException] Ungülltige Aufgabe
+Request URL: /project/levels/index/12
+Stack Trace:
+#0 [internal function]: LevelsController->index('12')
+#1 C:\Users\Reuf\Dropbox\project\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LevelsController), Array)
+#2 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LevelsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-02-28 12:40:49 Error: [NotFoundException] Ungültige Aufgabe
+Request URL: /project/levels/index/12
+Stack Trace:
+#0 [internal function]: LevelsController->index('12')
+#1 C:\Users\Reuf\Dropbox\project\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LevelsController), Array)
+#2 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LevelsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-02-28 12:41:22 Error: Fatal Error (1): Call to a member function read() on a non-object in [C:\Users\Reuf\Dropbox\project\app\Controller\LevelsController.php, line 13]
+2014-02-28 12:41:22 Error: [FatalErrorException] Call to a member function read() on a non-object
+Request URL: /project/levels/index/2
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\Users\Reuf\D...', 13)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\Users\Reuf\D...', 13, Array)
+#2 C:\Users\Reuf\Dropbox\project\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\Users\Reuf\D...', 13, Array)
+#3 C:\Users\Reuf\Dropbox\project\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-28 12:41:49 Error: Fatal Error (1): Call to a member function read() on a non-object in [C:\Users\Reuf\Dropbox\project\app\Controller\LevelsController.php, line 13]
+2014-02-28 12:41:49 Error: [FatalErrorException] Call to a member function read() on a non-object
+Request URL: /project/levels/index/2
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\Users\Reuf\D...', 13)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\Users\Reuf\D...', 13, Array)
+#2 C:\Users\Reuf\Dropbox\project\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\Users\Reuf\D...', 13, Array)
+#3 C:\Users\Reuf\Dropbox\project\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-28 12:41:57 Error: Fatal Error (1): Call to a member function read() on a non-object in [C:\Users\Reuf\Dropbox\project\app\Controller\LevelsController.php, line 13]
+2014-02-28 12:41:57 Error: [FatalErrorException] Call to a member function read() on a non-object
+Request URL: /project/levels/index/2
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\Users\Reuf\D...', 13)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\Users\Reuf\D...', 13, Array)
+#2 C:\Users\Reuf\Dropbox\project\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\Users\Reuf\D...', 13, Array)
+#3 C:\Users\Reuf\Dropbox\project\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-28 12:46:53 Error: [MissingActionException] Action LevelsController::1() could not be found.
+Exception Attributes: array (
+  'controller' => 'LevelsController',
+  'action' => '1',
+)
+Request URL: /project/levels/1
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LevelsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-02-28 12:49:56 Error: [MissingActionException] Action LevelsController::1() could not be found.
+Exception Attributes: array (
+  'controller' => 'LevelsController',
+  'action' => '1',
+)
+Request URL: /project/levels/1
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LevelsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-02-28 14:00:31 Error: [MissingActionException] Action LevelsController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'LevelsController',
+  'action' => 'add',
+)
+Request URL: /project/levels/add
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LevelsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-02-28 15:28:27 Error: [MissingControllerException] Controller class UploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadsController',
+  'plugin' => NULL,
+)
+Request URL: /project/uploads
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-02-28 15:28:32 Error: [MissingControllerException] Controller class UploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadsController',
+  'plugin' => NULL,
+)
+Request URL: /project/uploads/
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-02-28 17:02:37 Error: [MissingControllerException] Controller class AddController could not be found.
+Exception Attributes: array (
+  'class' => 'AddController',
+  'plugin' => NULL,
+)
+Request URL: /project/add/1
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-02-28 17:27:10 Error: Fatal Error (1): Call to undefined method LevelsController::data() in [C:\Users\Reuf\Dropbox\project\app\Controller\LevelsController.php, line 18]
+2014-02-28 17:27:10 Error: [FatalErrorException] Call to undefined method LevelsController::data()
+Request URL: /project/levels/add/1
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\Users\Reuf\D...', 18)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\Users\Reuf\D...', 18, Array)
+#2 C:\Users\Reuf\Dropbox\project\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\Users\Reuf\D...', 18, Array)
+#3 C:\Users\Reuf\Dropbox\project\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-28 17:29:55 Error: Fatal Error (4): syntax error, unexpected '&', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in [C:\Users\Reuf\Dropbox\project\app\Controller\LevelsController.php, line 21]
+2014-02-28 17:29:55 Error: [FatalErrorException] syntax error, unexpected '&', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+Request URL: /project/levels/add/1
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Reuf\D...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Reuf\D...', 21, Array)
+#2 C:\Users\Reuf\Dropbox\project\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Reuf\D...', 21, Array)
+#3 C:\Users\Reuf\Dropbox\project\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-28 17:30:06 Error: Fatal Error (4): syntax error, unexpected '&', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in [C:\Users\Reuf\Dropbox\project\app\Controller\LevelsController.php, line 21]
+2014-02-28 17:30:06 Error: [FatalErrorException] syntax error, unexpected '&', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+Request URL: /project/levels/add/1
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Reuf\D...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Reuf\D...', 21, Array)
+#2 C:\Users\Reuf\Dropbox\project\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Reuf\D...', 21, Array)
+#3 C:\Users\Reuf\Dropbox\project\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-28 17:42:19 Error: [MissingActionException] Action LevelsController::1() could not be found.
+Exception Attributes: array (
+  'controller' => 'LevelsController',
+  'action' => '1',
+)
+Request URL: /project/levels/1
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LevelsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

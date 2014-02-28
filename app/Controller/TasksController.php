@@ -15,4 +15,24 @@ class TasksController extends AppController {
 			}
 		}
 	}
+	
+	public function edit($id = null){
+		$this->Task->id = $id;
+			
+		if (!$this->Task->exists()) {
+			throw new NotFoundException('Ungültige Aufgabe');
+		}
+	
+		if ($this->request->is('post') || $this->request->is('put')){
+			if ($this->Task->save($this->request->data)){
+				$this->Session->setFlash('Die Aufgabe wurde erfolgreich gespeichert!', 'default', array('class'=>'alert alert-success'));
+				$this->redirect(array('action' => 'index'));
+			} else {
+				$this->Session->setFlash('Die Aufgabe konnte nicht gespeichert werden', 'default', array('class'=>'alert alert-danger'));
+			}
+		} else {
+			$this->set('task', $this->Task->read());
+			$this->request->data = $this->Task->read();
+		}
+	}
 }

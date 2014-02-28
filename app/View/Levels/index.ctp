@@ -1,4 +1,4 @@
-<h2>Bestehende Aufgaben:</h2>
+<h2>Bestehende Levels:</h2>
 <table class="table table-striped">
 	<th>Level</th>
 	<th>Beschreibung</th>
@@ -12,5 +12,5 @@
 	<?php } ?>
 </table>
 <p>
-<?php echo $this->Html->link('<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span>Aufgabe hinzufügen</button>',  array('action'=>'add'), array("escape"=>false)); ?>
+<?php echo $this->Html->link('<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span>Level hinzufügen</button>',  array('action'=>'add'), array("escape"=>false)); ?>
 </p>
