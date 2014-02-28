@@ -10,33 +10,33 @@ class User extends AppModel
 	 */
 	public $validate = array(
 		'First name'=>array(
-			'Geben Sie Ihren Vornamen ein.'=>array(
+			'firstNameNotEmpty'=>array(
 				'rule'=>'notEmpty',
 				'message'=>'Geben Sie bitte einen Vornamen ein.'
 			)
 		),
 		'Family name'=>array(
-			'Geben Sie Ihren Nachnamen ein.'=>array(
+			'familyNameNotEmpty'=>array(
 				'rule'=>'notEmpty',
 				'message'=>'Geben Sie bitte einen Nachnamen ein.'
 				)
 			),
 		'Mail'=>array(
-			' Geben Sie eine Mail ein'=>array(
+			'mailNotEmpty'=>array(
 				'rule'=>array('email'),
 				'message'=>'Geben Sie bitte eine Mail-Adresse ein'
 			),
-			'Geben Sie eine Mail ein'=>array(
+			'mailUnique'=>array(
 				'rule'=> 'isUnique',
 				'message'=>'Diese Mail-Adresse ist bereits vorhanden!'
 				)
 		),
 		'Password'=>array(
-			'Geben Sie ein Passwort ein.'=>array(
+			'passNotEmpty'=>array(
 				'rule'=>'notEmpty',
 				'message'=>'Geben Sie ein Passwort ein.'
 		),
-			'Das Passwort muss zwischen 8 und 20 Zeichen haben.'=>array(
+			'passLength'=>array(
 				'rule'=>array('between', 8, 20),
 				'message'=>'Das Passwort muss zwischen 8 und 20 Zeichen haben.'
 				)

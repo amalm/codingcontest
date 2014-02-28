@@ -1,4 +1,4 @@
-<h2> Persöhnliche Daten bearbeiten </h2>
+<h2> Persönliche Daten bearbeiten </h2>
 <?php
 echo $this->Form->create('User', array('class'=>'form-horizontal', 'role' => 'form'));
 ?>
@@ -33,8 +33,8 @@ echo $this->Form->create('User', array('class'=>'form-horizontal', 'role' => 'fo
 
 
 <div class="form-group">
-  <p> <button type="submit" class="btn btn-default">Submit</button> 
- <a href="../" class="btn btn-default" role="button">Return</a></p>
+  <p> <button type="submit" class="btn btn-default">Speichern</button> 
+ <a href="../" class="btn btn-default" role="button">Zurück</a></p>
 </div>
 </form>
 
