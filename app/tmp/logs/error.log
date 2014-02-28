@@ -1762,3 +1762,13 @@ Request URL: /codingcontest/favicon.ico
 Stack Trace:
 #0 C:\xampp\htdocs\codingcontest\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2014-02-27 23:47:27 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\Users\Reuf\Dropbox\project\app\Controller\LevelsController.php, line 5]
+2014-02-27 23:47:27 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /project/levels
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\Users\Reuf\D...', 5)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\Users\Reuf\D...', 5, Array)
+#2 C:\Users\Reuf\Dropbox\project\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\Users\Reuf\D...', 5, Array)
+#3 C:\Users\Reuf\Dropbox\project\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
