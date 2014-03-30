@@ -24,7 +24,7 @@
 </div>
 
 <button type="submit" class="btn btn-primary">
-	Weiter zur Leveldefinition
+	Speichern
 </button>
 
 <?php	

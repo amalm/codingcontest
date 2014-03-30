@@ -1,0 +1,73 @@
+2014-03-30 12:18:55 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /project/favicon.ico
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-30 12:18:56 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /project/favicon.ico
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-30 12:18:56 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /project/favicon.ico
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-30 12:18:56 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /project/favicon.ico
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-30 12:28:49 Error: [NotFoundException] Ungültige Aufgabe
+Request URL: /project/tasks/edit/index.php
+Stack Trace:
+#0 [internal function]: TasksController->edit('index.php')
+#1 C:\Users\Reuf\Dropbox\project\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TasksController), Array)
+#2 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-30 12:47:41 Error: [NotFoundException] Ungültige Aufgabe
+Request URL: /project/tasks/edit
+Stack Trace:
+#0 [internal function]: TasksController->edit()
+#1 C:\Users\Reuf\Dropbox\project\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TasksController), Array)
+#2 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-30 12:51:38 Error: Fatal Error (1): Call to undefined function getLastInsertId() in [C:\Users\Reuf\Dropbox\project\app\Controller\TasksController.php, line 12]
+2014-03-30 12:51:38 Error: [FatalErrorException] Call to undefined function getLastInsertId()
+Request URL: /project/tasks/add
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\Users\Reuf\D...', 12)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\Users\Reuf\D...', 12, Array)
+#2 C:\Users\Reuf\Dropbox\project\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\Users\Reuf\D...', 12, Array)
+#3 C:\Users\Reuf\Dropbox\project\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-30 12:52:40 Error: [MissingControllerException] Controller class AddController could not be found.
+Exception Attributes: array (
+  'class' => 'AddController',
+  'plugin' => NULL,
+)
+Request URL: /project/add/levels/8
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

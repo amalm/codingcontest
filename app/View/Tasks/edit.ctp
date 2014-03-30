@@ -26,6 +26,10 @@
 <button type="submit" class="btn btn-primary">
 	Speichern
 </button>
+<?php 
+	echo $this->Html->link('Weiter zur Leveldefinition', array('action' => 'add', 'controller' => 'levels', $task['Task']['id']), array('class' => 'btn btn-primary')
+	); 
+?>
 
 <?php	
 	echo $this->Form->end();
