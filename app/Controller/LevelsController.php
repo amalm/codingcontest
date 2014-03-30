@@ -37,9 +37,8 @@ class LevelsController extends AppController {
 	}
 	
 	public function __uploadFile(){
-		$file = $this->data['Level']['file'];
+		$file = $this->data['Level']['fileInput'];
 	  	if ($file['error'] === UPLOAD_ERR_OK) {
-	  		die(APP);
 	    	if (move_uploaded_file($file['tmp_name'], APP.'uploads'.DS.$file['name'])) {
 	      		$this->request->data['Level']['path'] = APP.'uploads'.DS.$file['name'];
 	      		return true;

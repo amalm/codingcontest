@@ -11,9 +11,9 @@
 </div>
 
 <div class="form-group">
-	<label for="inputFile" class="col-sm-2 control-label">Dauer</label>
+	<label for="inputFile" class="col-sm-2 control-label">Aufgabe</label>
 	<?php
-		echo $this->Form->input('file', array('id'=>'inputFile', 'type' => 'file', 'type'=>'file','class'=>'form-control','label' => FALSE,'div' => array('class'=>'col-sm-5')));
+		echo $this->Form->input('fileInput', array('id'=>'inputFile', 'type' => 'file', 'type'=>'file','class'=>'form-control','label' => FALSE,'div' => array('class'=>'col-sm-5')));
 	?>
 </div>
 

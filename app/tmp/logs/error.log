@@ -71,3 +71,13 @@ Request URL: /project/add/levels/8
 Stack Trace:
 #0 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2014-03-30 13:49:04 Error: Fatal Error (4): syntax error, unexpected 'die' (T_EXIT), expecting function (T_FUNCTION) in [C:\Users\Reuf\Dropbox\project\app\Model\Level.php, line 29]
+2014-03-30 13:49:04 Error: [FatalErrorException] syntax error, unexpected 'die' (T_EXIT), expecting function (T_FUNCTION)
+Request URL: /project/tasks/edit/8
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Reuf\D...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Reuf\D...', 29, Array)
+#2 C:\Users\Reuf\Dropbox\project\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Reuf\D...', 29, Array)
+#3 C:\Users\Reuf\Dropbox\project\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
