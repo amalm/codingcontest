@@ -31,7 +31,7 @@ class User extends AppModel
 				'message'=>'Diese Mail-Adresse ist bereits vorhanden!'
 				)
 		),
-		'Password'=>array(
+		'password'=>array(
 			'passNotEmpty'=>array(
 				'rule'=>'notEmpty',
 				'message'=>'Geben Sie ein Passwort ein.'
@@ -42,14 +42,18 @@ class User extends AppModel
 				)
 			)
 	);
-	    	/*Für das Hashan des PW
-			 schaut ob das Passwort überhaupt gesetzt wurde befor es das PW verschlüsselt
-			 schreibt das gehascht PW in DB zurück || AuthComponent Password hascht den String der eingegeben wurde */
+	    	/*Für das Hashen des PW
+			 schaut ob das Passwort überhaupt gesetzt wurde bevor es das PW verschlüsselt
+			 schreibt das gehashte PW in DB zurück || AuthComponent Password hasht den String der eingegeben wurde */
 	public function beforeSave($options = array()) {
-	    if (isset($this->data['User']['Password'])) {
-	        $this->data['User']['Password'] = AuthComponent::password($this->data['User']['Password']);
+	    if (isset($this->data['User']['password'])) {
+	        $this->data['User']['password'] = AuthComponent::password($this->data['User']['password']);
 	    }
 	    return true;
 	}
+	
+	/*public function isOwnedBy($user) {
+    return $this->field('id', array('user_id' => $user)) === $user;
+	}*/
 }
 ?>

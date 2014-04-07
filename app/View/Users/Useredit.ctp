@@ -1,6 +1,6 @@
-<h2> Benutzer bearbeiten </h2>
+<h2> Persönliche Daten bearbeiten </h2>
 <?php
-echo $this->Form->create('User', array('class'=>'form-horizontal', 'novalidate' => true, 'role' => 'form'));
+echo $this->Form->create('User', array('class'=>'form-horizontal', 'role' => 'form'));
 ?>
 
   <div class="form-group">
@@ -25,24 +25,16 @@ echo $this->Form->create('User', array('class'=>'form-horizontal', 'novalidate' 
 </div>
   
 <div class="form-group">
-	<label for="Password" class="col-sm-1 control-label">Neues Passwort</label>
+	<label for="Password" class="col-sm-1 control-label">Passwort</label>
 	<?php 
-		echo $this->Form->input('password', array('id'=>'Password', 'type'=>'text','class'=>'form-control', 'placeholder'=>'Passwort','label' => FALSE,'div' => array('class'=>'col-sm-5')));
+		echo $this->Form->input('password', array('id'=>'Password', 'type'=>'password','class'=>'form-control', 'placeholder'=>'Passwort','label' => FALSE,'div' => array('class'=>'col-sm-5')));
 	?>
 </div>
 
-<div class="form-group">
-	<label for="Active" class="col-sm-1 control-label">Aktiviert</label>
-    <?php 
-		echo $this->Form->input('active', array('id'=>'Active', 'type'=>'checkbox','class'=>'input-group-addon','label' => FALSE,'div' => array('class'=>'col-sm-6')));
-	?>
-</div>
-<?php
-echo $this->HTML->link('<span class=" glyphicon glyphicon-envelope" style="font-size:20px" data-toggle="tooltip" data-placement="left" title="Account bestätigen"></span>', array('action'=>'confirm', $user['User']['confirm_string']), array('escape'=>false)); ?>
 
 <div class="form-group">
   <p> <button type="submit" class="btn btn-default">Speichern</button> 
- <a href="../" class="btn btn-default" role="button">Zurück</a></p>
+<a href="../" class="btn btn-default" role="button">Zurück</a></p>
 </div>
 </form>
 

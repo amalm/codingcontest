@@ -22,16 +22,4 @@ class Level extends AppModel {
 		)
 	);
 	
-	 /*,
-		    
-	  
-	var $validate = array(
-	    'fileInput' => array(
-	        'rule'    => array(
-	            'extension',
-	            array('pdf')
-	        ),
-	        'message' => 'Please supply a valid image.'
-	    )
-	);*/
 }

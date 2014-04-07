@@ -13,28 +13,25 @@
     
 	<?php foreach($users as $user): ?>
     <tr>
-		<td><?php echo $user['User']['First name']." ".$user['User']['Family name'];?></td>
-        <td><?php echo $user['User']['Mail'];?></td>
-        <td><?php echo date('d-m-Y', strtotime($user['User']['Registered']));?></td>
-        <td> <?php if($user['User']['Accepted'] == 1){echo '<span class="glyphicon glyphicon-ok" style="font-size:15px;"></span>';} else {echo '<span class="glyphicon glyphicon-remove" style="font-size:15px;"></span>';} ?></td>
+		<td><?php echo $user['User']['first_name']." ".$user['User']['family_name'];?></td>
+        <td><?php echo $user['User']['mail'];?></td>
+        <td><?php echo date('d-m-Y', strtotime($user['User']['registered']));?></td>
+        <td> <?php if($user['User']['confirm'] == 1){echo '<span class="glyphicon glyphicon-ok" style="font-size:15px;"></span>';} else {echo '<span class="glyphicon glyphicon-remove" style="font-size:15px;"></span>';} ?></td>
 
 		<td>
 		<?php 
-			echo $this->HTML->link('<span class="glyphicon glyphicon-folder-open" style="font-size:20px" data-toggle="tooltip" data-placement="left" title="Benutzer ansehen"></span>', array('action'=>'view', $user['User']['ID']), array('escape'=>false)); ?>
+			echo $this->HTML->link('<span class="glyphicon glyphicon-folder-open" style="font-size:20px" data-toggle="tooltip" data-placement="left" title="Benutzer ansehen"></span>', array('action'=>'view', $user['User']['id']), array('escape'=>false)); ?>
 		<?php 
-			echo $this->HTML->link('<span class="glyphicon glyphicon-pencil" style="font-size:20px" data-toggle="tooltip" data-placement="left" title="Benutzer bearbeiten"></span>', array('action'=>'edit', $user['User']['ID']), array('escape'=>false)); ?>
+			echo $this->HTML->link('<span class="glyphicon glyphicon-pencil" style="font-size:20px" data-toggle="tooltip" data-placement="left" title="Benutzer bearbeiten"></span>', array('action'=>'edit', $user['User']['id']), array('escape'=>false)); ?>
         
         	<?php 
-			
-			if($user['User']['Active'] == 0){
-			
-				echo $this->Form->PostLink('<span class="glyphicon glyphicon-eye-open" style="font-size:20px" data-toggle="tooltip" data-placement="left" title="Benutzer aktivieren"></span>', array('action'=>'activate', $user['User']['ID']), array('confirm'=>'Soll der Benutzer aktiviert werden?', "escape" => false)); 
+			if($user['User']['active'] == 0){
+				echo $this->Form->PostLink('<span class="glyphicon glyphicon-eye-open" style="font-size:20px" data-toggle="tooltip" data-placement="left" title="Benutzer aktivieren"></span>', array('action'=>'activate', $user['User']['id']), array('confirm'=>'Soll der Benutzer aktiviert werden?', "escape" => false)); 
 				}
 				
 			else{
-				echo $this->Form->PostLink('<span class="glyphicon glyphicon-eye-close" style="font-size:20px" data-toggle="tooltip" data-placement="left" title="Benutzer deaktivieren"></span>', array('action'=>'activate', $user['User']['ID']), array('confirm'=>'Soll der Benutzer deaktiviert werden?', "escape" => false)); 
+				echo $this->Form->PostLink('<span class="glyphicon glyphicon-eye-close" style="font-size:20px" data-toggle="tooltip" data-placement="left" title="Benutzer deaktivieren"></span>', array('action'=>'activate', $user['User']['id']), array('confirm'=>'Soll der Benutzer deaktiviert werden?', "escape" => false)); 
 				}
-				
 				endforeach
 			?>
             
@@ -42,8 +39,8 @@
    		 </tr>
 	</table>
 
-<?php echo $this->Html->link('<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span>Benutzer hinzufügen</button>',  array('action'=>'add'), array("escape"=>false)); ?>
-
+<?php echo $this->Html->link('<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span>Benutzer hinzufügen</button>',  array('action'=>'add'), array("escape"=>false)); 
+?>
 
 
 

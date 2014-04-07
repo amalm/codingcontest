@@ -18,13 +18,17 @@
           </ul>
 		  
 		               <div class="text-right">
-			<?php if ($logged_in): ?>
-		            Angemeldet: <?php echo $current_user['First name']; ?> <?php echo $current_user['Family name']?> <?php echo $this->Html->link('Logout', array('controller'=>'users', 'action'=>'logout')); ?>
+		               	
+			<?php
+			$vorname= AuthComponent::user('first_name');
+			$nachname= AuthComponent::user('family_name');
+			 if ($logged_in): ?>
+		            Angemeldet: <?php echo ($vorname); ?> <?php echo ($nachname); ?> <?php echo $this->Html->link('Logout', array('controller'=>'users', 'action'=>'logout')); ?>
 		        <?php else: ?>
 		            <?php //echo $this->Html->link('Login', array('controller'=>'users', 'action'=>'login')); ?>
 		        <?php endif; ?>
 		</div>
-
+  
         </div><!-- /.nav-collapse -->
       </div><!-- /.container -->
     </div><!-- /.navbar -->
