@@ -31,5 +31,6 @@ class ContestsController extends AppController {
                 throw new NotFoundException('Contest wurde nicht gefunden');
             }
             $this->set('contest', $this->Contest->read());
+            $this->set('level', $this->Level->find('all', array('conditions' => array('Level.task_id'=>$this->Contest->data['Task']['id']))));
         }
 }
