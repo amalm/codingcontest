@@ -153,3 +153,48 @@ Request URL: /project/favicon.ico
 Stack Trace:
 #0 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2014-04-07 15:59:42 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /project/favicon.ico
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-07 15:59:42 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /project/favicon.ico
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-07 15:59:42 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /project/favicon.ico
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-07 15:59:42 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /project/favicon.ico
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-07 16:35:07 Error: [NotFoundException] Contest wurde nicht gefunden
+Request URL: /project/contests/participate/1000
+Stack Trace:
+#0 [internal function]: ContestsController->participate('1000')
+#1 C:\Users\Reuf\Dropbox\project\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ContestsController), Array)
+#2 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(ContestsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

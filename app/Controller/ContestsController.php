@@ -1,6 +1,6 @@
 <?php
 class ContestsController extends AppController {
-	var $uses = array('Contest', 'Level', 'Task');
+	var $uses = array('Contest', 'Level', 'Task', 'User');
 	
 	public function index(){
 		$this->set('contests', $this->Contest->find('all', array('conditions' => array('Contest.visible' => 1))));
@@ -17,4 +17,19 @@ class ContestsController extends AppController {
 			}
 		}
 	}
+        
+        public function isAuthorized($user) {
+	    if ($user['role'] == 'regular' && in_array($this->action, array('index', 'participate')) && $user['active'] == 1) {
+	        return true;
+		}			
+	    return parent::isAuthorized($user);
+	}
+        
+        public function participate($id = null){
+            $this->Contest->id = $id;
+            if(!$this->Contest->exists()){
+                throw new NotFoundException('Contest wurde nicht gefunden');
+            }
+            $this->set('contest', $this->Contest->read());
+        }
 }
