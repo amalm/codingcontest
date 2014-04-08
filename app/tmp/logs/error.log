@@ -282,3 +282,235 @@ Request URL: /project/favicon.ico
 Stack Trace:
 #0 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2014-04-08 21:23:03 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /project/favicon.ico
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-08 21:23:03 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /project/favicon.ico
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-08 21:23:03 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /project/favicon.ico
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-08 21:23:03 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /project/favicon.ico
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-08 21:52:01 Error: [NotFoundException] The requested file C:\Users\Reuf\Dropbox\project\app\C:\Users\Reuf\Dropbox\project\app\uploads\4_mysql_rechte.pdf was not found or not readable
+Request URL: /project/levels/download/24
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\app\Controller\LevelsController.php(38): CakeResponse->file('C:\Users\Reuf\D...', Array)
+#1 [internal function]: LevelsController->download('24')
+#2 C:\Users\Reuf\Dropbox\project\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LevelsController), Array)
+#3 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LevelsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-04-08 21:52:01 Error: [NotFoundException] The requested file C:\Users\Reuf\Dropbox\project\app\C:\Users\Reuf\Dropbox\project\app\uploads\4_mysql_rechte.pdf was not found or not readable
+Request URL: /project/levels/download/24
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\app\Controller\LevelsController.php(38): CakeResponse->file('C:\Users\Reuf\D...', Array)
+#1 [internal function]: LevelsController->download('24')
+#2 C:\Users\Reuf\Dropbox\project\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LevelsController), Array)
+#3 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LevelsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-04-08 21:52:50 Error: [NotFoundException] The requested file C:\Users\Reuf\Dropbox\project\app\C:\Users\Reuf\Dropbox\project\app\uploads\4_mysql_rechte.pdf was not found or not readable
+Request URL: /project/levels/download/24
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\app\Controller\LevelsController.php(38): CakeResponse->file('C:\Users\Reuf\D...', Array)
+#1 [internal function]: LevelsController->download('24')
+#2 C:\Users\Reuf\Dropbox\project\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LevelsController), Array)
+#3 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LevelsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-04-08 21:54:55 Error: Fatal Error (1): Call to undefined function exists() in [C:\Users\Reuf\Dropbox\project\app\Controller\LevelsController.php, line 34]
+2014-04-08 21:54:55 Error: [FatalErrorException] Call to undefined function exists()
+Request URL: /project/levels/download/24
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\Users\Reuf\D...', 34)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\Users\Reuf\D...', 34, Array)
+#2 C:\Users\Reuf\Dropbox\project\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\Users\Reuf\D...', 34, Array)
+#3 C:\Users\Reuf\Dropbox\project\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-08 21:55:13 Error: Fatal Error (1): Call to undefined function exists() in [C:\Users\Reuf\Dropbox\project\app\Controller\LevelsController.php, line 34]
+2014-04-08 21:55:13 Error: [FatalErrorException] Call to undefined function exists()
+Request URL: /project/levels/download/24
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\Users\Reuf\D...', 34)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\Users\Reuf\D...', 34, Array)
+#2 C:\Users\Reuf\Dropbox\project\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\Users\Reuf\D...', 34, Array)
+#3 C:\Users\Reuf\Dropbox\project\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-08 21:55:15 Error: Fatal Error (1): Call to undefined function exists() in [C:\Users\Reuf\Dropbox\project\app\Controller\LevelsController.php, line 34]
+2014-04-08 21:55:15 Error: [FatalErrorException] Call to undefined function exists()
+Request URL: /project/levels/download/24
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\Users\Reuf\D...', 34)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\Users\Reuf\D...', 34, Array)
+#2 C:\Users\Reuf\Dropbox\project\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\Users\Reuf\D...', 34, Array)
+#3 C:\Users\Reuf\Dropbox\project\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-08 21:55:19 Error: Fatal Error (1): Call to undefined function exists() in [C:\Users\Reuf\Dropbox\project\app\Controller\LevelsController.php, line 34]
+2014-04-08 21:55:19 Error: [FatalErrorException] Call to undefined function exists()
+Request URL: /project/levels/download/24
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\Users\Reuf\D...', 34)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\Users\Reuf\D...', 34, Array)
+#2 C:\Users\Reuf\Dropbox\project\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\Users\Reuf\D...', 34, Array)
+#3 C:\Users\Reuf\Dropbox\project\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-08 21:55:31 Error: Fatal Error (1): Call to undefined function exists() in [C:\Users\Reuf\Dropbox\project\app\Controller\LevelsController.php, line 35]
+2014-04-08 21:55:31 Error: [FatalErrorException] Call to undefined function exists()
+Request URL: /project/levels/download/24
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\Users\Reuf\D...', 35)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\Users\Reuf\D...', 35, Array)
+#2 C:\Users\Reuf\Dropbox\project\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\Users\Reuf\D...', 35, Array)
+#3 C:\Users\Reuf\Dropbox\project\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-08 21:57:16 Error: [NotFoundException] The requested file C:\Users\Reuf\Dropbox\project\app\C:\Users\Reuf\Dropbox\project\app\uploads\4_mysql_rechte.pdf was not found or not readable
+Request URL: /project/levels/download/24
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\app\Controller\LevelsController.php(40): CakeResponse->file('C:\Users\Reuf\D...', Array)
+#1 [internal function]: LevelsController->download('24')
+#2 C:\Users\Reuf\Dropbox\project\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LevelsController), Array)
+#3 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LevelsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-04-08 21:57:46 Error: [MissingViewException] View file "C:\Users\Reuf\Dropbox\project\app\View\Themed\Bootstrap\Levels\download.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Reuf\\Dropbox\\project\\app\\View\\Themed\\Bootstrap\\Levels\\download.ctp',
+)
+Request URL: /project/levels/download/24
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\Users\Reuf\Dropbox\project\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LevelsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-04-08 21:58:38 Error: [NotFoundException] Level wurde nicht gefunden
+Request URL: /project/levels/download/25
+Stack Trace:
+#0 [internal function]: LevelsController->download('25')
+#1 C:\Users\Reuf\Dropbox\project\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LevelsController), Array)
+#2 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LevelsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-04-08 21:58:43 Error: [NotFoundException] Level wurde nicht gefunden
+Request URL: /project/levels/download/28
+Stack Trace:
+#0 [internal function]: LevelsController->download('28')
+#1 C:\Users\Reuf\Dropbox\project\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LevelsController), Array)
+#2 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LevelsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-04-08 21:58:48 Error: [MissingViewException] View file "C:\Users\Reuf\Dropbox\project\app\View\Themed\Bootstrap\Levels\download.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Reuf\\Dropbox\\project\\app\\View\\Themed\\Bootstrap\\Levels\\download.ctp',
+)
+Request URL: /project/levels/download/24
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\Users\Reuf\Dropbox\project\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LevelsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-04-08 21:59:33 Error: [MissingViewException] View file "C:\Users\Reuf\Dropbox\project\app\View\Themed\Bootstrap\Levels\download.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Reuf\\Dropbox\\project\\app\\View\\Themed\\Bootstrap\\Levels\\download.ctp',
+)
+Request URL: /project/levels/download/24
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\Users\Reuf\Dropbox\project\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LevelsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-04-08 21:59:52 Error: [MissingViewException] View file "C:\Users\Reuf\Dropbox\project\app\View\Themed\Bootstrap\Levels\download.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Reuf\\Dropbox\\project\\app\\View\\Themed\\Bootstrap\\Levels\\download.ctp',
+)
+Request URL: /project/levels/download/24
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\Users\Reuf\Dropbox\project\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LevelsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-04-08 22:00:10 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'data' at line 1
+Request URL: /project/levels/download/24
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Reuf\Dropbox\project\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('data', Array)
+#2 C:\Users\Reuf\Dropbox\project\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('data', Array, Array)
+#3 C:\Users\Reuf\Dropbox\project\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('data', Array, Array)
+#4 C:\Users\Reuf\Dropbox\project\lib\Cake\Model\Model.php(801): DboSource->query('data', Array, Object(Level))
+#5 C:\Users\Reuf\Dropbox\project\app\Controller\LevelsController.php(39): Model->__call('data', Array)
+#6 C:\Users\Reuf\Dropbox\project\app\Controller\LevelsController.php(39): Level->data('path')
+#7 [internal function]: LevelsController->download('24')
+#8 C:\Users\Reuf\Dropbox\project\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LevelsController), Array)
+#9 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LevelsController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-04-08 22:00:32 Error: [MissingViewException] View file "C:\Users\Reuf\Dropbox\project\app\View\Themed\Bootstrap\Levels\download.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Reuf\\Dropbox\\project\\app\\View\\Themed\\Bootstrap\\Levels\\download.ctp',
+)
+Request URL: /project/levels/download/24
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\Users\Reuf\Dropbox\project\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LevelsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-04-08 22:00:40 Error: [MissingViewException] View file "C:\Users\Reuf\Dropbox\project\app\View\Themed\Bootstrap\Levels\download.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\Reuf\\Dropbox\\project\\app\\View\\Themed\\Bootstrap\\Levels\\download.ctp',
+)
+Request URL: /project/levels/download/24
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\Users\Reuf\Dropbox\project\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LevelsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
