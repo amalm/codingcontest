@@ -13,8 +13,7 @@
 		<td><?php echo count($task['Level']);?></td>
 		<td>
 			<?php echo $this->HTML->link('<span class="glyphicon glyphicon-pencil" style="font-size:20px;"></span>', array('action'=>'edit', $task['Task']['id']), array('escape'=>false)); ?>
-			<?php echo $this->HTML->link('<span class="glyphicon glyphicon-folder-open" style="font-size:20px;"></span>', array('controller' => 'levels', 'action'=>'index', $task['Task']['id']), array('escape'=>false)); ?>
-		</td>
+                </td>
 	</tr>
 	<?php } ?>
 </table>

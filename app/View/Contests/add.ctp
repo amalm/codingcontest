@@ -10,13 +10,6 @@
 </div>
 
 <div class="form-group">
-	<label for="inputDuration" class="col-sm-1 control-label">Dauer</label>
-	<?php
-		echo $this->Form->input('duration', array('id'=>'inputDuration', 'type'=>'text','class'=>'form-control','label' => FALSE,'div' => array('class'=>'col-sm-5')));
-	?>
-</div>
-
-<div class="form-group">
 	<label for="inputStart" class="col-sm-1 control-label">Anfang</label>
 	<div class="input-group date form_datetime col-md-5" data-date="<?php echo (date("Y-m-d")." ".date("H:i"));?>" data-date-format="yyyy-mm-dd HH:ii" data-link-field="inputStart">
 	<?php

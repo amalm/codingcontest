@@ -514,3 +514,43 @@ Stack Trace:
 #3 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LevelsController), Object(CakeRequest), Object(CakeResponse))
 #4 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2014-04-08 22:30:26 Error: [NotFoundException] Ungültiger User
+Request URL: /project/users/Useredit/29
+Stack Trace:
+#0 [internal function]: UsersController->Useredit('29')
+#1 C:\Users\Reuf\Dropbox\project\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-04-08 22:38:27 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'isOwnedBy' at line 1
+Request URL: /project/users/useredit/30
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\Reuf\Dropbox\project\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('isOwnedBy', Array)
+#2 C:\Users\Reuf\Dropbox\project\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('isOwnedBy', Array, Array)
+#3 C:\Users\Reuf\Dropbox\project\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('isOwnedBy', Array, Array)
+#4 C:\Users\Reuf\Dropbox\project\lib\Cake\Model\Model.php(801): DboSource->query('isOwnedBy', Array, Object(User))
+#5 C:\Users\Reuf\Dropbox\project\app\Controller\UsersController.php(16): Model->__call('isOwnedBy', Array)
+#6 C:\Users\Reuf\Dropbox\project\app\Controller\UsersController.php(16): User->isOwnedBy(NULL, '30')
+#7 C:\Users\Reuf\Dropbox\project\lib\Cake\Controller\Component\Auth\ControllerAuthorize.php(65): UsersController->isAuthorized(Array)
+#8 C:\Users\Reuf\Dropbox\project\lib\Cake\Controller\Component\AuthComponent.php(464): ControllerAuthorize->authorize(Array, Object(CakeRequest))
+#9 C:\Users\Reuf\Dropbox\project\lib\Cake\Controller\Component\AuthComponent.php(309): AuthComponent->isAuthorized(Array)
+#10 [internal function]: AuthComponent->startup(Object(UsersController))
+#11 C:\Users\Reuf\Dropbox\project\lib\Cake\Utility\ObjectCollection.php(132): call_user_func_array(Array, Array)
+#12 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#13 C:\Users\Reuf\Dropbox\project\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#14 C:\Users\Reuf\Dropbox\project\lib\Cake\Controller\Controller.php(675): CakeEventManager->dispatch(Object(CakeEvent))
+#15 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(184): Controller->startupProcess()
+#16 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#17 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#18 {main}
+2014-04-08 22:41:06 Error: [NotFoundException] Ungültiger User
+Request URL: /project/users/useredit/29
+Stack Trace:
+#0 [internal function]: UsersController->useredit('29')
+#1 C:\Users\Reuf\Dropbox\project\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

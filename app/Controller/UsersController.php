@@ -6,23 +6,18 @@ class UsersController extends AppController {
 
     public function beforeFilter() {
         parent::beforeFilter();
-
         $this->Auth->allow('login', 'logout');
     }
 
     public function isAuthorized($user) {
-
-        if ($user['role'] == 'regular' && in_array($this->action, array('Userview', 'Useredit')) && $user['active'] == 1) {
-            return true;
+        if ($user['role'] == 'regular' && in_array($this->action, array('useredit', 'userview')) && $user['active'] == 1) {
+            if ($user['id'] == $this->request->params['pass'][0]) {
+                return true;
+            } else {
+                return false;
+            }
         }
-        // The owner of a post can edit and delete it
-        /*  if (in_array($this->action, array('Useredit', 'Userview'))) {
-          if ($user['id'] != $this->request->params['pass'][0]) {
-          return false;
-          }
-          } */
-
-        return parent:: isAuthorized($user);
+        return parent::isAuthorized($user);
     }
 
     public function login() {
@@ -53,13 +48,11 @@ class UsersController extends AppController {
     }
 
     public function index() {
-
         $this->set('users', $this->User->find('all'));  //Holt den Datensatz aus der Tabelle und setzt ihn für den view zur Verfügung
     }
 
     public function view($id = null) {
         $this->User->id = $id;
-
         if (!$this->User->exists()) {
             throw new NotFoundException('Ungültiger User');
         }
@@ -72,11 +65,8 @@ class UsersController extends AppController {
     }
 
     public function add() {
-
         if ($this->request->is('Post')) {
-
             if ($this->User->save($this->request->data) && $this->User->saveField('confirm_string', $stringToSend = $this->__randomString($length = 10))) {
-
                 App::uses('CakeEmail', 'Network/Email');
                 $address = $this->request->data('User')['mail'];   //Holl ich mir die gerade eingegebene Mail
                 $email = new CakeEmail('gmail');
@@ -84,7 +74,6 @@ class UsersController extends AppController {
                 $email->to($address);
                 $email->subject('Anmeldung Conding Contest Platform');
                 $email->send("Aktivieren Sie Ihren Account mit dem folgenden Link: http://localhost/codingcontest/users/confirm/" . $stringToSend);
-
                 $this->Session->setFlash('Der Benutzer wurde erfolgreich gespeichert!');
                 $this->redirect(array('action' => 'index'));
             } else {
@@ -146,7 +135,6 @@ class UsersController extends AppController {
 
     public function activate($id = null) {
         $this->User->id = $id;
-
         if (!$this->User->exists()) {
             throw new NotFoundException('Ungültiger User');
         }
@@ -163,7 +151,6 @@ class UsersController extends AppController {
     public function __randomString($length = 10) {
         $chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
         srand((double) microtime() * 1000000);
-
         $i = 0;
         $pass = 0;
         while ($i < $length) {
@@ -177,13 +164,12 @@ class UsersController extends AppController {
 
 //////////////////////////////////////////////////////////////////Funktionen für den Benutzer/////////////////////////////////////////////////
 
-    public function Userview($id = null) {
+    public function userview($id = null) {
         $this->User->id = $id;
 
         if (!$this->User->exists()) {
             throw new NotFoundException('Ungültiger User');
         }
-
         if (!$id) {
             $this->Session->setFlash('Ungültiger User');
             $this->redirect(array('action' => 'index'));
@@ -191,20 +177,17 @@ class UsersController extends AppController {
         $this->set('user', $this->User->read());
     }
 
-    public function Useredit($id = null) {
+    public function useredit($id = null) {
         $this->User->id = $id;
-
         if (!$this->User->exists()) {
             throw new NotFoundException('Ungültiger User');
         }
 
         if ($this->request->is('post') || $this->request->is('put')) {
-
             if ($this->request->data('User')['password'] == "") {
                 unset($this->User->validate['password']);
                 unset($this->request->data('User')['password']);
             }
-
             if ($this->User->save($this->request->data)) {
                 $this->Session->setFlash('Der Benutzer wurde gespeichert!');
                 //$this->Session->setFlash($message,'success',array('alert'=>'info'));
@@ -215,7 +198,6 @@ class UsersController extends AppController {
         } else {
             $userdata = $this->User->read();
             unset($userdata['User']['password']);
-
             $this->set('user', $userdata);
             $this->request->data = $userdata;
         }

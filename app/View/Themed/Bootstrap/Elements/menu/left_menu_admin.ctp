@@ -14,7 +14,7 @@
 <?php } else { ?>
       <div class="list-group">
         <a href="#" class="list-group-item">CV Hochladen</a>
-        <?php echo $this->Html->link("Benutzereinstellungen", array('controller'=>'users', 'action'=>'Useredit', $this->Session->read('Auth.User.id')), array('escape'=>false, 'class' => 'list-group-item'))?>
+        <?php echo $this->Html->link("Benutzereinstellungen", array('controller'=>'users', 'action'=>'useredit', $this->Session->read('Auth.User.id')), array('escape'=>false, 'class' => 'list-group-item'))?>
       </div>
 <?php }} ?>
 </div>

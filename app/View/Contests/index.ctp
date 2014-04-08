@@ -9,7 +9,7 @@
 ?>
 <table class="table table-striped">
 	<th>Contestname</th>
-	<th>Anfang: Datum und Uhrzeit</th>
+	<th>Anfang</th>
 	<th>Offen bis</th>
 	<th>Durchf&uuml;hrungszeit</th>
 	<?php foreach ($contests as $contest){ ?>

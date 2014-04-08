@@ -13,6 +13,13 @@ class LevelsController extends AppController {
         }
     }
 
+    public function isAuthorized($user) {
+        if ($user['role'] == 'regular' && in_array($this->action, array('index', 'download')) && $user['active'] == 1) {
+            return true;
+        }
+        return parent::isAuthorized($user);
+    }
+
     public function add($id = null) {
         if ($id == null) {
             $this->redirect(array('controller' => 'tasks', 'action' => 'index'));
@@ -32,11 +39,11 @@ class LevelsController extends AppController {
 
     public function download($id = null) {
         $this->Level->id = $id;
-        if(!$this->Level->exists()){
+        if (!$this->Level->exists()) {
             throw new NotFoundException('Level wurde nicht gefunden');
         }
         $this->Level->read();
-        $this->response->file($this->Level->data['Level']['path'], array('download' => true, 'name' => $this->Level->data['Level']['description'].'.pdf'));
+        $this->response->file($this->Level->data['Level']['path'], array('download' => true, 'name' => $this->Level->data['Level']['description'] . '.pdf'));
         return $this->response;
     }
 
