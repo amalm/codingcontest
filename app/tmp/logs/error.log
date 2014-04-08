@@ -246,3 +246,39 @@ Stack Trace:
 #1 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(ContestsController), Object(CakeRequest), Object(CakeResponse))
 #2 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2014-04-08 09:54:34 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /project/favicon.ico
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-08 09:54:34 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /project/favicon.ico
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-08 09:54:34 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /project/favicon.ico
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-08 09:54:34 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /project/favicon.ico
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

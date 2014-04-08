@@ -5,6 +5,7 @@ class Contest extends AppModel {
 	var $name = 'Contest';
 	
 	var $belongsTo = 'Task';
+        var $hasMany = 'Relation';
 	
 	var $validate = array(
 		'name' => array(

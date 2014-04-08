@@ -2,6 +2,7 @@
 class User extends AppModel 
 {
 	public $name = 'User';
+        public $hasMany = 'Relation';
 	public $displayField = 'name';
 	
 	/*Überprüfung der Eingabe
