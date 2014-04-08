@@ -25,7 +25,7 @@ class UsersController extends AppController {
             if ($this->Auth->login()) {
                 $user = $this->Auth->user();
                 $id = $user['id'];
-                $redirect = "Userview/" . $id;
+                $redirect = "userview/" . $id;
 
                 if ($user['role'] == 'regular' && $user['active'] == 1) {
                     $this->redirect($this->Auth->redirect($redirect));
@@ -73,7 +73,7 @@ class UsersController extends AppController {
                 $email->from('reuf.kozlica@gmail.com');
                 $email->to($address);
                 $email->subject('Anmeldung Conding Contest Platform');
-                $email->send("Aktivieren Sie Ihren Account mit dem folgenden Link: http://localhost/codingcontest/users/confirm/" . $stringToSend);
+                $email->send("Aktivieren Sie Ihren Account mit dem folgenden Link: http://localhost/project/users/confirm/" . $stringToSend .", Ihr vorläufiges Passwort ist: ".$this->request->data('User')['password']);
                 $this->Session->setFlash('Der Benutzer wurde erfolgreich gespeichert!');
                 $this->redirect(array('action' => 'index'));
             } else {
