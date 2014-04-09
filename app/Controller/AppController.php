@@ -28,6 +28,7 @@ class AppController extends Controller {
     }
 
     public function beforeFilter() {
+        $this->set('attending', false);
         $this->Auth->deny();
         $this->set('logged_in', $this->Auth->loggedIn());
         $this->loadModel('Relation');
@@ -39,5 +40,14 @@ class AppController extends Controller {
                 $this->set('task', $task);
             }
         }
+    }
+    
+    public function __isAttending(){
+        if($this->Session->read('Auth.User')) { 
+            if($this->Relation->find('all', array('conditions' => array('Relation.user_id' => $this->Session->read('Auth.User.id'))))){
+                return true;
+            }
+        }
+        return false;
     }
 }

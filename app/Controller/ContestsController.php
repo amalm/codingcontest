@@ -16,10 +16,10 @@ class ContestsController extends AppController {
             $this->set('tasks', $this->Task->find('list', array('fields' => array('Task.id', 'Task.name'))));
             if ($this->request->is('post')){
                 if ($this->Contest->save($this->request->data)) {
-                        $this->Session->setFlash('Contest wurde erfolgreich angelegt', 'default', array('class'=>'alert alert-success'));
-                        $this->redirect(array('action' => 'index'));
+                    $this->Session->setFlash('Contest wurde erfolgreich angelegt', 'default', array('class'=>'alert alert-success'));
+                    $this->redirect(array('action' => 'index'));
                 } else {
-                $this->Session->setFlash('Contest konnte nicht gespeichert werden', 'default', array('class'=>'alert alert-danger'));
+                    $this->Session->setFlash('Contest konnte nicht gespeichert werden', 'default', array('class'=>'alert alert-danger'));
                 }
             }
 	}
@@ -32,6 +32,10 @@ class ContestsController extends AppController {
 	}
         
         public function participate($id = null){
+            if(parent::__isAttending()){
+                $this->Session->setFlash('Sie dürfen nur an einem Contest gleichzeitig teinehmen', 'default', array('class'=>'alert alert-danger'));
+                $this->redirect(array('action' => 'index'));
+            }
             $this->Contest->id = $id;
             if(!$this->Contest->exists()){
                 throw new NotFoundException('Contest wurde nicht gefunden');
