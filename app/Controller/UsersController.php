@@ -72,7 +72,7 @@ class UsersController extends AppController {
                 $email = new CakeEmail('gmail');
                 $email->from('reuf.kozlica@gmail.com');
                 $email->to($address);
-                $email->subject('Anmeldung Conding Contest Platform');
+                $email->subject('Anmeldung Coding Contest Platform');
                 $email->send("Aktivieren Sie Ihren Account mit dem folgenden Link: http://localhost/project/users/confirm/" . $stringToSend .", Ihr vorläufiges Passwort ist: ".$this->request->data('User')['password']);
                 $this->Session->setFlash('Der Benutzer wurde erfolgreich gespeichert!');
                 $this->redirect(array('action' => 'index'));

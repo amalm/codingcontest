@@ -34,7 +34,7 @@ class AppController extends Controller {
         $this->loadModel('Relation');
         $this->loadModel('Task');
         if($this->Session->read('Auth.User')) { 
-            if($attending = $this->Relation->find('all', $this->Session->read('Auth.User.id'))){
+            if($attending = $this->Relation->find('all', array('conditions' => array('Relation.user_id' => $this->Session->read('Auth.User.id'))))){
                 $task = $this->Task->find('all', array('conditions' => array('Task.id' => $attending['0']['Contest']['task_id'])));
                 $this->set('attending', $attending);
                 $this->set('task', $task);
