@@ -7,6 +7,7 @@
         }
 }
 ?>
+
 <table class="table table-striped">
 	<th>Contestname</th>
 	<th>Anfang</th>

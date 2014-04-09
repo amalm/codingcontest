@@ -83,12 +83,13 @@ class UsersController extends AppController {
     }
 
     public function edit($id = null) {
+        
         $this->User->id = $id;
 
         if (!$this->User->exists()) {
             throw new NotFoundException('Ungültiger User');
         }
-
+        
         if ($this->request->is('post') || $this->request->is('put')) {
 
             if ($this->request->data('User')['password'] == "") {
@@ -178,7 +179,9 @@ class UsersController extends AppController {
     }
 
     public function useredit($id = null) {
+        
         $this->User->id = $id;
+        
         if (!$this->User->exists()) {
             throw new NotFoundException('Ungültiger User');
         }

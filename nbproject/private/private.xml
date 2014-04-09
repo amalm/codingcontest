@@ -2,18 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/xampp/htdocs/project/app/Controller/AppController.php</file>
-            <file>file:/C:/xampp/htdocs/project/app/View/Users/userview.ctp</file>
-            <file>file:/C:/xampp/htdocs/project/app/View/Contests/index.ctp</file>
-            <file>file:/C:/xampp/htdocs/project/app/View/Tasks/index.ctp</file>
-            <file>file:/C:/xampp/htdocs/project/app/Controller/TasksController.php</file>
-            <file>file:/C:/xampp/htdocs/project/app/View/Themed/Bootstrap/Elements/menu/left_menu_admin.ctp</file>
-            <file>file:/C:/xampp/htdocs/project/app/Controller/ContestsController.php</file>
-            <file>file:/C:/xampp/htdocs/project/app/Controller/LevelsController.php</file>
-            <file>file:/C:/xampp/htdocs/project/app/Controller/UsersController.php</file>
-            <file>file:/C:/xampp/htdocs/project/app/View/Contests/add.ctp</file>
-            <file>file:/C:/xampp/htdocs/project/app/Model/Level.php</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>
