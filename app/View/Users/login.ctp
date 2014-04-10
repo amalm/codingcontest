@@ -19,7 +19,7 @@ echo $this->Form->create('User', array('class'=>'form-horizontal', 'role' => 'fo
 	?>
 
 <div class="form-group">
-  <p> <button type="submit" class="btn btn-default">Login</button> 
+  <p> <button type="submit" class="btn btn-primary">Login</button> 
   </div>
   
 </form>
