@@ -1,8 +1,8 @@
 <?php
 echo $this->Form->create('User', array('class'=>'form-horizontal', 'role' => 'form'));
 ?>
-
-
+<!-- dejan test -->
+<div class="container">
 	
 <form class="form-signin" role="form">
 	
@@ -23,7 +23,7 @@ echo $this->Form->create('User', array('class'=>'form-horizontal', 'role' => 'fo
   </div>
   
 </form>
-
+</div>
 <?php
 echo $this->Form->end();
 ?>
