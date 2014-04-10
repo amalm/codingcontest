@@ -37,6 +37,7 @@
 		echo $this -> fetch('meta');
 
 		echo $this -> Html -> css('bootstrap.min');
+		echo $this -> Html -> css('signin');
 		echo $this -> Html -> css('offcanvas');
 		echo $this -> Html -> css('bootstrap-datetimepicker.min');
 
