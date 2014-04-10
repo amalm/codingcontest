@@ -22,7 +22,7 @@
                 $nachname = AuthComponent::user('family_name');
                 if ($logged_in):
                     ?>
-                    Angemeldet: <?php echo ($vorname); ?> <?php echo ($nachname); ?> <?php echo $this->Html->link('Logout', array('controller' => 'users', 'action' => 'logout')); ?>
+                    Angemeldet: <?php echo ($vorname); ?> <?php echo ($nachname); ?> <?php echo $this->Html->link('Abmelden', array('controller' => 'users', 'action' => 'logout')); ?>
                 <?php else: ?>
                     <?php //echo $this->Html->link('Login', array('controller'=>'users', 'action'=>'login')); ?>
 <?php endif; ?>

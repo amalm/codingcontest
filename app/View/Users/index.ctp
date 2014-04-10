@@ -1,12 +1,12 @@
 <h2> Benutzerverwaltung </h2>
-<table class="table table-hover">
+<table class="table table-striped">
 <thead>
 	<tr>
 	<th> Benutzername </th>
     <th> Mail </th>
-    <th> Registriert am </th>
-    <th> Bestätigt </th>
-    <th> Aktion </th>
+    <th style="text-align: center;"> Registriert am </th>
+    <th style="text-align: center;"> Bestätigt </th>
+    <th style="text-align: center;"> Aktion </th>
 	</tr>
 </thead>
     
@@ -14,10 +14,10 @@
     <tr>
 		<td><?php echo $user['User']['first_name']." ".$user['User']['family_name'];?></td>
         <td><?php echo $user['User']['mail'];?></td>
-        <td><?php echo date('d-m-Y', strtotime($user['User']['registered']));?></td>
-        <td> <?php if($user['User']['confirm'] == 1){echo '<span class="glyphicon glyphicon-ok" style="font-size:15px;"></span>';} else {echo '<span class="glyphicon glyphicon-remove" style="font-size:15px;"></span>';} ?></td>
+        <td style="text-align: center;"><?php echo date('d-m-Y', strtotime($user['User']['registered']));?></td>
+        <td style="text-align: center;"> <?php if($user['User']['confirm'] == 1){echo '<span class="glyphicon glyphicon-ok" style="font-size:15px; color:#00CD00;"></span>';} else {echo '<span class="glyphicon glyphicon-remove" style="font-size:15px; color:#fe0802;"></span>';} ?></td>
 
-		<td>
+		<td style="text-align: center;">
 		<?php 
 			echo $this->HTML->link('<span class="glyphicon glyphicon-folder-open" style="font-size:20px" data-toggle="tooltip" data-placement="left" title="Benutzer ansehen"></span>', array('action'=>'view', $user['User']['id']), array('escape'=>false)); ?>
 		<?php 
@@ -38,7 +38,7 @@
    		 </tr>
 	</table>
 
-<?php echo $this->Html->link('<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span>Benutzer hinzufügen</button>',  array('action'=>'add'), array("escape"=>false)); 
+<?php echo $this->Html->link('<button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Benutzer hinzufügen </button>',  array('action'=>'add'), array("escape"=>false)); 
 ?>
 
 
