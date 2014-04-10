@@ -4,28 +4,28 @@ echo $this->Form->create('User', array('class'=>'form-horizontal', 'role' => 'fo
 ?>
 
   <div class="form-group">
-	<label for="FirstName" class="col-sm-1 control-label">Vorname</label>
+      <label for="FirstName" class="col-sm-1 control-label" style="text-align: left;">Vorname</label>
 	<?php 
 		echo $this->Form->input('first_name', array('id'=>'FirstName', 'type'=>'text','class'=>'form-control', 'placeholder'=>'Vorname','label' => FALSE,'div' => array('class'=>'col-sm-5')));
 	?>
 </div>
   
  <div class="form-group">
-	<label for="FamilyName" class="col-sm-1 control-label">Nachname</label>
+	<label for="FamilyName" class="col-sm-1 control-label" style="text-align: left;">Nachname</label>
 	<?php 
 		echo $this->Form->input('family_name', array('id'=>'FamilyName', 'type'=>'text','class'=>'form-control', 'placeholder'=>'Nachname','label' => FALSE,'div' => array('class'=>'col-sm-5')));
 	?>
 </div>
 
 <div class="form-group">
-	<label for="Mail" class="col-sm-1 control-label">Mail</label>
+	<label for="Mail" class="col-sm-1 control-label" style="text-align: left;">Mail</label>
 	<?php 
 		echo $this->Form->input('mail', array('id'=>'Mail', 'type'=>'text','class'=>'form-control', 'placeholder'=>'Mail','label' => FALSE,'div' => array('class'=>'col-sm-5')));
 	?>
 </div>
   
 <div class="form-group">
-	<label for="Password" class="col-sm-1 control-label">Passwort</label>
+	<label for="Password" class="col-sm-1 control-label" style="text-align: left;">Passwort</label>
 	<?php 
 		echo $this->Form->input('password', array('id'=>'Password', 'type'=>'password','class'=>'form-control', 'placeholder'=>'Passwort','label' => FALSE,'div' => array('class'=>'col-sm-5')));
 	?>
@@ -33,8 +33,8 @@ echo $this->Form->create('User', array('class'=>'form-horizontal', 'role' => 'fo
 
 
 <div class="form-group">
-  <p> <button type="submit" class="btn btn-default">Speichern</button> 
-<a href="../" class="btn btn-default" role="button">Zurück</a></p>
+  <p> <button type="submit" class="btn btn-primary">Speichern</button> 
+<a href="../" class="btn btn-primary" role="button">Zurück</a></p>
 </div>
 </form>
 
