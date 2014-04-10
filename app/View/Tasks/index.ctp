@@ -1,10 +1,12 @@
-<h2>Bestehende Aufgaben:</h2>
+<h2> Bestehende Aufgaben </h2>
 <table class="table table-striped">
+    <thead>
 	<th>Aufgabename</th>
 	<th>Beschreibung</th>
 	<th>Dauer</th>
 	<th>Anzahl der Levels</th>
 	<th>Aktion</th>
+    </thead>
 	<?php foreach($tasks as $task){ ?>
 	<tr>
 		<td><?php echo $task['Task']['name'];?></td>

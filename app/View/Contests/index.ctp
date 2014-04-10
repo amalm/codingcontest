@@ -1,4 +1,4 @@
-<h2>Anstehende Contests:</h2>
+<h2> Anstehende Contests </h2>
 <?php if($this->Session->read('Auth.User')) { 
         if($this->Session->read('Auth.User.role')=='admin'){ 
             $userRole = "admin";
@@ -9,10 +9,12 @@
 ?>
 
 <table class="table table-striped">
+    <thead>
 	<th>Contestname</th>
 	<th>Anfang</th>
 	<th>Offen bis</th>
 	<th>Durchf&uuml;hrungszeit</th>
+    </thead>
 	<?php foreach ($contests as $contest){ ?>
 	<tr>
                 <td><?php if($userRole && $userRole=="regular"){ ?><?php echo $this->Html->link($contest['Contest']['name'], array('controller'=>'contests', 'action'=>'participate', $contest['Contest']['id'])) ?><?php } else { echo $contest['Contest']['name']; }?></td>
