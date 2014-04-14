@@ -938,3 +938,1524 @@ Stack Trace:
 #2 C:\xampp_neu\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
 >>>>>>> 737ed0fcc01a3a79b4ad483a3157144bbe4d5af8
+2014-04-14 11:58:54 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /project/favicon.ico
+Stack Trace:
+#0 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-14 11:58:54 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /project/favicon.ico
+Stack Trace:
+#0 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-14 11:58:55 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /project/favicon.ico
+Stack Trace:
+#0 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-14 11:58:55 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /project/favicon.ico
+Stack Trace:
+#0 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-14 12:05:01 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:05:01 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:06:44 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:06:44 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:07:37 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:07:38 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:08:11 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:08:11 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:09:01 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:09:01 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:09:03 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:09:16 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:09:17 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:09:43 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:09:44 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:09:52 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:09:52 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:10:18 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:10:18 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:15:11 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:15:11 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:15:14 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:17:12 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:17:12 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:17:54 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:17:54 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:18:04 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:18:08 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:18:09 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:18:23 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:18:23 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:21:47 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:21:47 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:21:58 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:21:58 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:22:22 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:22:22 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:22:30 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:22:30 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:22:41 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:22:41 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:22:51 Error: Fatal Error (4): syntax error, unexpected '/' in [C:\xampp\htdocs\project\app\View\Users\login.ctp, line 42]
+2014-04-14 12:22:51 Error: [FatalErrorException] syntax error, unexpected '/'
+Request URL: /project/Users/login
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 42)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 42, Array)
+#2 C:\xampp\htdocs\project\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 42, Array)
+#3 C:\xampp\htdocs\project\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-14 12:23:00 Error: Fatal Error (4): syntax error, unexpected '>' in [C:\xampp\htdocs\project\app\View\Users\login.ctp, line 42]
+2014-04-14 12:23:00 Error: [FatalErrorException] syntax error, unexpected '>'
+Request URL: /project/Users/login
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 42)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 42, Array)
+#2 C:\xampp\htdocs\project\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 42, Array)
+#3 C:\xampp\htdocs\project\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-14 12:23:19 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:23:19 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:23:27 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:23:27 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:24:21 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:24:21 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:24:31 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:24:31 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:24:47 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:24:47 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:26:20 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:26:20 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:28:03 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:28:03 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:28:41 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:28:41 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:28:59 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:28:59 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:29:27 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:29:27 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:29:31 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:29:31 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:29:38 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:29:39 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:30:06 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:30:06 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:37:13 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:37:14 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:37:46 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:37:46 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:40:24 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:40:24 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:42:21 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:42:21 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:43:47 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:43:48 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:44:22 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:44:22 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:46:04 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:46:04 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:46:37 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:46:37 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:46:53 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:46:54 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:47:19 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:47:19 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:47:49 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:47:49 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:48:12 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:48:12 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:48:35 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:48:35 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:49:08 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:49:08 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:49:39 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:49:39 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:49:50 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:49:50 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:51:37 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 12:51:37 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signin.css',
+)
+Request URL: /project/Users/signin.css
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 13:02:10 Error: [MissingActionException] Action UsersController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'webroot',
+)
+Request URL: /project/Users/webroot/img/logon-login.png
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 13:02:40 Error: [MissingControllerException] Controller class WebrootController could not be found.
+Exception Attributes: array (
+  'class' => 'WebrootController',
+  'plugin' => NULL,
+)
+Request URL: /project/webroot/img/logon-login.png
+Stack Trace:
+#0 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-14 13:02:50 Error: [MissingControllerException] Controller class Logon-login.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Logon-login.pngController',
+  'plugin' => NULL,
+)
+Request URL: /project/logon-login.png
+Stack Trace:
+#0 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-14 13:02:52 Error: [MissingControllerException] Controller class Logon-login.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Logon-login.pngController',
+  'plugin' => NULL,
+)
+Request URL: /project/logon-login.png
+Stack Trace:
+#0 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-14 13:02:53 Error: [MissingControllerException] Controller class Logon-login.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Logon-login.pngController',
+  'plugin' => NULL,
+)
+Request URL: /project/logon-login.png
+Stack Trace:
+#0 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-14 13:03:16 Error: [MissingControllerException] Controller class Logon-login.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Logon-login.pngController',
+  'plugin' => NULL,
+)
+Request URL: /project/logon-login.png
+Stack Trace:
+#0 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-14 13:03:17 Error: [MissingControllerException] Controller class Logon-login.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Logon-login.pngController',
+  'plugin' => NULL,
+)
+Request URL: /project/logon-login.png
+Stack Trace:
+#0 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-14 13:03:18 Error: [MissingControllerException] Controller class Logon-login.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Logon-login.pngController',
+  'plugin' => NULL,
+)
+Request URL: /project/logon-login.png
+Stack Trace:
+#0 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-14 13:19:56 Error: [MissingControllerException] Controller class Logo-login.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Logo-login.pngController',
+  'plugin' => NULL,
+)
+Request URL: /project/logo-login.png
+Stack Trace:
+#0 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-14 13:19:58 Error: [MissingControllerException] Controller class Logo-login.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Logo-login.pngController',
+  'plugin' => NULL,
+)
+Request URL: /project/logo-login.png
+Stack Trace:
+#0 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-14 13:20:14 Error: [MissingActionException] Action UsersController::logo-login.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'logo-login.png',
+)
+Request URL: /project/Users/logo-login.png
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 13:20:15 Error: [MissingActionException] Action UsersController::logo-login.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'logo-login.png',
+)
+Request URL: /project/Users/logo-login.png
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 13:22:22 Error: [MissingControllerException] Controller class Logo-login.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Logo-login.pngController',
+  'plugin' => NULL,
+)
+Request URL: /project/logo-login.png
+Stack Trace:
+#0 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-14 13:23:51 Error: [MissingActionException] Action UsersController::logo-login.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'logo-login.png',
+)
+Request URL: /project/Users/logo-login.png
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 13:23:53 Error: [MissingActionException] Action UsersController::logo-login.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'logo-login.png',
+)
+Request URL: /project/Users/logo-login.png
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 13:24:00 Error: [MissingActionException] Action UsersController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'img',
+)
+Request URL: /project/Users/img/logo-login.png
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 13:24:01 Error: [MissingActionException] Action UsersController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'img',
+)
+Request URL: /project/Users/img/logo-login.png
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 13:24:39 Error: [MissingActionException] Action UsersController::app() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'app',
+)
+Request URL: /project/Users/app/view/webroot/img/logo-login.png
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 13:24:58 Error: [MissingActionException] Action UsersController::app() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'app',
+)
+Request URL: /project/Users/app/view/webroot/img/logo-login.png
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 13:37:54 Error: [MissingActionException] Action UsersController::logo-login.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'logo-login.png',
+)
+Request URL: /project/Users/logo-login.png
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 13:37:55 Error: [MissingActionException] Action UsersController::logo-login.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'logo-login.png',
+)
+Request URL: /project/Users/logo-login.png
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 13:37:58 Error: [MissingActionException] Action UsersController::logo-login.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'logo-login.png',
+)
+Request URL: /project/Users/logo-login.png
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 13:47:25 Error: [MissingActionException] Action UsersController::logo-login.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'logo-login.png',
+)
+Request URL: /project/Users/logo-login.png
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 13:47:54 Error: [MissingActionException] Action UsersController::logo-login.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'logo-login.png',
+)
+Request URL: /project/Users/logo-login.png
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 13:48:03 Error: [MissingActionException] Action UsersController::logo-login.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'logo-login.png',
+)
+Request URL: /project/Users/logo-login.png
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 13:48:09 Error: [MissingActionException] Action UsersController::logo-login.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'logo-login.png',
+)
+Request URL: /project/Users/logo-login.png
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 13:49:35 Error: [MissingActionException] Action UsersController::logo-login.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'logo-login.png',
+)
+Request URL: /project/Users/logo-login.png
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 13:50:12 Error: [MissingActionException] Action UsersController::logo-login.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'logo-login.png',
+)
+Request URL: /project/Users/logo-login.png
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 13:51:29 Error: [MissingActionException] Action UsersController::logo-login.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'logo-login.png',
+)
+Request URL: /project/Users/logo-login.png
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 13:51:35 Error: [MissingActionException] Action UsersController::logo-login.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'logo-login.png',
+)
+Request URL: /project/Users/logo-login.png
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 13:51:43 Error: [MissingActionException] Action UsersController::logo-login.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'logo-login.png',
+)
+Request URL: /project/Users/logo-login.png
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 13:54:16 Error: [MissingActionException] Action UsersController::logo-login.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'logo-login.png',
+)
+Request URL: /project/Users/logo-login.png
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 13:54:23 Error: [MissingActionException] Action UsersController::logo-login.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'logo-login.png',
+)
+Request URL: /project/Users/logo-login.png
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 13:54:30 Error: [MissingActionException] Action UsersController::logo-login.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'logo-login.png',
+)
+Request URL: /project/Users/logo-login.png
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

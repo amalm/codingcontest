@@ -1,29 +1,26 @@
+<h2>Anmelden</h2>
 <?php
 echo $this->Form->create('User', array('class'=>'form-horizontal', 'role' => 'form'));
 ?>
 
-<div class="container">
-	
-<form class="form-signin" role="form">
-	
-<h2 class="form-signin-heading">Anmelden</h2>
-
+<div class="form-group">
 	<label for="Mail" class="col-sm-1 control-label">Mail</label>
 	<?php 
-		echo $this->Form->input('mail', array('id'=>'Mail', 'type'=>'email', 'required', 'autofocus','class'=>'form-control', 'placeholder'=>'Mail','label' => FALSE,'div' => array('class'=>'col-sm-3')));
+		echo $this->Form->input('mail', array('id'=>'mail', 'type'=>'text','class'=>'form-control', 'placeholder'=>'Mail','label' => FALSE,'div' => array('class'=>'col-sm-5')));
 	?>
-
+</div>
+  
+<div class="form-group">
 	<label for="Password" class="col-sm-1 control-label">Passwort</label>
 	<?php 
-		echo $this->Form->input('password', array('id'=>'Password', 'type'=>'password', 'required','class'=>'form-control', 'placeholder'=>'Passwort','label' => FALSE,'div' => array('class'=>'col-sm-3')));
+		echo $this->Form->input('password', array('id'=>'password', 'type'=>'password','class'=>'form-control', 'placeholder'=>'Passwort','label' => FALSE,'div' => array('class'=>'col-sm-5')));
 	?>
-
-<div class="form-group">
-  <p> <button type="submit" class="btn btn-default">Login</button> 
-  </div>
-  
-</form>
 </div>
+
+<div class="form-signin">
+  <p> <button type="submit" class="btn btn-lg btn-primary btn-block">Anmelden</button> 
+  </div>
+
 <?php
 echo $this->Form->end();
 ?>

@@ -5,17 +5,15 @@ body {
 }
 
 .form-signin {
-  max-width: 330px;
-  padding: 15px;
+  max-width: 300px;
+  padding: 10px;
   margin: 0 auto;
 }
 .form-signin .form-signin-heading,
 .form-signin .checkbox {
   margin-bottom: 10px;
 }
-.form-signin .checkbox {
-  font-weight: normal;
-}
+
 .form-signin .form-control {
   position: relative;
   height: auto;

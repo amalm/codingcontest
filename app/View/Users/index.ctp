@@ -19,7 +19,7 @@
 
 		<td style="text-align: center;">
 		<?php 
-			echo $this->HTML->link('<span class="glyphicon glyphicon-folder-open" style="font-size:20px" data-toggle="tooltip" data-placement="left" title="Benutzer ansehen"></span>', array('action'=>'view', $user['User']['id']), array('escape'=>false)); ?>
+			echo $this->HTML->link('<span class=" glyphicon glyphicon-search" style="font-size:20px" data-toggle="tooltip" data-placement="left" title="Benutzer ansehen"></span>', array('action'=>'view', $user['User']['id']), array('escape'=>false)); ?>
 		<?php 
 			echo $this->HTML->link('<span class="glyphicon glyphicon-pencil" style="font-size:20px" data-toggle="tooltip" data-placement="left" title="Benutzer bearbeiten"></span>', array('action'=>'edit', $user['User']['id']), array('escape'=>false)); ?>
         
