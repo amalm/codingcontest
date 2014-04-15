@@ -938,40 +938,63 @@ Stack Trace:
 #2 C:\xampp_neu\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
 >>>>>>> 737ed0fcc01a3a79b4ad483a3157144bbe4d5af8
+<<<<<<< HEAD
 2014-04-14 11:58:54 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+=======
+2014-04-10 11:13:43 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+>>>>>>> 3fd7c05e1f3a7c3558947b98bfadaebc60bbfdb7
 Exception Attributes: array (
   'class' => 'Favicon.icoController',
   'plugin' => NULL,
 )
 Request URL: /project/favicon.ico
 Stack Trace:
+<<<<<<< HEAD
 #0 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
 2014-04-14 11:58:54 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+=======
+#0 C:\xampp_neu\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-10 11:13:43 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+>>>>>>> 3fd7c05e1f3a7c3558947b98bfadaebc60bbfdb7
 Exception Attributes: array (
   'class' => 'Favicon.icoController',
   'plugin' => NULL,
 )
 Request URL: /project/favicon.ico
 Stack Trace:
+<<<<<<< HEAD
 #0 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
 2014-04-14 11:58:55 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+=======
+#0 C:\xampp_neu\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-10 11:13:43 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+>>>>>>> 3fd7c05e1f3a7c3558947b98bfadaebc60bbfdb7
 Exception Attributes: array (
   'class' => 'Favicon.icoController',
   'plugin' => NULL,
 )
 Request URL: /project/favicon.ico
 Stack Trace:
+<<<<<<< HEAD
 #0 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
 2014-04-14 11:58:55 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+=======
+#0 C:\xampp_neu\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-10 11:13:43 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+>>>>>>> 3fd7c05e1f3a7c3558947b98bfadaebc60bbfdb7
 Exception Attributes: array (
   'class' => 'Favicon.icoController',
   'plugin' => NULL,
 )
 Request URL: /project/favicon.ico
 Stack Trace:
+<<<<<<< HEAD
 #0 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
 2014-04-14 12:05:01 Error: [MissingActionException] Action UsersController::signin.css() could not be found.
@@ -2459,3 +2482,157 @@ Stack Trace:
 #1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
 #2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+=======
+#0 C:\xampp_neu\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-10 16:16:56 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] Es konnte keine Verbindung hergestellt werden, da der Zielcomputer die Verbindung verweigerte.
+',
+  'enabled' => true,
+)
+Request URL: /project/users/login
+Stack Trace:
+#0 C:\xampp_neu\htdocs\project\lib\Cake\Model\Datasource\DboSource.php(262): Mysql->connect()
+#1 C:\xampp_neu\htdocs\project\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\xampp_neu\htdocs\project\lib\Cake\Model\Model.php(3454): ConnectionManager::getDataSource('default')
+#3 C:\xampp_neu\htdocs\project\lib\Cake\Model\Model.php(1124): Model->setDataSource('default')
+#4 C:\xampp_neu\htdocs\project\lib\Cake\Model\Model.php(3476): Model->setSource('users')
+#5 C:\xampp_neu\htdocs\project\lib\Cake\Model\Model.php(1350): Model->getDataSource()
+#6 C:\xampp_neu\htdocs\project\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\xampp_neu\htdocs\project\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 C:\xampp_neu\htdocs\project\app\View\Users\login.ctp(2): FormHelper->create('User', Array)
+#9 C:\xampp_neu\htdocs\project\lib\Cake\View\View.php(931): include('C:\xampp_neu\ht...')
+#10 C:\xampp_neu\htdocs\project\lib\Cake\View\View.php(893): View->_evaluate('C:\xampp_neu\ht...', Array)
+#11 C:\xampp_neu\htdocs\project\lib\Cake\View\View.php(462): View->_render('C:\xampp_neu\ht...')
+#12 C:\xampp_neu\htdocs\project\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 C:\xampp_neu\htdocs\project\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 C:\xampp_neu\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\xampp_neu\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-04-10 16:16:58 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] Es konnte keine Verbindung hergestellt werden, da der Zielcomputer die Verbindung verweigerte.
+',
+  'enabled' => true,
+)
+Request URL: /project/users/login
+Stack Trace:
+#0 C:\xampp_neu\htdocs\project\lib\Cake\Model\Datasource\DboSource.php(262): Mysql->connect()
+#1 C:\xampp_neu\htdocs\project\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\xampp_neu\htdocs\project\lib\Cake\Model\Model.php(3454): ConnectionManager::getDataSource('default')
+#3 C:\xampp_neu\htdocs\project\lib\Cake\Model\Model.php(1124): Model->setDataSource('default')
+#4 C:\xampp_neu\htdocs\project\lib\Cake\Model\Model.php(3476): Model->setSource('users')
+#5 C:\xampp_neu\htdocs\project\lib\Cake\Model\Model.php(1350): Model->getDataSource()
+#6 C:\xampp_neu\htdocs\project\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\xampp_neu\htdocs\project\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 C:\xampp_neu\htdocs\project\app\View\Users\login.ctp(2): FormHelper->create('User', Array)
+#9 C:\xampp_neu\htdocs\project\lib\Cake\View\View.php(931): include('C:\xampp_neu\ht...')
+#10 C:\xampp_neu\htdocs\project\lib\Cake\View\View.php(893): View->_evaluate('C:\xampp_neu\ht...', Array)
+#11 C:\xampp_neu\htdocs\project\lib\Cake\View\View.php(462): View->_render('C:\xampp_neu\ht...')
+#12 C:\xampp_neu\htdocs\project\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 C:\xampp_neu\htdocs\project\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 C:\xampp_neu\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\xampp_neu\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-04-10 16:16:59 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /project/favicon.ico
+Stack Trace:
+#0 C:\xampp_neu\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-10 16:16:59 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /project/favicon.ico
+Stack Trace:
+#0 C:\xampp_neu\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-10 16:16:59 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /project/favicon.ico
+Stack Trace:
+#0 C:\xampp_neu\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-10 16:16:59 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /project/favicon.ico
+Stack Trace:
+#0 C:\xampp_neu\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-10 16:17:09 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] Es konnte keine Verbindung hergestellt werden, da der Zielcomputer die Verbindung verweigerte.
+',
+  'enabled' => true,
+)
+Request URL: /project/users/login
+Stack Trace:
+#0 C:\xampp_neu\htdocs\project\lib\Cake\Model\Datasource\DboSource.php(262): Mysql->connect()
+#1 C:\xampp_neu\htdocs\project\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\xampp_neu\htdocs\project\lib\Cake\Model\Model.php(3454): ConnectionManager::getDataSource('default')
+#3 C:\xampp_neu\htdocs\project\lib\Cake\Model\Model.php(1124): Model->setDataSource('default')
+#4 C:\xampp_neu\htdocs\project\lib\Cake\Model\Model.php(3476): Model->setSource('users')
+#5 C:\xampp_neu\htdocs\project\lib\Cake\Model\Model.php(1350): Model->getDataSource()
+#6 C:\xampp_neu\htdocs\project\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\xampp_neu\htdocs\project\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 C:\xampp_neu\htdocs\project\app\View\Users\login.ctp(2): FormHelper->create('User', Array)
+#9 C:\xampp_neu\htdocs\project\lib\Cake\View\View.php(931): include('C:\xampp_neu\ht...')
+#10 C:\xampp_neu\htdocs\project\lib\Cake\View\View.php(893): View->_evaluate('C:\xampp_neu\ht...', Array)
+#11 C:\xampp_neu\htdocs\project\lib\Cake\View\View.php(462): View->_render('C:\xampp_neu\ht...')
+#12 C:\xampp_neu\htdocs\project\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 C:\xampp_neu\htdocs\project\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 C:\xampp_neu\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\xampp_neu\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-04-10 16:17:20 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] Es konnte keine Verbindung hergestellt werden, da der Zielcomputer die Verbindung verweigerte.
+',
+  'enabled' => true,
+)
+Request URL: /project/users/login
+Stack Trace:
+#0 C:\xampp_neu\htdocs\project\lib\Cake\Model\Datasource\DboSource.php(262): Mysql->connect()
+#1 C:\xampp_neu\htdocs\project\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\xampp_neu\htdocs\project\lib\Cake\Model\Model.php(3454): ConnectionManager::getDataSource('default')
+#3 C:\xampp_neu\htdocs\project\lib\Cake\Model\Model.php(1124): Model->setDataSource('default')
+#4 C:\xampp_neu\htdocs\project\lib\Cake\Model\Model.php(3476): Model->setSource('users')
+#5 C:\xampp_neu\htdocs\project\lib\Cake\Model\Model.php(1350): Model->getDataSource()
+#6 C:\xampp_neu\htdocs\project\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\xampp_neu\htdocs\project\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 C:\xampp_neu\htdocs\project\app\View\Users\login.ctp(2): FormHelper->create('User', Array)
+#9 C:\xampp_neu\htdocs\project\lib\Cake\View\View.php(931): include('C:\xampp_neu\ht...')
+#10 C:\xampp_neu\htdocs\project\lib\Cake\View\View.php(893): View->_evaluate('C:\xampp_neu\ht...', Array)
+#11 C:\xampp_neu\htdocs\project\lib\Cake\View\View.php(462): View->_render('C:\xampp_neu\ht...')
+#12 C:\xampp_neu\htdocs\project\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 C:\xampp_neu\htdocs\project\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 C:\xampp_neu\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\xampp_neu\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-04-10 16:44:52 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [C:\xampp_neu\htdocs\project\app\View\Contests\index.ctp, line 3]
+2014-04-10 16:44:52 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /project/contests
+Stack Trace:
+#0 C:\xampp_neu\htdocs\project\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp_neu\ht...', 3)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp_neu\ht...', 3, Array)
+#2 C:\xampp_neu\htdocs\project\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp_neu\ht...', 3, Array)
+#3 C:\xampp_neu\htdocs\project\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+>>>>>>> 3fd7c05e1f3a7c3558947b98bfadaebc60bbfdb7
