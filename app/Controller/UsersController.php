@@ -74,10 +74,10 @@ class UsersController extends AppController {
                 $email->to($address);
                 $email->subject('Anmeldung Coding Contest Platform');
                 $email->send("Aktivieren Sie Ihren Account mit dem folgenden Link: http://localhost/project/users/confirm/" . $stringToSend .", Ihr vorläufiges Passwort ist: ".$this->request->data('User')['password']);
-                $this->Session->setFlash('Der Benutzer wurde erfolgreich gespeichert!');
+                $this->Session->setFlash('<span class="glyphicon glyphicon-ok" style="font-size:20px;"></span>'.' Benutzer wurde erfolgreich angelegt', 'default', array('class'=>'alert alert-success'));
                 $this->redirect(array('action' => 'index'));
             } else {
-                $this->Session->setFlash('Der Benutzer wurde nicht erfolgreich gespeichert!');
+                $this->Session->setFlash('<span class="glyphicon glyphicon-remove" style="font-size:20px;"></span>'.' Benutzer konnte nicht angelegt werden', 'default', array('class'=>'alert alert-danger'));
             }
         }
     }
@@ -180,30 +180,44 @@ class UsersController extends AppController {
 
     public function useredit($id = null) {
         
-        $this->User->id = $id;
-        
+		$this->User->id = $id;
+
         if (!$this->User->exists()) {
             throw new NotFoundException('Ungültiger User');
         }
-
+        
         if ($this->request->is('post') || $this->request->is('put')) {
+
             if ($this->request->data('User')['password'] == "") {
                 unset($this->User->validate['password']);
                 unset($this->request->data('User')['password']);
             }
+
             if ($this->User->save($this->request->data)) {
                 $this->Session->setFlash('Der Benutzer wurde gespeichert!');
                 //$this->Session->setFlash($message,'success',array('alert'=>'info'));
-                $this->redirect(array('action' => 'index'));
+                $this->redirect(array('action' => 'userview'));
             } else {
                 $this->Session->setFlash('Der Benutzer konnte nicht gespeichert werden. ');
             }
         } else {
             $userdata = $this->User->read();
             unset($userdata['User']['password']);
+
             $this->set('user', $userdata);
             $this->request->data = $userdata;
         }
+    }
+
+    public function cvupload() {
+        $file = $this->data['User']['fileInput'];
+        if ($file['error'] === UPLOAD_ERR_OK) {
+            if (move_uploaded_file($file['tmp_name'], APP . 'CVs' . DS . $file['name'])) {
+                $this->request->data['User']['cvpath'] = APP . 'CVs' . DS . $file['name'];
+                return true;
+            }
+        }
+        return false;
     }
 
 }

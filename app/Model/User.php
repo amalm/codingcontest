@@ -41,7 +41,13 @@ class User extends AppModel
 				'rule'=>array('between', 8, 20),
 				'message'=>'Das Passwort muss zwischen 8 und 20 Zeichen haben.'
 				)
-			)
+			),
+			'fileInput' => array(
+				'fileChecking' => array(
+		        'rule'    => array('extension', array('pdf')),
+			    'message' => 'Es wird nur PDF Format unterstützt'
+		    )
+		)
 	);
 	    	/*Für das Hashen des PW
 			 schaut ob das Passwort überhaupt gesetzt wurde bevor es das PW verschlüsselt

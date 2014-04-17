@@ -16,10 +16,10 @@ class ContestsController extends AppController {
             $this->set('tasks', $this->Task->find('list', array('fields' => array('Task.id', 'Task.name'))));
             if ($this->request->is('post')){
                 if ($this->Contest->save($this->request->data)) {
-                    $this->Session->setFlash('Contest wurde erfolgreich angelegt', 'default', array('class'=>'alert alert-success'));
+                    $this->Session->setFlash('<span class="glyphicon glyphicon-ok" style="font-size:20px;"></span>'.' Contest wurde erfolgreich angelegt', 'default', array('class'=>'alert alert-success'));
                     $this->redirect(array('action' => 'index'));
                 } else {
-                    $this->Session->setFlash('Contest konnte nicht gespeichert werden', 'default', array('class'=>'alert alert-danger'));
+                    $this->Session->setFlash('<span class="glyphicon glyphicon-remove" style="font-size:20px;"></span>'.' Contest konnte nicht gespeichert werden', 'default', array('class'=>'alert alert-danger'));
                 }
             }
 	}

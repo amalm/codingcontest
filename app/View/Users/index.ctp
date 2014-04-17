@@ -19,21 +19,17 @@
 
 		<td style="text-align: center;">
 		<?php 
-<<<<<<< HEAD
 			echo $this->HTML->link('<span class=" glyphicon glyphicon-search" style="font-size:20px" data-toggle="tooltip" data-placement="left" title="Benutzer ansehen"></span>', array('action'=>'view', $user['User']['id']), array('escape'=>false)); ?>
-=======
-			echo $this->HTML->link('<span class="glyphicon glyphicon-folder-open" style="font-size:20px" data-toggle="tooltip" data-placement="left" title="öffnen"></span>', array('action'=>'view', $user['User']['id']), array('escape'=>false)); ?>
->>>>>>> 3fd7c05e1f3a7c3558947b98bfadaebc60bbfdb7
 		<?php 
-			echo $this->HTML->link('<span class="glyphicon glyphicon-pencil" style="font-size:20px" data-toggle="tooltip" data-placement="left" title="bearbeiten"></span>', array('action'=>'edit', $user['User']['id']), array('escape'=>false)); ?>
+			echo $this->HTML->link('<span class="glyphicon glyphicon-pencil" style="font-size:20px" data-toggle="tooltip" data-placement="left" title="Benutzer bearbeiten"></span>', array('action'=>'edit', $user['User']['id']), array('escape'=>false)); ?>
         
         	<?php 
 			if($user['User']['active'] == 0){
-				echo $this->Form->PostLink('<span class="glyphicon glyphicon-eye-open" style="font-size:20px" data-toggle="tooltip" data-placement="left" title="aktivieren"></span>', array('action'=>'activate', $user['User']['id']), array('confirm'=>'Soll der Benutzer aktiviert werden?', "escape" => false)); 
+				echo $this->Form->PostLink('<span class="glyphicon glyphicon-eye-open" style="font-size:20px" data-toggle="tooltip" data-placement="left" title="Benutzer aktivieren"></span>', array('action'=>'activate', $user['User']['id']), array('confirm'=>'Soll der Benutzer aktiviert werden?', "escape" => false)); 
 				}
 				
 			else{
-				echo $this->Form->PostLink('<span class="glyphicon glyphicon-eye-close" style="font-size:20px" data-toggle="tooltip" data-placement="left" title="deaktivieren"></span>', array('action'=>'activate', $user['User']['id']), array('confirm'=>'Soll der Benutzer deaktiviert werden?', "escape" => false)); 
+				echo $this->Form->PostLink('<span class="glyphicon glyphicon-eye-close" style="font-size:20px" data-toggle="tooltip" data-placement="left" title="Benutzer deaktivieren"></span>', array('action'=>'activate', $user['User']['id']), array('confirm'=>'Soll der Benutzer deaktiviert werden?', "escape" => false)); 
 				}
 				endforeach
 			?>

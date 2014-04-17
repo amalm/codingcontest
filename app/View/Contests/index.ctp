@@ -12,7 +12,7 @@
     <thead>
 	<th>Contestname</th>
 	<th>Anfang</th>
-	<th>Ende</th>
+	<th>Offen bis</th>
 	<th style="text-align: center;">Durchf&uuml;hrungszeit</th>
     </thead>
 	<?php foreach ($contests as $contest){ ?>
@@ -26,6 +26,6 @@
 </table>
 <?php if($userRole && $userRole=="admin"){ ?>
 <p>
-<?php echo $this->Html->link('<button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-plus" style="bgcolor:#0064b2;"></span> Contest hinzufügen </button>',  array('action'=>'add'), array("escape"=>false)); ?>
+<?php echo $this->Html->link('<button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Contest hinzufügen </button>',  array('action'=>'add'), array("escape"=>false)); ?>
 </p>
 <?php } ?>
