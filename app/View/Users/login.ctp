@@ -1,30 +1,19 @@
+<html>
+	<body>
+		<img src="../img/logo-login.png" alt="Coding Contest">
 
-<img src="../img/logo-login.png" alt="Coding Contest">
-
-<h2>Anmelden</h2>
-<?php
-echo $this->Form->create('User', array('class'=>'form-horizontal', 'role' => 'form'));
-?>
-
-<div class="form-group">
-	<label for="Mail" class="col-sm-1 control-label"></label>
-	<?php 
-		echo $this->Form->input('mail', array('id'=>'mail', 'type'=>'text','class'=>'form-control', 'placeholder'=>'Mail','label' => FALSE,'div' => array('class'=>'col-sm-5')));
-	?>
-</div>
-  
-<div class="form-group">
-	<label for="Password" class="col-sm-1 control-label"></label>
-	<?php 
-		echo $this->Form->input('password', array('id'=>'password', 'type'=>'password','class'=>'form-control', 'placeholder'=>'Passwort','label' => FALSE,'div' => array('class'=>'col-sm-5')));
-	?>
-</div>
-
-<div class="form-group">
- <button type="submit" class="btn btn-primary btn-lg">Anmelden</button>
-  </div>
-
-<?php
-echo $this->Form->end();
-?>
+		<?php
+		echo $this->Form->create('User', array('action'=>'login','class'=>'form-signin', 'role' => 'form'));
+		?>
+	        <h2 class="form-signin-heading">Anmelden</h2>
+	        <?php echo $this->Form->input('mail', array('id'=>'mail', 'type'=>'email', 'class'=>'form-control', 'placeholder'=>'Email', 'required', 'autofocus','label' => FALSE,));?>
+	        <?php echo $this->Form->input('password', array('id'=>'password', 'type'=>'password', 'class'=>'form-control', 'placeholder'=>'Passwort', 'required','label' => FALSE,));?>
+	        <button class="btn btn-lg btn-primary btn-block" type="submit" name="submit">Anmelden</button>
+	      </form>
 	
+	    </div><!-- /.container -->
+		<?php
+		echo $this->Form->end();
+		?>
+  </body>
+</html>
