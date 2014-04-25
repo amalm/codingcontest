@@ -1,7 +1,5 @@
 <html>
 	<body>
-		<img src="../img/logo-login.png" alt="Coding Contest">
-
 		<?php
 		echo $this->Form->create('User', array('action'=>'login','class'=>'form-signin', 'role' => 'form'));
 		?>
