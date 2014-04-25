@@ -10,7 +10,7 @@ class UsersController extends AppController {
     }
 
     public function isAuthorized($user) {
-        if ($user['role'] == 'regular' && in_array($this->action, array('useredit', 'userview')) && $user['active'] == 1) {
+        if ($user['role'] == 'regular' && in_array($this->action, array('useredit', 'userview', 'cvupload')) && $user['active'] == 1) {
             if ($user['id'] == $this->request->params['pass'][0]) {
                 return true;
             } else {
@@ -31,14 +31,14 @@ class UsersController extends AppController {
                     $this->redirect($this->Auth->redirect($redirect));
                 } else {
                     if (!$user['active'] == 1) {
-                        $this->Session->setFlash('Ihr Account ist derzeit deaktiviert! <br>
-                                        Kontaktieren Sie den Systemadministrator!');
+                    	$this->Session->setFlash('<span class="glyphicon glyphicon-warning-sign" style="font-size:20px;"></span>'.'  Ihr Account ist derzeit deaktiviert! <br>
+                                        	      Kontaktieren Sie den Systemadministrator!', 'default', array('class'=>'alert alert-danger'));
                     } else {
                         $this->redirect($this->Auth->redirect());
                     }
                 }
             } else {
-                $this->Session->setFlash('Die eingegebenen Daten stimmen nicht überein!');
+				$this->Session->setFlash('<span class="glyphicon glyphicon-remove" style="font-size:20px;"></span>'.' Die eingegebenen Daten stimmen nicht überein!', 'default', array('class'=>'alert alert-danger'));
             }
         }
     }
@@ -98,11 +98,11 @@ class UsersController extends AppController {
             }
 
             if ($this->User->save($this->request->data)) {
-                $this->Session->setFlash('Der Benutzer wurde gespeichert!');
-                //$this->Session->setFlash($message,'success',array('alert'=>'info'));
+                $this->Session->setFlash('');
+               	$this->Session->setFlash('<span class="glyphicon glyphicon-ok" style="font-size:20px;"></span>'.' Der Benutzer wurde gespeichert!', 'default', array('class'=>'alert alert-success'));
                 $this->redirect(array('action' => 'index'));
             } else {
-                $this->Session->setFlash('Der Benutzer konnte nicht gespeichert werden. ');
+				$this->Session->setFlash('<span class="glyphicon glyphicon-remove" style="font-size:20px;"></span>'.' Der Benutzer konnte nicht gespeichert werden!', 'default', array('class'=>'alert alert-danger'));
             }
         } else {
             $userdata = $this->User->read();
@@ -124,12 +124,12 @@ class UsersController extends AppController {
             if ($userdata[0]['User']['confirm'] != '1') {
                 $this->User->id = $userid;
                 $this->User->saveField('confirm', '1');
-                $this->Session->setFlash('Sie haben Ihren Account erfolgreich bestätigt!');
+                $this->Session->setFlash('<span class="glyphicon glyphicon-ok" style="font-size:20px;"></span>'.' Sie haben Ihren Account erfolgreich bestätigt!', 'default', array('class'=>'alert alert-success'));
             } else {
-                $this->Session->setFlash('Sie haben Ihren Account bereits bestätigt!');
+				$this->Session->setFlash('<span class="glyphicon glyphicon-remove" style="font-size:20px;"></span>'.' Sie haben Ihren Account bereits bestätigt!', 'default', array('class'=>'alert alert-danger'));
             }
         } else {
-            $this->Session->setFlash('Sie haben Ihren Account nicht erfolgreich bestätigt!');
+			$this->Session->setFlash('<span class="glyphicon glyphicon-remove" style="font-size:20px;"></span>'.' Sie haben Ihren Account nicht erfolgreich bestätigt!', 'default', array('class'=>'alert alert-danger'));
         }
         $this->redirect(array('action' => 'index'));
     }
@@ -143,8 +143,10 @@ class UsersController extends AppController {
 
         if ($userdata['User']['active'] == 1) {
             $this->User->saveField('active', '0');      //saveField --> schreibt in DB
+            $this->Session->setFlash('<span class="glyphicon glyphicon-ok" style="font-size:20px;"></span>'.' Der Account wurde deaktiviert!', 'default', array('class'=>'alert alert-success'));
         } else {
             $this->User->saveField('active', '1');
+			$this->Session->setFlash('<span class="glyphicon glyphicon-ok" style="font-size:20px;"></span>'.' Der Account wurde aktiviert!', 'default', array('class'=>'alert alert-success'));
         }
         $this->redirect(array('action' => 'index'));
     }
@@ -194,11 +196,10 @@ class UsersController extends AppController {
             }
 
             if ($this->User->save($this->request->data)) {
-                $this->Session->setFlash('Der Benutzer wurde gespeichert!');
-                //$this->Session->setFlash($message,'success',array('alert'=>'info'));
+                $this->Session->setFlash('<span class="glyphicon glyphicon-ok" style="font-size:20px;"></span>'.' Die Änderungen wurden erfolgreich gespeichert!', 'default', array('class'=>'alert alert-success'));
                 $this->redirect(array('action' => 'userview'));
             } else {
-                $this->Session->setFlash('Der Benutzer konnte nicht gespeichert werden. ');
+				$this->Session->setFlash('<span class="glyphicon glyphicon-remove" style="font-size:20px;"></span>'.' Die Änderungen konnten nicht gespeichert werden!', 'default', array('class'=>'alert alert-danger'));
             }
         } else {
             $userdata = $this->User->read();
@@ -209,11 +210,15 @@ class UsersController extends AppController {
         }
     }
 
-    public function cvupload() {
+    public function cvupload($id = null) {
+        $this->User->id = $id;
+        if (!$this->User->exists()) {
+            throw new NotFoundException('Ungültiger User');
+        }
         $file = $this->data['User']['fileInput'];
         if ($file['error'] === UPLOAD_ERR_OK) {
-            if (move_uploaded_file($file['tmp_name'], APP . 'CVs' . DS . $file['name'])) {
-                $this->request->data['User']['cvpath'] = APP . 'CVs' . DS . $file['name'];
+            if (move_uploaded_file($file['tmp_name'], APP . 'CVupload' . DS . $file['name'])) {
+                $this->request->data['User']['cvpath'] = APP . 'CVupload' . DS . $file['name'];
                 return true;
             }
         }

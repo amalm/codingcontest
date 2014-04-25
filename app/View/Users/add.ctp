@@ -7,28 +7,28 @@ echo $this->Form->input('id', array('type'=>'hidden'));
   <div class="form-group">
 	<label for="FirstName" class="col-sm-1 control-label" style="text-align: left;">Vorname</label>
 	<?php 
-		echo $this->Form->input('first_name', array('id'=>'FirstName', 'type'=>'text','class'=>'form-control', 'placeholder'=>'Vorname','label' => FALSE,'div' => array('class'=>'col-sm-5')));
+		echo $this->Form->input('first_name', array('id'=>'FirstName', 'type'=>'text','class'=>'form-control', 'placeholder'=>'Vorname','required','label' => FALSE,'div' => array('class'=>'col-sm-5')));
 	?>
 </div>
   
  <div class="form-group">
 	<label for="FamilyName" class="col-sm-1 control-label" style="text-align: left;">Nachname</label>
 	<?php 
-		echo $this->Form->input('family_name', array('id'=>'FamilyName', 'type'=>'text','class'=>'form-control', 'placeholder'=>'Nachname','label' => FALSE,'div' => array('class'=>'col-sm-5')));
+		echo $this->Form->input('family_name', array('id'=>'FamilyName', 'type'=>'text','class'=>'form-control', 'placeholder'=>'Nachname', 'required', 'label' => FALSE,'div' => array('class'=>'col-sm-5')));
 	?>
 </div>
 
 <div class="form-group">
 	<label for="Mail" class="col-sm-1 control-label" style="text-align: left;">E-Mail</label>
 	<?php 
-		echo $this->Form->input('mail', array('id'=>'Mail', 'type'=>'text','class'=>'form-control', 'placeholder'=>'Mail','label' => FALSE,'div' => array('class'=>'col-sm-5')));
+		echo $this->Form->input('mail', array('id'=>'Mail', 'type'=>'text','class'=>'form-control', 'placeholder'=>'Mail','required','label' => FALSE,'div' => array('class'=>'col-sm-5')));
 	?>
 </div>
   
 <div class="form-group">
 	<label for="Password" class="col-sm-1 control-label" style="text-align: left;">Passwort</label>
 	<?php 
-		echo $this->Form->input('password', array('id'=>'Password', 'type'=>'text','class'=>'form-control', 'placeholder'=>'Passwort','label' => FALSE,'div' => array('class'=>'col-sm-5')));
+		echo $this->Form->input('password', array('id'=>'Password', 'type'=>'text','class'=>'form-control', 'placeholder'=>'Passwort', 'required', 'label' => FALSE,'div' => array('class'=>'col-sm-5')));
 	?>
 </div>
   
