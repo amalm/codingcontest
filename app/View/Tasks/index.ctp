@@ -1,7 +1,7 @@
 <h2> Bestehende Aufgaben </h2>
 <table class="table table-striped">
     <thead>
-	<th>Aufgabename</th>
+	<th>Aufgabenname</th>
 	<th>Beschreibung</th>
 	<th style="text-align: center;">Dauer</th>
 	<th style="text-align: center;">Anzahl der Levels</th>
