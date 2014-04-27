@@ -24,8 +24,8 @@ class ContestsController extends AppController {
             }
 	}
         
-        public function isAuthorized($user) {
-	    if ($user['role'] == 'regular' && in_array($this->action, array('index', 'participate', 'confirm')) && $user['active'] == 1) {
+       public function isAuthorized($user) {
+	    if ($user['role'] == 'regular' && in_array($this->action, array('index', 'participate', 'confirm', 'show')) && $user['active'] == 1) {
 	        return true;
 		}			
 	    return parent::isAuthorized($user);
@@ -52,5 +52,27 @@ class ContestsController extends AppController {
             $this->Relation->save(array('user_id' => $this->Session->read('Auth.User.id'), 'contest_id' => $this->Contest->id));
             $this->Session->setFlash('Sie nehmen an diesem Contest teil', 'default', array('class'=>'alert alert-success'));
             $this->redirect(array('action' => 'index'));
+        }
+        
+         public function show($id = null){
+            $this->Contest->id = $id;
+            if(!$this->Contest->exists()){
+                throw new NotFoundException('Contest wurde nicht gefunden');
+            }
+            $this->tmpContest = $this->Contest->find('all', array('conditions' => array('Contest.id' => $id)));
+            if(!$this->Relation->find('list', array('conditions' => array('Relation.contest_id' => $id, 'Relation.user_id' => $this->Session->read('Auth.User'))))){
+                $this->Session->setFlash('Sie nehmen an diesem Contest nicht teil!', 'default', array('class'=>'alert alert-danger'));
+                $this->redirect(array('action' => 'index'));
+            } else {
+                $this->set('levels', $this->Level->find('all', array('conditions' => array('Level.task_id' => $this->tmpContest[0]['Task']['id']))));
+            }
+        }
+        
+        public function submit($id = null){
+            $this->Contest->id = $id;
+            if(!$this->Contest->exists()){
+                throw new NotFoundException('Contest wurde nicht gefunden');
+            }
+            
         }
 }
