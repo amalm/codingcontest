@@ -3,7 +3,7 @@
 <thead>
 	<tr>
 	<th> Benutzername </th>
-    <th> Mail </th>
+    <th> E-Mail </th>
     <th style="text-align: center;"> Registriert am </th>
     <th style="text-align: center;"> Bestätigt </th>
     <th style="text-align: center;"> Aktion </th>

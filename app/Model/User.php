@@ -10,19 +10,19 @@ class User extends AppModel
 	Dann die Regel und die dazugehörige Message
 	 */
 	public $validate = array(
-		'First name'=>array(
+		'first_name'=>array(
 			'firstNameNotEmpty'=>array(
 				'rule'=>'notEmpty',
 				'message'=>'Geben Sie bitte einen Vornamen ein.'
 			)
 		),
-		'Family name'=>array(
+		'family_name'=>array(
 			'familyNameNotEmpty'=>array(
 				'rule'=>'notEmpty',
 				'message'=>'Geben Sie bitte einen Nachnamen ein.'
 				)
 			),
-		'Mail'=>array(
+		'mail'=>array(
 			'mailNotEmpty'=>array(
 				'rule'=>array('email'),
 				'message'=>'Geben Sie bitte eine Mail-Adresse ein'

@@ -22,8 +22,8 @@ class AppController extends Controller {
         if ($user['role'] == 'admin') {
             return true;
         }
-		$this->Session->setFlash('<span class="glyphicon glyphicon-remove" style="font-size:20px;"></span>'.' Sie haben nicht die Rechte diese Seite zu sehen!', 'default', array('class'=>'alert alert-danger'));
-        $this->redirect(array('controller' => 'users', 'action' => 'userview'));
+        $this->Session->setFlash('Sie haben nicht die Rechte diese Seite zu sehen!', 'default', array('class' => 'alert alert-danger'));
+        $this->redirect(array('controller' => 'contests', 'action' => 'index'));
         return false;
     }
 
