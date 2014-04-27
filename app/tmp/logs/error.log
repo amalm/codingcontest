@@ -2883,3 +2883,14 @@ Request URL: /project/favicon.ico
 Stack Trace:
 #0 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2014-04-27 14:18:58 Error: [MissingActionException] Action LevelsController::levels() could not be found.
+Exception Attributes: array (
+  'controller' => 'LevelsController',
+  'action' => 'levels',
+)
+Request URL: /project/levels/levels/index
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LevelsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

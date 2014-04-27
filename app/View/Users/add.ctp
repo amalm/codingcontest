@@ -34,7 +34,7 @@ echo $this->Form->input('id', array('type'=>'hidden'));
   
 <div class="form-group">
     <p> <button type="submit" class="btn btn-primary">Speichern</button> 
-    <a href="../users/index" class="btn btn-primary" role="button">Zur&uuml;ck</a></p>
+    <a href="../users/index" class="btn btn-primary" role="button">Zurück</a></p>
 </div>
 
 <?php

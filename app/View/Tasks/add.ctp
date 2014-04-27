@@ -23,9 +23,8 @@
 	?>
 </div>
 
-<button type="submit" class="btn btn-primary">
-	Speichern
-</button>
+<button type="submit" class="btn btn-primary">Speichern</button>
+<a href="../tasks/index" class="btn btn-primary" role="button">Zurück</a></p>
 
 <?php	
 	echo $this->Form->end();

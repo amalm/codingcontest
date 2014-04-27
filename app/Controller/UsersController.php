@@ -14,6 +14,7 @@ class UsersController extends AppController {
             if ($user['id'] == $this->request->params['pass'][0]) {
                 return true;
             } else {
+            	$this->Session->setFlash('<span class="glyphicon glyphicon-ban-circle" style="font-size:20px;"></span>'.' Sie haben nicht die Rechte diese Seite zu sehen!', 'default', array('class'=>'alert alert-danger'));
                 return false;
             }
         }
@@ -49,6 +50,8 @@ class UsersController extends AppController {
     }
 
     public function index() {
+    	
+		
         $this->set('users', $this->User->find('all'));  //Holt den Datensatz aus der Tabelle und setzt ihn für den view zur Verfügung
     }
 
@@ -163,7 +166,7 @@ class UsersController extends AppController {
         }
         return $pass;
     }
-
+	
 //////////////////////////////////////////////////////////////////Funktionen für den Benutzer/////////////////////////////////////////////////
 
     public function userview($id = null) {
@@ -181,7 +184,7 @@ class UsersController extends AppController {
 
     public function useredit($id = null) {
         
-		$this->User->id = $id;
+        $this->User->id = $id;
 
         if (!$this->User->exists()) {
             throw new NotFoundException('Ungültiger User');
@@ -195,11 +198,10 @@ class UsersController extends AppController {
             }
 
             if ($this->User->save($this->request->data)) {
-                $this->Session->setFlash('Der Benutzer wurde gespeichert!');
-                //$this->Session->setFlash($message,'success',array('alert'=>'info'));
-                $this->redirect(array('action' => 'userview'));
+                $this->Session->setFlash('<span class="glyphicon glyphicon-ok" style="font-size:20px;"></span>'.' Änderungen wurde erfolgreich gespeichert!', 'default', array('class'=>'alert alert-success'));
+                $this->redirect(array('action' => 'index'));
             } else {
-                $this->Session->setFlash('Der Benutzer konnte nicht gespeichert werden. ');
+                $this->Session->setFlash('<span class="glyphicon glyphicon-ok" style="font-size:20px;"></span>'.' Änderungen konnten nicht erfolgreich gespeichert werden!', 'default', array('class'=>'alert alert-success'));
             }
         } else {
             $userdata = $this->User->read();
@@ -209,6 +211,7 @@ class UsersController extends AppController {
             $this->request->data = $userdata;
         }
     }
+
 
     public function cvupload() {
         $file = $this->data['User']['fileInput'];

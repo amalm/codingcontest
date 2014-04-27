@@ -1,6 +1,6 @@
 <h2> Persönliche Daten bearbeiten </h2>
 <?php
-echo $this->Form->create('User', array('class'=>'form-horizontal', 'role' => 'form'));
+echo $this->Form->create('User', array('class'=>'form-horizontal', 'novalidate' => true, 'role' => 'form'));
 ?>
 
   <div class="form-group">
@@ -24,16 +24,12 @@ echo $this->Form->create('User', array('class'=>'form-horizontal', 'role' => 'fo
 	?>
 </div>
   
-
-
 <div class="form-group">
 	<label for="Password" class="col-sm-1 control-label">Neues Passwort</label>
 	<?php 
 		echo $this->Form->input('password', array('id'=>'Password', 'type'=>'text','class'=>'form-control', 'placeholder'=>'Passwort','label' => FALSE,'div' => array('class'=>'col-sm-5')));
 	?>
 </div>
-
-
 
 <div class="form-group">
 	<label for="Adresse" class="col-sm-1 control-label">Adresse</label>
@@ -49,7 +45,6 @@ echo $this->Form->create('User', array('class'=>'form-horizontal', 'role' => 'fo
 	?>
 </div>
 
-
 <div class="form-group">
 	<label for="birthday" class="col-sm-1 control-label" style="text-align: left;">Geburtstag</label>
 	<div class="input-group date form_datetime col-md-5" data-date="<?php echo (date("Y-m-d")." ".date("H:i"));?>" data-date-format="yyyy-mm-dd HH:ii" data-link-field="inputEnd">
@@ -60,7 +55,6 @@ echo $this->Form->create('User', array('class'=>'form-horizontal', 'role' => 'fo
         <span class="input-group-addon"><span class="glyphicon glyphicon-th" title="Kalender"></span></span>
 	</div>
 </div>
-
 
 <div class="form-group">
   <p> <button type="submit" class="btn btn-default">Speichern</button> 

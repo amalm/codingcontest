@@ -46,11 +46,9 @@
 		echo $this->Form->input('visible', array('id'=>'inputVisible', 'label'=>FALSE, 'class'=>'form-control', 'div' => array('class'=>'col-sm-1')));
 	?>
 </div>
-<br />
 
-<button type="submit" class="btn btn-primary">
-	Contest speichern
-</button>
+<button type="submit" class="btn btn-primary">Contest speichern</button>
+<a href="../contests/index" class="btn btn-primary" role="button">Zurück</a></p>
 <?php	
 	echo $this->Form->end();
 ?>

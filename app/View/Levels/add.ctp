@@ -17,9 +17,7 @@
 	?>
 </div>
 
-<button type="submit" class="btn btn-primary">
-	Speichern
-</button>
+<button type="submit" class="btn btn-primary">Speichern</button>
 
 <?php	
 	echo $this->Form->end();
