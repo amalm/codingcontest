@@ -6,6 +6,7 @@
     <tr><td>E-Mail:</td><td><?php echo $user['User']['mail']; ?></td></tr>
     <tr><td>Adresse:</td><td><?php echo $user['User']['address']; ?></td></tr>
     <tr><td>PLZ:</td><td><?php echo $user['User']['plz']; ?></td></tr>
+    <tr><td>Geburtsdatum:</td><td><?php echo $user['User']['birthday']; ?></td></tr>
   </table>
 </div>
 

@@ -14,7 +14,6 @@ class UsersController extends AppController {
             if ($user['id'] == $this->request->params['pass'][0]) {
                 return true;
             } else {
-            	$this->Session->setFlash('<span class="glyphicon glyphicon-ban-circle" style="font-size:20px;"></span>'.' Sie haben nicht die Rechte diese Seite zu sehen!', 'default', array('class'=>'alert alert-danger'));
                 return false;
             }
         }
@@ -33,14 +32,15 @@ class UsersController extends AppController {
                     $this->redirect($this->Auth->redirect($redirect));
                 } else {
                     if (!$user['active'] == 1) {
-                        $this->Session->setFlash('Ihr Account ist derzeit deaktiviert! <br>
-                                        Kontaktieren Sie den Systemadministrator!');
+										$this->Session->setFlash('<span class="glyphicon glyphicon-ban-circle" style="font-size:20px;"></span>'.' Ihr Account ist derzeit deaktiviert! <br>
+                                        Kontaktieren Sie den Systemadministrator!', 'default', array('class'=>'alert alert-danger'));
                     } else {
                         $this->redirect($this->Auth->redirect());
                     }
                 }
             } else {
-                $this->Session->setFlash('Die eingegebenen Daten stimmen nicht überein!');
+				$this->Session->setFlash('<span class="glyphicon glyphicon-ban-circle" style="font-size:20px;"></span>'.' Die eingegebenen Daten stimmen nicht überein!', 'default', array('class'=>'alert alert-danger'));
+				
             }
         }
     }
@@ -102,11 +102,10 @@ class UsersController extends AppController {
             }
 
             if ($this->User->save($this->request->data)) {
-                $this->Session->setFlash('Der Benutzer wurde gespeichert!');
-                //$this->Session->setFlash($message,'success',array('alert'=>'info'));
+                $this->Session->setFlash('<span class="glyphicon glyphicon-floppy-saved" style="font-size:20px;"></span>'.' Der Benutzer wurde gespeichert!', 'default', array('class'=>'alert alert-success'));
                 $this->redirect(array('action' => 'index'));
             } else {
-                $this->Session->setFlash('Der Benutzer konnte nicht gespeichert werden. ');
+				$this->Session->setFlash('<span class="glyphicon glyphicon-floppy-remove" style="font-size:20px;"></span>'.' Der Benutzer konnte nicht gespeichert werden!', 'default', array('class'=>'alert alert-danger'));
             }
         } else {
             $userdata = $this->User->read();
@@ -128,12 +127,12 @@ class UsersController extends AppController {
             if ($userdata[0]['User']['confirm'] != '1') {
                 $this->User->id = $userid;
                 $this->User->saveField('confirm', '1');
-                $this->Session->setFlash('Sie haben Ihren Account erfolgreich bestätigt!');
+				$this->Session->setFlash('<span class="glyphicon glyphicon-ok" style="font-size:20px;"></span>'.' Sie haben Ihren Account erfolgreich bestätigt!', 'default', array('class'=>'alert alert-success'));
             } else {
-                $this->Session->setFlash('Sie haben Ihren Account bereits bestätigt!');
+				$this->Session->setFlash('<span class="glyphicon glyphicon-remove" style="font-size:20px;"></span>'.' Sie haben Ihren Account bereits bestätigt!', 'default', array('class'=>'alert alert-danger'));
             }
         } else {
-            $this->Session->setFlash('Sie haben Ihren Account nicht erfolgreich bestätigt!');
+			$this->Session->setFlash('<span class="glyphicon glyphicon-remove" style="font-size:20px;"></span>'.' Sie haben Ihren Account nicht erfolgreich bestätigt!', 'default', array('class'=>'alert alert-danger'));
         }
         $this->redirect(array('action' => 'index'));
     }
@@ -185,6 +184,9 @@ class UsersController extends AppController {
     public function useredit($id = null) {
         
         $this->User->id = $id;
+		$user = $this -> Auth -> user();
+		$id = $user['id'];
+		$redirect = "userview/" . $id;
 
         if (!$this->User->exists()) {
             throw new NotFoundException('Ungültiger User');
@@ -199,7 +201,7 @@ class UsersController extends AppController {
 
             if ($this->User->save($this->request->data)) {
                 $this->Session->setFlash('<span class="glyphicon glyphicon-ok" style="font-size:20px;"></span>'.' Änderungen wurde erfolgreich gespeichert!', 'default', array('class'=>'alert alert-success'));
-                $this->redirect(array('action' => 'index'));
+                $this -> redirect($this -> Auth -> redirect($redirect));
             } else {
                 $this->Session->setFlash('<span class="glyphicon glyphicon-ok" style="font-size:20px;"></span>'.' Änderungen konnten nicht erfolgreich gespeichert werden!', 'default', array('class'=>'alert alert-success'));
             }
@@ -211,7 +213,6 @@ class UsersController extends AppController {
             $this->request->data = $userdata;
         }
     }
-
 
     public function cvupload() {
         $file = $this->data['User']['fileInput'];
