@@ -24,8 +24,8 @@ class ContestsController extends AppController {
             }
 	}
         
-        public function isAuthorized($user) {
-	    if ($user['role'] == 'regular' && in_array($this->action, array('index', 'participate', 'confirm')) && $user['active'] == 1) {
+       public function isAuthorized($user) {
+	    if ($user['role'] == 'regular' && in_array($this->action, array('index', 'participate', 'confirm', 'show')) && $user['active'] == 1) {
 	        return true;
 		}			
 	    return parent::isAuthorized($user);
