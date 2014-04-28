@@ -6,7 +6,7 @@
 <div class="form-group">
 	<label for="inputDesc" class="col-sm-2 control-label">Beschreibung</label>
 	<?php 
-		echo $this->Form->input('description', array('id'=>'inputDesc', 'type'=>'text','class'=>'form-control','label' => FALSE,'div' => array('class'=>'col-sm-5')));
+		echo $this->Form->input('description', array('id'=>'inputDesc', 'type'=>'text','class'=>'form-control', 'placeholder'=>'Beschreibung','label' => FALSE,'div' => array('class'=>'col-sm-5')));
 	?>
 </div>
 

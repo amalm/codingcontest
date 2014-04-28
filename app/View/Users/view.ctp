@@ -14,10 +14,10 @@
 
 <form role="form">
 <div class="form-group">
-<?php echo $this->Html->link('<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-pencil"></span> Bearbeiten</button>',  array('action'=>'edit', $user['User']['id']), array("escape"=>false)); ?>
+<?php echo $this->Html->link('<button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span> Bearbeiten</button>',  array('action'=>'edit', $user['User']['id']), array("escape"=>false)); ?>
 
 
 
- <a href="../" class="btn btn-default" role="button">Zurück</a></p>
+ <a href="../" class="btn btn-primary" role="button">Zurück</a></p>
 </div>
 </form>

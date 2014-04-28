@@ -5,21 +5,21 @@
 <div class="form-group">
 	<label for="inputName" class="col-sm-2 control-label" style="text-align: left;">Name</label>
 	<?php 
-		echo $this->Form->input('name', array('id'=>'inputName', 'type'=>'text','class'=>'form-control','label' => FALSE,'div' => array('class'=>'col-sm-5')));
+		echo $this->Form->input('name', array('id'=>'inputName', 'type'=>'text','class'=>'form-control','placeholder'=>'Aufgabenname','label' => FALSE,'div' => array('class'=>'col-sm-5')));
 	?>
 </div>
 
 <div class="form-group">
 	<label for="inputDesc" class="col-sm-2 control-label" style="text-align: left;">Beschreibung</label>
 	<?php 
-		echo $this->Form->input('description', array('id'=>'inputDesc', 'type'=>'text','class'=>'form-control','label' => FALSE,'div' => array('class'=>'col-sm-5')));
+		echo $this->Form->input('description', array('id'=>'inputDesc', 'type'=>'text','class'=>'form-control', 'placeholder'=>'Beschreibung','label' => FALSE,'div' => array('class'=>'col-sm-5')));
 	?>
 </div>
 
 <div class="form-group">
 	<label for="inputDuration" class="col-sm-2 control-label" style="text-align: left;">Dauer</label>
 	<?php
-		echo $this->Form->input('duration', array('id'=>'inputDuration', 'type'=>'text','class'=>'form-control','label' => FALSE,'div' => array('class'=>'col-sm-5')));
+		echo $this->Form->input('duration', array('id'=>'inputDuration', 'type'=>'text','class'=>'form-control', 'placeholder'=>'Dauer in Stunden','label' => FALSE,'div' => array('class'=>'col-sm-5')));
 	?>
 </div>
 

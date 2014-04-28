@@ -9,10 +9,10 @@ class TasksController extends AppController {
     public function add() {
         if ($this->request->is('post')) {
             if ($this->Task->save($this->request->data)) {
-                $this->Session->setFlash('Aufgabe wurde erfolgreich angelegt', 'default', array('class' => 'alert alert-success'));
+                $this->Session->setFlash('<span class="glyphicon glyphicon-ok" style="font-size:20px;"></span>'.' Aufgabe wurde erfolgreich angelegt', 'default', array('class' => 'alert alert-success'));
                 $this->redirect(array('action' => 'edit', $this->Task->getLastInsertId()));
             } else {
-                $this->Session->setFlash('Aufgabe konnte nicht gespeichert werden', 'default', array('class' => 'alert alert-danger'));
+                $this->Session->setFlash('<span class="glyphicon glyphicon-remove" style="font-size:20px;"></span>'.' Aufgabe konnte nicht gespeichert werden', 'default', array('class' => 'alert alert-danger'));
             }
         }
     }
@@ -26,10 +26,10 @@ class TasksController extends AppController {
 
         if ($this->request->is('post') || $this->request->is('put')) {
             if ($this->Task->save($this->request->data)) {
-                $this->Session->setFlash('Die Aufgabe wurde erfolgreich gespeichert!', 'default', array('class' => 'alert alert-success'));
+                $this->Session->setFlash('<span class="glyphicon glyphicon-ok" style="font-size:20px;"></span>'.' Die Aufgabe wurde erfolgreich gespeichert!', 'default', array('class' => 'alert alert-success'));
                 $this->redirect(array('action' => 'index'));
             } else {
-                $this->Session->setFlash('Die Aufgabe konnte nicht gespeichert werden', 'default', array('class' => 'alert alert-danger'));
+                $this->Session->setFlash('<span class="glyphicon glyphicon-remove" style="font-size:20px;"></span>'.' Die Aufgabe konnte nicht gespeichert werden', 'default', array('class' => 'alert alert-danger'));
             }
         } else {
             $this->set('task', $this->Task->read());

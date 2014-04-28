@@ -2905,6 +2905,7 @@ Stack Trace:
 #1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
 #2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+<<<<<<< HEAD
 2014-04-28 11:45:48 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
 Exception Attributes: array (
   'class' => 'Favicon.icoController',
@@ -2953,38 +2954,93 @@ Stack Trace:
 #2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
 2014-04-28 21:58:56 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+=======
+2014-04-28 14:17:06 Error: [MissingControllerException] Controller class LoginController could not be found.
+Exception Attributes: array (
+  'class' => 'LoginController',
+  'plugin' => NULL,
+)
+Request URL: /project/login
+Stack Trace:
+#0 C:\xampp_neu\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-28 19:19:38 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+>>>>>>> f0345f34ac37b9170a0f599a0002d7f5734567be
 Exception Attributes: array (
   'class' => 'Favicon.icoController',
   'plugin' => NULL,
 )
 Request URL: /project/favicon.ico
 Stack Trace:
+<<<<<<< HEAD
 #0 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
 2014-04-28 21:58:56 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+=======
+#0 C:\xampp_neu\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-28 19:19:38 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+>>>>>>> f0345f34ac37b9170a0f599a0002d7f5734567be
 Exception Attributes: array (
   'class' => 'Favicon.icoController',
   'plugin' => NULL,
 )
 Request URL: /project/favicon.ico
 Stack Trace:
+<<<<<<< HEAD
 #0 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
 2014-04-28 21:58:56 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+=======
+#0 C:\xampp_neu\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-28 19:19:39 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+>>>>>>> f0345f34ac37b9170a0f599a0002d7f5734567be
 Exception Attributes: array (
   'class' => 'Favicon.icoController',
   'plugin' => NULL,
 )
 Request URL: /project/favicon.ico
 Stack Trace:
+<<<<<<< HEAD
 #0 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
 2014-04-28 21:58:56 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+=======
+#0 C:\xampp_neu\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-28 19:19:39 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+>>>>>>> f0345f34ac37b9170a0f599a0002d7f5734567be
 Exception Attributes: array (
   'class' => 'Favicon.icoController',
   'plugin' => NULL,
 )
 Request URL: /project/favicon.ico
 Stack Trace:
+<<<<<<< HEAD
 #0 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+=======
+#0 C:\xampp_neu\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+>>>>>>> f0345f34ac37b9170a0f599a0002d7f5734567be
 #1 {main}
+2014-04-28 22:42:57 Error: [MissingActionException] Action UsersController::cvupload() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'cvupload',
+)
+Request URL: /project/users/cvupload/31
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-28 22:43:26 Error: Fatal Error (4): syntax error, unexpected end of file in [C:\xampp\htdocs\project\app\View\Users\cvadd.ctp, line 21]
+2014-04-28 22:43:26 Error: [FatalErrorException] syntax error, unexpected end of file
+Request URL: /project/users/cvadd/31
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 21, Array)
+#2 C:\xampp\htdocs\project\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 21, Array)
+#3 C:\xampp\htdocs\project\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

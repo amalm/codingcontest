@@ -42,8 +42,8 @@ class User extends AppModel
 				'message'=>'Das Passwort muss zwischen 8 und 20 Zeichen haben.'
 				)
 			),
-			'fileInput' => array(
-				'fileChecking' => array(
+		'fileInput' => array(
+			'fileChecking' => array(
 		        'rule'    => array('extension', array('pdf')),
 			    'message' => 'Es wird nur PDF Format unterstützt'
 		    )

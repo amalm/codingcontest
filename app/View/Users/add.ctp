@@ -21,7 +21,7 @@ echo $this->Form->input('id', array('type'=>'hidden'));
 <div class="form-group">
 	<label for="Mail" class="col-sm-1 control-label" style="text-align: left;">E-Mail</label>
 	<?php 
-		echo $this->Form->input('mail', array('id'=>'Mail', 'type'=>'text','class'=>'form-control', 'placeholder'=>'Mail','label' => FALSE,'div' => array('class'=>'col-sm-5')));
+		echo $this->Form->input('mail', array('id'=>'Mail', 'type'=>'text','class'=>'form-control', 'placeholder'=>'E-Mail','label' => FALSE,'div' => array('class'=>'col-sm-5')));
 	?>
 </div>
   

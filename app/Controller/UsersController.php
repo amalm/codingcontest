@@ -10,7 +10,7 @@ class UsersController extends AppController {
     }
 
     public function isAuthorized($user) {
-        if ($user['role'] == 'regular' && in_array($this->action, array('useredit', 'userview')) && $user['active'] == 1) {
+        if ($user['role'] == 'regular' && in_array($this->action, array('useredit', 'userview','cvadd')) && $user['active'] == 1) {
             if ($user['id'] == $this->request->params['pass'][0]) {
                 return true;
             } else {
@@ -213,17 +213,24 @@ class UsersController extends AppController {
             $this->request->data = $userdata;
         }
     }
+	
+	public function cvadd()
+	{
+		$this->set('user', $this->User->read());
+	}
 
-    public function cvupload() {
+    public function __cvupload() {
+		
         $file = $this->data['User']['fileInput'];
         if ($file['error'] === UPLOAD_ERR_OK) {
-            if (move_uploaded_file($file['tmp_name'], APP . 'CVs' . DS . $file['name'])) {
-                $this->request->data['User']['cvpath'] = APP . 'CVs' . DS . $file['name'];
+            if (move_uploaded_file($file['tmp_name'], APP . 'uploads' . DS . $file['name'])) {
+                $this->request->data['User']['cvpath'] = APP . 'uploads' . DS . $file['name'];
                 return true;
             }
         }
         return false;
     }
+
 
 }
 
