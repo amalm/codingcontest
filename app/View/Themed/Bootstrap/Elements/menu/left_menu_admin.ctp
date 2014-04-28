@@ -23,6 +23,7 @@
     </div>
     <?php } ?>
       <div class="list-group">
+        <?php echo $this->Html->link("Contests", array('controller'=>'contests', 'action'=>'index'), array('escape'=>false, 'class' => 'list-group-item')); ?>
         <?php echo $this->Html->link("Persönliche Daten", array('controller'=>'users', 'action'=>'userview', $this->Session->read('Auth.User.id')), array('escape'=>false, 'class' => 'list-group-item'))?>
       <a href="#" class="list-group-item">CV Hochladen</a>
       </div>

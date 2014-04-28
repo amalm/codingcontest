@@ -16,13 +16,9 @@
 		        </div>
 		
 		        <div class="collapse navbar-collapse">
-		            <ul class="nav navbar-nav">
-		                <li class="active"><?php echo $this->Html->link("Contests", array('controller'=>'contests', 'action'=>'index')); ?></li>
-		            </ul>
-
-            <div class="text-right">
-                    Angemeldet: <?php echo ($vorname); ?> <?php echo ($nachname); ?> <?php echo $this->Html->link('Abmelden', array('controller'=>'users', 'action'=>'logout')); ?>
-            </div>
+                            <div class="text-right">
+                                Angemeldet: <?php echo ($vorname); ?> <?php echo ($nachname); ?> <?php echo $this->Html->link('Abmelden', array('controller'=>'users', 'action'=>'logout')); ?>
+                            </div>
         <?php } else { ?>
         <?php } ?>
 
