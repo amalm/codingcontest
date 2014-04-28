@@ -3023,6 +3023,7 @@ Stack Trace:
 #0 C:\xampp_neu\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 >>>>>>> f0345f34ac37b9170a0f599a0002d7f5734567be
 #1 {main}
+<<<<<<< HEAD
 2014-04-28 22:42:57 Error: [MissingActionException] Action UsersController::cvupload() could not be found.
 Exception Attributes: array (
   'controller' => 'UsersController',
@@ -3044,3 +3045,72 @@ Stack Trace:
 #3 C:\xampp\htdocs\project\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+=======
+2014-04-28 21:43:59 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /project/favicon.ico
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-28 21:43:59 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /project/favicon.ico
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-28 21:44:00 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /project/favicon.ico
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-28 21:44:00 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /project/favicon.ico
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-28 22:40:01 Error: [NotFoundException] Level wurde nicht gefunden
+Request URL: /project/inputsoutputs/add/33
+Stack Trace:
+#0 [internal function]: InputsoutputsController->add('33')
+#1 C:\Users\Reuf\Dropbox\project\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(InputsoutputsController), Array)
+#2 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(InputsoutputsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-04-28 22:48:10 Error: [MissingActionException] Action LevelsController::1() could not be found.
+Exception Attributes: array (
+  'controller' => 'LevelsController',
+  'action' => '1',
+)
+Request URL: /project/levels/1
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LevelsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-28 23:07:59 Error: [MissingActionException] Action InputsoutputsController::tasks() could not be found.
+Exception Attributes: array (
+  'controller' => 'InputsoutputsController',
+  'action' => 'tasks',
+)
+Request URL: /project/inputsoutputs/tasks/index
+Stack Trace:
+#0 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\Reuf\Dropbox\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(InputsoutputsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\Reuf\Dropbox\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+>>>>>>> cb62a0efa7ff4d40c3ef6ca89fd202294e5e84dc

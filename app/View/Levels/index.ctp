@@ -3,11 +3,13 @@
 	<th>Level</th>
 	<th>Beschreibung</th>
 	<th>Pfad</th>
+        <th>Aktion</th>
 	<?php foreach($levels as $level){ ?>
 	<tr>
 		<td><?php echo $level['Level']['level'];?></td>
 		<td><?php echo $level['Level']['description'];?></td>
 		<td><?php echo $level['Level']['path'];?></td>
+                <td style="text-align: center;"><?php echo $this->HTML->link('<span class="glyphicon glyphicon-sort" style="font-size:20px" data-toggle="tooltip" data-placement="left" title="Input und Output definieren"></span>', array('controller'=>'inputsoutputs','action'=>'add', $level['Level']['id']), array('escape'=>false)); ?></td>
 	</tr>
 	<?php } ?>
 </table>
