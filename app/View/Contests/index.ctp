@@ -11,7 +11,7 @@
 <table class="table table-striped">
     <thead>
 	<th>Contestname</th>
-	<th>Anfang</th>
+	<th>Start</th>
 	<th>Offen bis</th>
 	<th style="text-align: center;">Durchf&uuml;hrungszeit</th>
     </thead>
