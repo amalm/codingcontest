@@ -4,7 +4,7 @@
 ?>
 <div class="form-group">
 	<label for="inputName" class="col-sm-1 control-label" style="text-align: left;">Name</label>
-	<?php 
+        <?php 
 		echo $this->Form->input('name', array('id'=>'inputName', 'type'=>'text','class'=>'form-control','label' => FALSE,'div' => array('class'=>'col-sm-5')));
 	?>
 </div>
