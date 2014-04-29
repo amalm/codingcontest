@@ -4,6 +4,14 @@ class InputsoutputsController extends AppController {
     var $name = 'Inputsoutputs';
     var $uses = array('Inputsoutput', 'Level');
     
+    public function index($id = null) {
+        if ($id == null) {
+            $this->redirect(array('controller' => 'tasks', 'action' => 'index'));
+        } else {
+            $this->set('inputsoutputs', $this->Inputsoutput->find('all', array('conditions' => array('Inputsoutput.level_id' => $id))));
+        }
+    }
+    
     public function add($id = null){
         $this->Level->id = $id;
         if(!$this->Level->exists()){
@@ -21,4 +29,20 @@ class InputsoutputsController extends AppController {
         }
     }
     
+    public function delete($id = null){
+        $this->Inputsoutput->id = $id;
+        if (!$this->Inputsoutput->exists()) {
+            $this->redirect(array('controller' => 'tasks', 'action' => 'index'));
+        } else {
+            $tmpInputsoutput = $this->Inputsoutput->read();
+            $tmpId = $tmpInputsoutput['Level']['id'];
+            if($this->Inputsoutput->delete($id)){
+                $this->Session->setFlash('<span class="glyphicon glyphicon-ok" style="font-size:20px;"></span>'.' Input und Output wurden erfolgreich gelöscht', 'default', array('class'=>'alert alert-success'));
+                $this->redirect(array('controller' => 'inputsoutputs', 'action' => 'index', $tmpId));
+            } else {
+                $this->Session->setFlash('<span class="glyphicon glyphicon-remove" style="font-size:20px;"></span>'.' Input und Output konnten nicht gelöscht werden', 'default', array('class'=>'alert alert-danger'));
+                $this->redirect(array('controller' => 'inputsoutputs', 'action' => 'index', $tmpId));
+            }
+        }
+    }
 }

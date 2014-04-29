@@ -1,5 +1,14 @@
+<<<<<<< HEAD
 *.class
 *.pyc
 *.pyo
 app/tmp/
 app/tmp/**
+=======
+*.class
+*.pyc
+*.pyo
+app/tmp/**
+app/tmp/
+app/tmp/*
+>>>>>>> 58934e55fe93eeb747990ab8150e75e0d9e25035

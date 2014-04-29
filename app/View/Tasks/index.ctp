@@ -14,7 +14,8 @@
 		<td style="text-align: center;"><?php echo $task['Task']['duration'];?></td>
 		<td style="text-align: center;"><?php echo count($task['Level']);?></td>
 		<td style="text-align: center;">
-			<?php echo $this->HTML->link('<span class="glyphicon glyphicon-pencil" style="font-size:20px;" title="Bearbeiten"></span>', array('action'=>'edit', $task['Task']['id']), array('escape'=>false)); ?>
+                    <?php echo $this->HTML->link('<span class="glyphicon glyphicon-pencil" style="font-size:20px;" title="Bearbeiten"></span>', array('action'=>'edit', $task['Task']['id']), array('escape'=>false)); ?>
+                    <?php echo $this->HTML->link('<span class="glyphicon glyphicon-search" style="font-size:20px;" title="Levels ansehen"></span>', array('controller'=>'levels', 'action'=>'index', $task['Task']['id']), array('escape'=>false)); ?>
                 </td>
 	</tr>
 	<?php } ?>

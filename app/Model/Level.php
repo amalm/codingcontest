@@ -2,6 +2,7 @@
 class Level extends AppModel {
 	var $name = "Level";
 	var $belongsTo = 'Task';
+        var $hasMany = 'Inputsoutput';
 	
 	var $validate = array(
 		'description' => array(
