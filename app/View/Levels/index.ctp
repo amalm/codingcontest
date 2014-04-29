@@ -9,7 +9,10 @@
 		<td><?php echo $level['Level']['level'];?></td>
 		<td><?php echo $level['Level']['description'];?></td>
                 <td style="text-align: center;"><?php echo count($level['Inputsoutput']); ?></td>
-                <td style="text-align: center;"><?php echo $this->HTML->link('<span class="glyphicon glyphicon-sort" style="font-size:20px" data-toggle="tooltip" data-placement="left" title="Input und Output definieren"></span>', array('controller'=>'inputsoutputs','action'=>'add', $level['Level']['id']), array('escape'=>false)); ?></td>
+                <td style="text-align: center;">
+                    <?php echo $this->HTML->link('<span class="glyphicon glyphicon-sort" style="font-size:20px" data-toggle="tooltip" data-placement="left" title="Input und Output definieren"></span>', array('controller'=>'inputsoutputs','action'=>'add', $level['Level']['id']), array('escape'=>false)); ?>
+                    <?php echo $this->HTML->link('<span class="glyphicon glyphicon-search" style="font-size:20px" data-toggle="tooltip" data-placement="left" title="Bestehende In- und Outputs ansehen"></span>', array('controller'=>'inputsoutputs','action'=>'index', $level['Level']['id']), array('escape'=>false)); ?>
+                </td>
 	</tr>
 	<?php } ?>
 </table>
