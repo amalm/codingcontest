@@ -2,45 +2,56 @@
 <?php
 echo $this->Form->create('User', array('class'=>'form-horizontal', 'novalidate' => true, 'role' => 'form'));
 ?>
-
-  <div class="form-group">
-	<label for="FirstName" class="col-sm-1 control-label">Vorname</label>
+<div class="row" style="margin-left:10px; ">
+  <div class="form-group col-sm-5">
+	<label for="FirstName">Vorname</label>
 	<?php 
-		echo $this->Form->input('first_name', array('id'=>'FirstName', 'type'=>'text','class'=>'form-control', 'placeholder'=>'Vorname','label' => FALSE,'div' => array('class'=>'col-sm-5')));
+		echo $this->Form->input('first_name', array('id'=>'FirstName', 'type'=>'text','class'=>'form-control', 'placeholder'=>'Vorname','label' => FALSE));
 	?>
 </div>
+  </div>
   
- <div class="form-group">
-	<label for="FamilyName" class="col-sm-1 control-label">Nachname</label>
+<div class="row" style="margin-left:10px; ">
+  <div class="form-group col-sm-5">
+	<label for="FamilyName">Nachname</label>
 	<?php 
-		echo $this->Form->input('family_name', array('id'=>'FamilyName', 'type'=>'text','class'=>'form-control', 'placeholder'=>'Nachname','label' => FALSE,'div' => array('class'=>'col-sm-5')));
+		echo $this->Form->input('family_name', array('id'=>'FamilyName', 'type'=>'text','class'=>'form-control', 'placeholder'=>'Nachname','label' => FALSE));
 	?>
+</div>
 </div>
 
-<div class="form-group">
-	<label for="Mail" class="col-sm-1 control-label">Mail</label>
+<div class="row" style="margin-left:10px; ">
+  <div class="form-group col-sm-5">
+	<label for="Mail">E-Mail</label>
 	<?php 
-		echo $this->Form->input('mail', array('id'=>'Mail', 'type'=>'text','class'=>'form-control', 'placeholder'=>'Mail','label' => FALSE,'div' => array('class'=>'col-sm-5')));
+		echo $this->Form->input('mail', array('id'=>'Mail', 'type'=>'text','class'=>'form-control', 'placeholder'=>'E-Mail','label' => FALSE));
 	?>
 </div>
-  
-<div class="form-group">
-	<label for="Password" class="col-sm-1 control-label">Neues Passwort</label>
-	<?php 
-		echo $this->Form->input('password', array('id'=>'Password', 'type'=>'text','class'=>'form-control', 'placeholder'=>'Passwort','label' => FALSE,'div' => array('class'=>'col-sm-5')));
-	?>
 </div>
 
-<div class="form-group">
-	<label for="Active" class="col-sm-1 control-label">Aktiviert</label>
+<div class="row" style="margin-left:10px; ">
+  <div class="form-group col-sm-5">
+	<label for="Password">Neues Passwort</label>
+	<?php 
+		echo $this->Form->input('password', array('id'=>'Password', 'type'=>'text','class'=>'form-control', 'placeholder'=>'Passwort','label' => FALSE));
+	?>
+</div>
+</div>
+
+<div class="row" style="margin-left:10px; ">
+<div class="form-group col-sm-5">
+	<label for="Active">Aktiviert</label>
     <?php 
-		echo $this->Form->input('active', array('id'=>'Active', 'type'=>'checkbox','class'=>'input-group-addon','label' => FALSE,'div' => array('class'=>'col-sm-6')));
+		echo $this->Form->input('active', array('id'=>'Active', 'type'=>'checkbox','class'=>'input-group-addon','label' => FALSE));
 	?>
 </div>
+</div>
 
+<div class="row" style="margin-left:25px; ">
 <div class="form-group">
   <p> <button type="submit" class="btn btn-primary">Speichern</button> 
  <a href="../" class="btn btn-primary" role="button">Zurück</a></p>
+</div>
 </div>
 </form>
 

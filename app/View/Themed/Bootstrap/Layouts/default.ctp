@@ -67,7 +67,6 @@
 
 				<small> <?php echo $this -> element('sql_dump'); ?></small>
 			</div><!--/row-->
-			<hr>
 		</div><!--/.container-->
 		</div>
 		<?php echo $this -> element('menu/footer'); ?>

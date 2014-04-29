@@ -3,50 +3,64 @@
 echo $this->Form->create('User', array('class'=>'form-horizontal', 'novalidate' => true, 'role' => 'form'));
 ?>
 
-  <div class="form-group">
-	<label for="FirstName" class="col-sm-1 control-label">Vorname</label>
+<div class="row" style="margin-left:10px; ">
+  <div class="form-group col-sm-5">
+	<label for="FirstName">Vorname</label>
 	<?php 
-		echo $this->Form->input('first_name', array('id'=>'FirstName', 'type'=>'text','class'=>'form-control', 'placeholder'=>'Vorname','label' => FALSE,'div' => array('class'=>'col-sm-5')));
+		echo $this->Form->input('first_name', array('id'=>'FirstName', 'type'=>'text','class'=>'form-control', 'placeholder'=>'Vorname','label' => FALSE));
 	?>
+</div>
 </div>
   
- <div class="form-group">
-	<label for="FamilyName" class="col-sm-1 control-label">Nachname</label>
+<div class="row" style="margin-left:10px; ">
+  <div class="form-group col-sm-5">
+	<label for="FamilyName">Nachname</label>
 	<?php 
-		echo $this->Form->input('family_name', array('id'=>'FamilyName', 'type'=>'text','class'=>'form-control', 'placeholder'=>'Nachname','label' => FALSE,'div' => array('class'=>'col-sm-5')));
+		echo $this->Form->input('family_name', array('id'=>'FamilyName', 'type'=>'text','class'=>'form-control', 'placeholder'=>'Nachname','label' => FALSE));
 	?>
 </div>
+</div>
 
-<div class="form-group">
-	<label for="Mail" class="col-sm-1 control-label">Mail</label>
+<div class="row" style="margin-left:10px; ">
+  <div class="form-group col-sm-5">
+	<label for="Mail">Mail</label>
 	<?php 
-		echo $this->Form->input('mail', array('id'=>'Mail', 'type'=>'text','class'=>'form-control', 'placeholder'=>'Mail','label' => FALSE,'div' => array('class'=>'col-sm-5')));
+		echo $this->Form->input('mail', array('id'=>'Mail', 'type'=>'text','class'=>'form-control', 'placeholder'=>'Mail','label' => FALSE));
 	?>
+</div>
 </div>
   
-<div class="form-group">
-	<label for="Password" class="col-sm-1 control-label">Neues Passwort</label>
+<div class="row" style="margin-left:10px; ">
+  <div class="form-group col-sm-5">
+	<label for="Password">Neues Passwort</label>
 	<?php 
-		echo $this->Form->input('password', array('id'=>'Password', 'type'=>'text','class'=>'form-control', 'placeholder'=>'Passwort','label' => FALSE,'div' => array('class'=>'col-sm-5')));
+		echo $this->Form->input('password', array('id'=>'Password', 'type'=>'text','class'=>'form-control', 'placeholder'=>'Passwort','label' => FALSE));
 	?>
 </div>
-
-<div class="form-group">
-	<label for="Adresse" class="col-sm-1 control-label">Adresse</label>
-	<?php 
-		echo $this->Form->input('address', array('id'=>'address', 'type'=>'text','class'=>'form-control', 'placeholder'=>'Neues Passwort bestätigen','label' => FALSE,'div' => array('class'=>'col-sm-5')));
-	?>
 </div>
 
-<div class="form-group">
-	<label for="PLZ" class="col-sm-1 control-label">PLZ</label>
+<div class="row" style="margin-left:10px; ">
+  <div class="form-group col-sm-5">
+	<label for="Adresse">Adresse</label>
 	<?php 
-		echo $this->Form->input('plz', array('id'=>'plz', 'type'=>'text','class'=>'form-control', 'placeholder'=>'Neues Passwort bestätigen','label' => FALSE,'div' => array('class'=>'col-sm-5')));
+		echo $this->Form->input('address', array('id'=>'address', 'type'=>'text','class'=>'form-control', 'placeholder'=>'Neues Passwort bestätigen','label' => FALSE));
 	?>
 </div>
+</div>
 
-<div class="form-group">
-	<label for="birthday" class="col-sm-1 control-label" style="text-align: left;">Geburtstag</label>
+<div class="row" style="margin-left:10px; ">
+  <div class="form-group col-sm-5">
+	<label for="PLZ">PLZ</label>
+	<?php 
+		echo $this->Form->input('plz', array('id'=>'plz', 'type'=>'text','class'=>'form-control', 'placeholder'=>'Neues Passwort bestätigen','label' => FALSE));
+	?>
+</div>
+</div>
+
+
+<div class="row" style="margin-left:10px; ">
+  <div class="form-group col-sm-5">
+	<label for="birthday">Geburtstag</label>
 	<div class="input-group date form_datetime col-md-5" data-date="<?php echo (date("Y-m-d")." ".date("H:i"));?>" data-date-format="yyyy-mm-dd HH:ii" data-link-field="inputEnd">
 	<?php
 		echo $this->Form->input('birthday', array('id'=>'birthday', 'label'=>FALSE,'class'=>'form-control', 'size'=>'16', 'type'=>'text'));
@@ -54,6 +68,7 @@ echo $this->Form->create('User', array('class'=>'form-horizontal', 'novalidate' 
 	<span class="input-group-addon"><span class="glyphicon glyphicon-remove" title="L&ouml;schen"></span></span>
         <span class="input-group-addon"><span class="glyphicon glyphicon-th" title="Kalender"></span></span>
 	</div>
+</div>
 </div>
 
 <div class="form-group">
