@@ -22,6 +22,9 @@
         
 </thead>
 </table>
-<p>
-<?php echo $this->Html->link('<button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Level hinzufügen</button>',  array('action'=>'add', $levels[0]['Level']['task_id']), array("escape"=>false)); ?>
-</p>
+<form role="form">
+<div class="form-group">
+    <?php echo $this->Html->link('<button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Level hinzufügen</button>',  array('action'=>'add', $levels[0]['Level']['task_id']), array("escape"=>false)); ?>
+    <a href="../" class="btn btn-primary" role="button">Zurück</a></p>
+</div>
+</form>
