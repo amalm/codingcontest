@@ -1,8 +1,12 @@
 <h2>Bestehende In- und Outputs:</h2>
 <table class="table table-striped">
-	<th>Input</th>
-	<th>Output</th>
-        <th style="text-align: center;">Aktion</th>
+<thead>
+	<tr>
+	<th> Input </th>
+        <th> Output </th>
+        <th style="text-align: center;"> Aktion </th>
+	</tr>
+</thead>
 	<?php foreach($inputsoutputs as $inputsoutput){ ?>
 	<tr>
 		<td><?php echo $inputsoutput['Inputsoutput']['input'];?></td>

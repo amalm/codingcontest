@@ -1,9 +1,13 @@
-<h2>Bestehende Levels:</h2>
+<h2> Bestehende Levels </h2>
 <table class="table table-striped">
-	<th>Level</th>
-	<th>Beschreibung</th>
-        <th style="text-align: center;">Inputs & Outputs</th>
-        <th style="text-align: center;">Aktion</th>
+<thead>
+	<tr>
+	<th> Level </th>
+        <th> Beschreibung </th>
+        <th style="text-align: center;"> Inputs & Outputs </th>
+        <th style="text-align: center;"> Aktion </th>
+	</tr>
+</thead>
 	<?php foreach($levels as $level){ ?>
 	<tr>
 		<td><?php echo $level['Level']['level'];?></td>
@@ -15,6 +19,8 @@
                 </td>
 	</tr>
 	<?php } ?>
+        
+</thead>
 </table>
 <p>
 <?php echo $this->Html->link('<button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Level hinzufügen</button>',  array('action'=>'add', $levels[0]['Level']['task_id']), array("escape"=>false)); ?>
