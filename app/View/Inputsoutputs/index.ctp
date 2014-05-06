@@ -14,5 +14,5 @@
 	<?php } ?>
 </table>
 <p>
-<?php echo $this->Html->link('<button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span>In- und Output hinzufügen</button>',  array('action'=>'add', $inputsoutputs[0]['Inputsoutput']['level_id']), array("escape"=>false)); ?>
+<?php echo $this->Html->link('<button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> In- und Output hinzufügen</button>',  array('action'=>'add', $inputsoutputs[0]['Inputsoutput']['level_id']), array("escape"=>false)); ?>
 </p>
