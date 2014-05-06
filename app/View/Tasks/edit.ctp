@@ -2,27 +2,35 @@
 <?php 
 	echo $this->Form->create('Task', array('class'=>'form-horizontal', 'role' => 'form'));
 ?>
-<div class="form-group">
-	<label for="inputName" class="col-sm-2 control-label">Name</label>
+<div class="row" style="margin-left:10px; ">  
+<div class="form-group col-sm-5">
+	<label for="inputName">Name</label>
 	<?php 
-		echo $this->Form->input('name', array('id'=>'inputName', 'type'=>'text','class'=>'form-control','placeholder'=>'Aufgabenname','label' => FALSE,'div' => array('class'=>'col-sm-5')));
+		echo $this->Form->input('name', array('id'=>'inputName', 'type'=>'text','class'=>'form-control','placeholder'=>'Aufgabenname','label' => FALSE));
 	?>
 </div>
-
-<div class="form-group">
-	<label for="inputDesc" class="col-sm-2 control-label">Beschreibung</label>
+</div>
+    
+<div class="row" style="margin-left:10px; ">  
+<div class="form-group col-sm-5">
+	<label for="inputDesc">Beschreibung</label>
 	<?php 
-		echo $this->Form->input('description', array('id'=>'inputDesc', 'type'=>'text','class'=>'form-control', 'placeholder'=>'Beschreibung','label' => FALSE,'div' => array('class'=>'col-sm-5')));
+		echo $this->Form->input('description', array('id'=>'inputDesc', 'type'=>'text','class'=>'form-control', 'placeholder'=>'Beschreibung','label' => FALSE));
 	?>
 </div>
-
-<div class="form-group">
-	<label for="inputDuration" class="col-sm-2 control-label">Dauer</label>
+</div>
+    
+<div class="row" style="margin-left:10px; ">  
+<div class="form-group col-sm-5">
+	<label for="inputDuration">Dauer</label>
 	<?php
-		echo $this->Form->input('duration', array('id'=>'inputDuration', 'type'=>'text','class'=>'form-control', 'placeholder'=>'Dauer in Stunden','label' => FALSE,'div' => array('class'=>'col-sm-5')));
+		echo $this->Form->input('duration', array('id'=>'inputDuration', 'type'=>'text','class'=>'form-control', 'placeholder'=>'Dauer in Stunden','label' => FALSE));
 	?>
 </div>
+</div>
 
+<div class="row" style="margin-left:25px; ">
+<div class="form-group">
 <button type="submit" class="btn btn-primary">
 	Speichern
 </button>
@@ -34,4 +42,6 @@
 <?php	
 	echo $this->Form->end();
 ?>
+</div>
+</div>
 
