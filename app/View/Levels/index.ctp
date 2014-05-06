@@ -17,5 +17,5 @@
 	<?php } ?>
 </table>
 <p>
-<?php echo $this->Html->link('<button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span>Level hinzufügen</button>',  array('action'=>'add', $levels[0]['Level']['task_id']), array("escape"=>false)); ?>
+<?php echo $this->Html->link('<button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Level hinzufügen</button>',  array('action'=>'add', $levels[0]['Level']['task_id']), array("escape"=>false)); ?>
 </p>
