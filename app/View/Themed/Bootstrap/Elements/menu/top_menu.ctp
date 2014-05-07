@@ -12,7 +12,7 @@
 		                <span class="icon-bar"></span>
 		                <span class="icon-bar"></span>
 		            </button>
-                            <a class="navbar-brand" href="#" style="color:#ffffff;">Coding Contest Platform</a>
+                            <a class="navbar-brand" style="color:#ffffff;">Coding Contest Platform</a>
 		        </div>
 		
 		        <div class="collapse navbar-collapse">

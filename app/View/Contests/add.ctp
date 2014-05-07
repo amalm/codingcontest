@@ -48,19 +48,19 @@
 </div>
 </div>
 
-<div class="row" style="margin-left:10px;">  
+<div class="row" style="margin-left:10px; ">  
 <div class="form-group col-sm-5">
-    <label for="inputVisible">Sichtbar</label>
+	<label for="inputVisible">Sichtbar</label>
         <?php   
 		echo $this->Form->input('visible', array('id'=>'inputVisible', 'label'=>FALSE, 'class'=>'form-control'));
 	?>
 </div>
 </div>
 
-<div class="row" style="margin-left:25px; float: left;">
+<div class="row" style="margin-left:25px; ">
 <div class="form-group">
 <button type="submit" class="btn btn-primary">Contest speichern</button>
-<a href="../contests/index" class="btn btn-primary" role="button">Zurück</a>
+<a href="../contests/index" class="btn btn-primary" role="button">Zurück</a></p>
 <?php	
 	echo $this->Form->end();
 ?>
