@@ -12,12 +12,12 @@
 		                <span class="icon-bar"></span>
 		                <span class="icon-bar"></span>
 		            </button>
-                            <a class="navbar-brand" href="#" style="color:#ffffff;">Coding Contest Platform</a>
+                            <a class="navbar-brand" style="color:#ffffff;">Coding Contest Platform</a>
 		        </div>
 		
 		        <div class="collapse navbar-collapse">
                             <div class="text-right">
-                                Angemeldet: <?php echo ($vorname); ?> <?php echo ($nachname); ?> <?php echo $this->Html->link('Abmelden', array('controller'=>'users', 'action'=>'logout')); ?>
+                                Angemeldet: <?php echo ($vorname); ?> <?php echo ($nachname); ?> <?php echo $this->Html->link('Abmelden', array('controller'=>'users', 'action'=>'logout'));?>
                             </div>
         <?php } else { ?>
         <?php } ?>

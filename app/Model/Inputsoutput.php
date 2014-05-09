@@ -7,13 +7,13 @@ class Inputsoutput extends AppModel {
 		'input' => array(
 			'notEmpty' => array(
 				'rule' => array('notEmpty'),
-				'message' => 'Input muss angegeben werden'
+				'message' => 'Input muss angegeben werden!'
 			)
 		),
 		'output' => array(
 			'notEmpty' => array(
 				'rule' => array('notEmpty'),
-				'message' => 'Input muss angegeben werden'
+				'message' => 'Output muss angegeben werden!'
 			)
 		)
 	);

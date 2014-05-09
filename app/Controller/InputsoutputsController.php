@@ -31,6 +31,7 @@ class InputsoutputsController extends AppController {
     
     public function delete($id = null){
         $this->Inputsoutput->id = $id;
+        
         if (!$this->Inputsoutput->exists()) {
             $this->redirect(array('controller' => 'tasks', 'action' => 'index'));
         } else {

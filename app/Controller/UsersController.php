@@ -10,7 +10,7 @@ class UsersController extends AppController {
     }
 
     public function isAuthorized($user) {
-        if ($user['role'] == 'regular' && in_array($this->action, array('useredit', 'userview','cvadd')) && $user['active'] == 1) {
+        if ($user['role'] == 'regular' && in_array($this->action, array('useredit', 'userview','cvupload')) && $user['active'] == 1) {
             if ($user['id'] == $this->request->params['pass'][0]) {
                 return true;
             } else {
@@ -166,6 +166,11 @@ class UsersController extends AppController {
         return $pass;
     }
 	
+	public function showCV() {
+		
+		$this->set('users', $this->User->find('all')); 
+	}
+	
 //////////////////////////////////////////////////////////////////Funktionen für den Benutzer/////////////////////////////////////////////////
 
     public function userview($id = null) {
@@ -219,16 +224,18 @@ class UsersController extends AppController {
 		$this->set('user', $this->User->read());
 	}
 
-    public function __cvupload() {
+    public function cvupload() {
 		
         $file = $this->data['User']['fileInput'];
         if ($file['error'] === UPLOAD_ERR_OK) {
-            if (move_uploaded_file($file['tmp_name'], APP . 'uploads' . DS . $file['name'])) {
-                $this->request->data['User']['cvpath'] = APP . 'uploads' . DS . $file['name'];
+            if (move_uploaded_file($file['tmp_name'], APP . 'uploads/CVs' . DS . $file['name'])) {
+                $this->request->data['User']['cvpath'] = APP . 'uploads/CVs' . DS . $file['name'];
+				$this->Session->setFlash('<span class="glyphicon glyphicon-ok" style="font-size:20px;"></span>'.' CV wurde erfolgreich hochgeladen!', 'default', array('class'=>'alert alert-success'));
                 return true;
             }
         }
         return false;
+		$this->Session->setFlash('<span class="glyphicon glyphicon-remove" style="font-size:20px;"></span>'.' CV konnte nicht hochgeladen werden!', 'default', array('class'=>'alert alert-danger'));
     }
 
 

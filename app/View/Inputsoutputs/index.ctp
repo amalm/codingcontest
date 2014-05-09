@@ -1,8 +1,12 @@
 <h2>Bestehende In- und Outputs:</h2>
 <table class="table table-striped">
-	<th>Input</th>
-	<th>Output</th>
-        <th style="text-align: center;">Aktion</th>
+<thead>
+	<tr>
+	<th> Input </th>
+        <th> Output </th>
+        <th style="text-align: center;"> Aktion </th>
+	</tr>
+</thead>
 	<?php foreach($inputsoutputs as $inputsoutput){ ?>
 	<tr>
 		<td><?php echo $inputsoutput['Inputsoutput']['input'];?></td>
@@ -14,5 +18,5 @@
 	<?php } ?>
 </table>
 <p>
-<?php echo $this->Html->link('<button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span>In- und Output hinzufügen</button>',  array('action'=>'add', $inputsoutputs[0]['Inputsoutput']['level_id']), array("escape"=>false)); ?>
+<?php echo $this->Html->link('<button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> In- und Output hinzufügen</button>',  array('action'=>'add', $inputsoutputs[0]['Inputsoutput']['level_id']), array("escape"=>false)); ?>
 </p>
