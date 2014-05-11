@@ -17,9 +17,7 @@
         <div class="list-group-item">
             Sie nehmen am Contest "<?php echo $attending['0']['Contest']['name']; ?>" teil. Geben Sie Ihre Dateien vor <?php echo date("Y-m-d H:i:s", strtotime($attending['0']['Relation']['started']." + 2 hours")); ?> Uhr ab.
         </div>
-        <div class="list-group-item">
-            Abgabe
-        </div>
+            <?php echo $this->Html->link("Übersicht", array('controller'=>'contests', 'action'=>'attend', $attending['0']['Contest']['id']), array('escape'=>false, 'class' => 'list-group-item')); ?>
     </div>
     <?php } ?>
       <div class="list-group">

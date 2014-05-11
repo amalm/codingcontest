@@ -27,7 +27,7 @@ class ContestsController extends AppController {
     }
 
     public function isAuthorized($user) {
-        if ($user['role'] == 'regular' && in_array($this->action, array('index', 'participate', 'confirm', 'show')) && $user['active'] == 1) {
+        if ($user['role'] == 'regular' && in_array($this->action, array('index', 'participate', 'confirm', 'show', 'attend')) && $user['active'] == 1) {
             return true;
         }
         return parent::isAuthorized($user);
@@ -62,11 +62,12 @@ class ContestsController extends AppController {
             throw new NotFoundException('Contest wurde nicht gefunden');
         }
         $this->tmpContest = $this->Contest->find('all', array('conditions' => array('Contest.id' => $id)));
-        if (!$this->Relation->find('list', array('conditions' => array('Relation.contest_id' => $id, 'Relation.user_id' => $this->Session->read('Auth.User'))))) {
+        if (!$this->Relation->find('all', array('conditions' => array('Relation.user_id' => $this->Session->read('Auth.User.id'), 'Relation.started >=' => date("Y-m-d H:i:s", strtotime("now - 2 hours")))))) {
             $this->Session->setFlash('Sie nehmen an diesem Contest nicht teil!', 'default', array('class' => 'alert alert-danger'));
             $this->redirect(array('action' => 'index'));
         } else {
             $this->set('levels', $this->Level->find('all', array('conditions' => array('Level.task_id' => $this->tmpContest[0]['Task']['id']))));
+            $this->set('contest', $this->Contest->id);
         }
     }
 
@@ -75,5 +76,7 @@ class ContestsController extends AppController {
         if (!$this->Contest->exists()) {
             throw new NotFoundException('Contest wurde nicht gefunden');
         }
+        
     }
+    
 }
