@@ -165,7 +165,7 @@ class UsersController extends AppController {
         return $pass;
     }
 
-    public function showCV() {
+    public function cvshow() {
 
         $this->set('users', $this->User->find('all'));
     }
@@ -218,23 +218,41 @@ class UsersController extends AppController {
         }
     }
 
-    public function cvadd() {
-        $this->set('user', $this->User->read());
-    }
+    public function cvupload($id = null) {
+    	
+		$this->User->id = $id;
 
-    public function cvupload() {
-
+        if (!$this->User->exists()) {
+            throw new NotFoundException('Ungültiger User');
+        }
+ if ($this->request->is('post') || $this->request->is('put')) {
         $file = $this->data['User']['fileInput'];
         if ($file['error'] === UPLOAD_ERR_OK) {
             if (move_uploaded_file($file['tmp_name'], APP . 'uploads/CVs' . DS . $file['name'])) {
                 $this->request->data['User']['cvpath'] = APP . 'uploads/CVs' . DS . $file['name'];
                 $this->Session->setFlash('<span class="glyphicon glyphicon-ok" style="font-size:20px;"></span>' . ' CV wurde erfolgreich hochgeladen!', 'default', array('class' => 'alert alert-success'));
+                $path= 'uploads/CVs/'.$file['name'];
+			    $this->User->saveField('cvpath', $path);
                 return true;
             }
         }
         return false;
         $this->Session->setFlash('<span class="glyphicon glyphicon-remove" style="font-size:20px;"></span>' . ' CV konnte nicht hochgeladen werden!', 'default', array('class' => 'alert alert-danger'));
     }
+    }
+
+	 public function download($id = null) {
+	 	
+		$this->User->id = $id;
+
+        if (!$this->User->exists()) {
+            throw new NotFoundException('Ungültiger User');
+        }
+		
+		$this->User->read();
+        $this->response->file($this->User->data['User']['cvpath'], array('download' => true, 'name' => 'CV '.$this->User->data['User']['first_name'].' '.$this->User->data['User']['family_name'].'.pdf'));
+        return $this->response;
+	 }
 
 }
 
