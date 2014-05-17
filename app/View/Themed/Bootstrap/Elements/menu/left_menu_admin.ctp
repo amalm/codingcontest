@@ -9,7 +9,7 @@
           <div class="list-group">
             <a class="list-group-item">Statistik</a>
             <a href="#" class="list-group-item">Contestergebnisse</a>
-            <a href="http://localhost/project/users/showCV" class="list-group-item">Benutzer CVs</a>
+            <a href="http://localhost/project/users/cvshow" class="list-group-item">Benutzer CVs</a>
           </div>
 <?php } else { ?>
     <?php if($attending){ ?>
