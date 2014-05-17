@@ -57,20 +57,19 @@ echo $this->Form->create('User', array('class'=>'form-horizontal', 'novalidate' 
 </div>
 </div>
 
-
-<div class="row" style="margin-left:10px; ">
-  <div class="form-group col-sm-5">
-	<label for="birthday">Geburtstag</label>
-	<div class="input-group date form_datetime col-md-5" data-date="<?php echo (date("Y-m-d")." ".date("H:i"));?>" data-date-format="yyyy-mm-dd HH:ii" data-link-field="inputEnd">
+	<label for="birthday" style="padding-left:10px; ">Geburtstag</label>
+	<div class="row" style="padding-left:10px; ">
+	<div class="input-group date form_datetime col-md-5" data-date="<?php echo (date("Y-m-d"));?>" data-date-format="yyyy-mm-dd" data-placement="right" data-link-field="inputEnd">
+		
 	<?php
-		echo $this->Form->input('birthday', array('id'=>'birthday', 'label'=>FALSE,'class'=>'form-control', 'size'=>'16', 'type'=>'text'));
+		echo $this->Form->input('birthday', array('id'=>'birthday', 'label'=>FALSE,'class'=>'form-control', 'type'=>'text'));
 	?>
 	<span class="input-group-addon"><span class="glyphicon glyphicon-remove" title="L&ouml;schen"></span></span>
         <span class="input-group-addon"><span class="glyphicon glyphicon-th" title="Kalender"></span></span>
 	</div>
-</div>
-</div>
+	</div>
 
+<br>
 <div class="form-group">
   <p> <button type="submit" class="btn btn-primary">Speichern</button> 
  <a href="../" class="btn btn-primary" role="button">Zurück</a></p>
@@ -83,6 +82,7 @@ echo $this->Form->end();
 
 <script type="text/javascript">
     $('.form_datetime').datetimepicker({
+    	format: "dd-mm-yyyy",
         language:  'de',
         weekStart: 1,
         todayBtn:  0,
