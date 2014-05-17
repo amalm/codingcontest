@@ -7,8 +7,8 @@
     </thead>
 	<?php foreach ($levels as $level){ ?>
 	<tr>
-            <td><?php echo $level['Level']['description'];  ?></td>
-            <td><?php echo $this->Html->link("Abgabe", array('controller'=>'contests', 'action'=>'submit', $contest)) ?></td>
+            <td><?php echo $this->Html->link($level['Level']['description'], array('controller'=>'levels', 'action'=>'download', $level['Level']['id']));  ?></td>
+            <td><?php echo $this->Html->link("Abgabe", array('controller'=>'contests', 'action'=>'submit', $contest)); ?></td>
 	</tr>
 	<?php } ?>
 </table>

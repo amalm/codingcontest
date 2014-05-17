@@ -69,14 +69,5 @@ class ContestsController extends AppController {
             $this->set('levels', $this->Level->find('all', array('conditions' => array('Level.task_id' => $this->tmpContest[0]['Task']['id']))));
             $this->set('contest', $this->Contest->id);
         }
-    }
-
-    public function submit($id = null) {
-        $this->Contest->id = $id;
-        if (!$this->Contest->exists()) {
-            throw new NotFoundException('Contest wurde nicht gefunden');
-        }
-        
-    }
-    
+    }       
 }
