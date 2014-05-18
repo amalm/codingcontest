@@ -41,4 +41,13 @@ class AppController extends Controller {
         return false;
     }
 
+    public function __alreadyAttended($contest_id){
+        if ($this->Session->read('Auth.User')) {
+            if ($this->Relation->find('all', array('conditions' => array('Relation.user_id' => $this->Session->read('Auth.User.id'), 'Relation.contest_id' => $contest_id)))) {
+                return true;
+            }
+        }
+        return false;
+    }
+
 }

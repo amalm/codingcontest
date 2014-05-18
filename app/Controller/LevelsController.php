@@ -3,7 +3,7 @@
 class LevelsController extends AppController {
 
     var $name = 'Levels';
-    var $uses = 'Level';
+    var $uses = array('Level', 'Solution', 'Relation', 'User');
 
     public function index($id = null) {
         if ($id == null) {
@@ -46,6 +46,27 @@ class LevelsController extends AppController {
         }
         $this->Level->read();
         $this->User->id = $this->Session->read('Auth.User.id');
+
+        if(!parent::__isAttending()){
+            $this->Session->setFlash('Sie dürfen diese Datei nicht herunterladen, da Sie an diesem Contest nicht aktuell teilnehmen', 'default', array('class' => 'alert alert-danger'));
+            $this->redirect(array('action' => 'index'));
+        }
+
+        $tmpRelation = $this->Relation->find('first', array('conditions' => array('Relation.user_id' => $this->User->id), 'order' => array('Relation.id' => 'DESC')));
+
+        if(!$this->Solution->find('all', array('conditions' => array('Solution.relation_id' => $tmpRelation['Relation']['id'])))){
+            if($this->Level->data['Level']['level'] != '1'){
+                $this->Session->setFlash('Dieser Level ist für Sie nicht freigeschalten, die Levels müssen nach der Reihe abgearbeitet werden.', 'default', array('class' => 'alert alert-danger'));
+                $this->redirect(array('controller' => 'contests', 'action' => 'show', $tmpRelation['Relation']['contest_id']));
+            }
+        } else {
+            $tmp = $this->Solution->find('first', array('conditions' => array('Solution.relation_id' => $tmpRelation['Relation']['id']), 'order' => array('Solution.id' => 'DESC')));
+            $tmpLevel = $this->Level->find('all', array('conditions' => array('Level.id' => $tmp['Solution']['level_id'])));
+            if($this->Level->data['Level']['level']-1 > $tmpLevel['0']['Level']['level']){
+                $this->Session->setFlash('Dieser Level ist für Sie nicht freigeschalten, die Levels müssen nach der Reihe abgearbeitet werden.', 'default', array('class' => 'alert alert-danger'));
+                $this->redirect(array('controller' => 'contests', 'action' => 'show', $tmpRelation['Relation']['contest_id']));
+            }
+        }
         $this->response->file($this->Level->data['Level']['path'], array('download' => true, 'name' => $this->Level->data['Level']['description'] . '.pdf'));
         return $this->response;
     }

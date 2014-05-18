@@ -34,14 +34,18 @@ class ContestsController extends AppController {
     }
 
     public function participate($id = null) {
-        if (parent::__isAttending()) {
-            $this->Session->setFlash('Sie dürfen nur an einem Contest gleichzeitig teilnehmen', 'default', array('class' => 'alert alert-danger'));
-            $this->redirect(array('action' => 'index'));
-        }
         $this->Contest->id = $id;
         if (!$this->Contest->exists()) {
             throw new NotFoundException('Contest wurde nicht gefunden');
         }
+        if (parent::__isAttending()) {
+            $this->Session->setFlash('Sie dürfen nur an einem Contest gleichzeitig teilnehmen', 'default', array('class' => 'alert alert-danger'));
+            $this->redirect(array('action' => 'index'));
+        } else if (parent::__alreadyAttended($id)){
+            $this->Session->setFlash('Sie haben an diesem Contest bereits teilgenommen', 'default', array('class' => 'alert alert-danger'));
+            $this->redirect(array('action' => 'index'));
+        }
+
         $this->set('contest', $this->Contest->read());
         $this->set('level', $this->Level->find('all', array('conditions' => array('Level.task_id' => $this->Contest->data['Task']['id']))));
     }
@@ -69,5 +73,5 @@ class ContestsController extends AppController {
             $this->set('levels', $this->Level->find('all', array('conditions' => array('Level.task_id' => $this->tmpContest[0]['Task']['id']))));
             $this->set('contest', $this->Contest->id);
         }
-    }       
+    }
 }
