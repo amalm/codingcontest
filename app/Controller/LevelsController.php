@@ -81,12 +81,4 @@ class LevelsController extends AppController {
         }
         return false;
     }
-
-    public function submit($id = null) {
-        $this->Level->id = $id;
-        if (!$this->Level->exists()) {
-            throw new NotFoundException('Level wurde nicht gefunden');
-        }
-
-    }
 }

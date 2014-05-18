@@ -2,7 +2,7 @@
 
 class ContestsController extends AppController {
 
-    var $uses = array('Contest', 'Level', 'Task', 'User', 'Relation');
+    var $uses = array('Contest', 'Level', 'Task', 'User', 'Relation', 'Inputsoutput', 'Solution');
 
     public function index() {
         if ($this->Session->read('Auth.User')) {
@@ -27,7 +27,7 @@ class ContestsController extends AppController {
     }
 
     public function isAuthorized($user) {
-        if ($user['role'] == 'regular' && in_array($this->action, array('index', 'participate', 'confirm', 'show', 'attend')) && $user['active'] == 1) {
+        if ($user['role'] == 'regular' && in_array($this->action, array('index', 'participate', 'confirm', 'show', 'attend', 'submit')) && $user['active'] == 1) {
             return true;
         }
         return parent::isAuthorized($user);
@@ -71,7 +71,91 @@ class ContestsController extends AppController {
             $this->redirect(array('action' => 'index'));
         } else {
             $this->set('levels', $this->Level->find('all', array('conditions' => array('Level.task_id' => $this->tmpContest[0]['Task']['id']))));
-            $this->set('contest', $this->Contest->id);
         }
+    }
+
+    public function submit($id = null) {
+        $flag = true;
+        $tmpFalse = 0;
+        $tmpFalseStrings = "";
+        $this->Level->id = $id;
+        if (!$this->Level->exists()) {
+            throw new NotFoundException('Level wurde nicht gefunden');
+        }
+        $this->Level->read();
+        $this->User->id = $this->Session->read('Auth.User.id');
+        $tmpRelation = $this->Relation->find('first', array('conditions' => array('Relation.user_id' => $this->User->id), 'order' => array('Relation.id' => 'DESC')));
+
+        if(!parent::__isAttending()){
+            $this->Session->setFlash('Sie dürfen keine Dateien abgeben, da Sie an diesem Contest nicht aktuell teilnehmen', 'default', array('class' => 'alert alert-danger'));
+            $this->redirect(array('controller' => 'contests', 'action' => 'index'));
+        }
+
+        if($this->__canSubmit($id)){
+            $this->set('inputsoutputs', $tmpInputsoutputs = $this->Inputsoutput->find('all', array('conditions' => array('Inputsoutput.level_id' => $this->Level->id))));
+
+            if($this->request->is('post')){
+                foreach ($tmpInputsoutputs as $inputsoutput){
+                    if($inputsoutput['Inputsoutput']['output'] != $this->request->data['Solution']['output'.$inputsoutput['Inputsoutput']['id']]){
+                        $tmpFalse++;
+                        $tmpFalseStrings .= "Input: ".$inputsoutput['Inputsoutput']['input'].", Benutzeroutput: ".$this->request->data['Solution']['output'.$inputsoutput['Inputsoutput']['id']]."<br>";
+                    }
+                }
+                if($tmpFalse>0){
+                    $tmpFalseStrings = "Insgesamt falsch ".$tmpFalse." von ".count($tmpInputsoutputs)."<br>Fehlerhaft:<br>".$tmpFalseStrings;
+                } else {
+                    $tmpFalseStrings = "Alle Eingaben richtig";
+                }
+                $this->request->data['Solution']['correct'] = $tmpFalseStrings;
+                $this->request->data['Solution']['level_id'] = $this->Level->id;
+                $this->request->data['Solution']['relation_id'] = $tmpRelation['Relation']['id'];
+
+                if ($this->__uploadFile() && $this->Solution->save($this->request->data)) {
+                    $this->Session->setFlash('Ihre Daten wurden erfolgreich angelegt. <br>', 'default', array('class' => 'alert alert-success'));
+                    if($tmpFalse == 0){
+                        $this->Session->setFlash('Auswertung: <br> '.$tmpFalseStrings, 'default', array('class' => 'alert alert-success'));
+                    } else {
+                        $this->Session->setFlash('Auswertung: <br> '.$tmpFalseStrings, 'default', array('class' => 'alert alert-warning'));
+                    }
+                    $this->redirect(array('controller' => 'contests','action' => 'show', $tmpRelation['Relation']['contest_id']));
+                } else {
+                    $this->Session->setFlash('Level konnte nicht gespeichert werden', 'default', array('class' => 'alert alert-danger'));
+                    unlink($this->request->data['Solution']['path']);
+                }
+            }
+        }
+    }
+
+    public function __uploadFile() {
+        $file = $this->request->data['Solution']['file'];
+        $date = new DateTime();
+        $random = $date->format('Y-m-d-H-i-s');
+        if ($file['error'] === UPLOAD_ERR_OK) {
+            if (move_uploaded_file($file['tmp_name'], APP . 'uploads'.DS.'Usercontestfiles' . DS . $random .$file['name'])) {
+                $this->request->data['Solution']['path'] = APP . 'uploads'.DS.'Usercontestfiles' . DS . $random. $file['name'];
+                $this->request->data['Solution']['file_name'] = $file['name'];
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public function __canSubmit($id){
+        $tmpRelation = $this->Relation->find('first', array('conditions' => array('Relation.user_id' => $this->Session->read('Auth.User.id')), 'order' => array('Relation.id' => 'DESC')));
+        $this->Level->id = $id;
+        if(!$this->Solution->find('all', array('conditions' => array('Solution.relation_id' => $tmpRelation['Relation']['id'])))){
+            if($this->Level->data['Level']['level'] != '1'){
+                $this->Session->setFlash('Dieser Level ist für Sie nicht freigeschalten, die Levels müssen nach der Reihe abgearbeitet werden. <br>Bitte Level 1 abgeben', 'default', array('class' => 'alert alert-danger'));
+                $this->redirect(array('controller' => 'contests', 'action' => 'show', $tmpRelation['Relation']['contest_id']));
+            }
+        } else {
+            $tmp = $this->Solution->find('first', array('conditions' => array('Solution.relation_id' => $tmpRelation['Relation']['id']), 'order' => array('Solution.id' => 'DESC')));
+            $tmpLevel = $this->Level->find('all', array('conditions' => array('Level.id' => $tmp['Solution']['level_id'])));
+            if($this->Level->data['Level']['level']-1 != $tmpLevel['0']['Level']['level']){
+                $this->Session->setFlash('Dieser Level ist für Sie nicht freigeschalten, die Levels müssen nach der Reihe abgearbeitet werden.<br>Bitte Level '.($tmpLevel['0']['Level']['level']+1).' abgeben', 'default', array('class' => 'alert alert-danger'));
+                $this->redirect(array('controller' => 'contests', 'action' => 'show', $tmpRelation['Relation']['contest_id']));
+            }
+        }
+        return true;
     }
 }
