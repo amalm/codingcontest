@@ -1,4 +1,4 @@
-<h2> Benutzer hinzufügen</h2>
+<h2> Benutzer</h2>
 <?php
 echo $this->Form->create('User', array('action'=>'add','class'=>'form-horizontal', 'role' => 'form'));
 echo $this->Form->input('id', array('type'=>'hidden'));
