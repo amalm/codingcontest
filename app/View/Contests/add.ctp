@@ -17,8 +17,8 @@
 	<?php
 		echo $this->Form->input('start', array('id'=>'inputStart', 'label'=>FALSE,'class'=>'form-control', 'placeholder'=>'Start','size'=>'16', 'type'=>'text'));
 	?>
-        <span class="input-group-addon"><span class="glyphicon glyphicon-remove" title="L&ouml;schen"></span></span>
-        <span class="input-group-addon"><span class="glyphicon glyphicon-th" title="Kalender"></span></span>
+            <span class="input-group-addon"><span class="glyphicon glyphicon-remove" title="L&ouml;schen"></span></span>
+        <span class="input-group-addon"  style="border-bottom-right-radius: 4px; border-top-right-radius: 4px;"><span class="glyphicon glyphicon-th" title="Kalender"></span></span>
 	<input type="hidden" id="inputStart" value="" /><br/>
         </div>
         </div>
