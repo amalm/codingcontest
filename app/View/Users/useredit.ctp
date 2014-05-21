@@ -72,10 +72,12 @@ echo $this->Form->create('User', array('class'=>'form-horizontal', 'novalidate' 
 </div>
 
 	
+<div class="row" style="margin-left:25px; ">
 <div class="form-group">
   <p> <button type="submit" class="btn btn-primary">Speichern</button> 
  <a href="../" class="btn btn-primary" role="button">Zurück</a></p>
 </div>
+    </div>
 </form>
 
 <?php
