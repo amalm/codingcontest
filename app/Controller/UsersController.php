@@ -80,12 +80,8 @@ class UsersController extends AppController {
         }
         if ($this->request->is('post') || $this->request->is('put')) {
             if ($this->request->data('User')['password'] == "") {
-                if ($this->User->save($this->request->data, true, array('first_name', 'family_name', 'mail', 'active'))) {
-	                $this->Session->setFlash('<span class="glyphicon glyphicon-floppy-saved" style="font-size:20px;"></span>' . ' Der Benutzer wurde gespeichert!', 'default', array('class' => 'alert alert-success'));
-	                $this->redirect(array('action' => 'index'));
-	            } else {
-	                $this->Session->setFlash('<span class="glyphicon glyphicon-floppy-remove" style="font-size:20px;"></span>' . ' Der Benutzer konnte nicht gespeichert werden!', 'default', array('class' => 'alert alert-danger'));
-	            }
+                unset($this->User->validate['password']);
+                unset($this->request->data('User')['password']);
             }
             if ($this->User->save($this->request->data)) {
                 $this->Session->setFlash('<span class="glyphicon glyphicon-floppy-saved" style="font-size:20px;"></span>' . ' Der Benutzer wurde gespeichert!', 'default', array('class' => 'alert alert-success'));
