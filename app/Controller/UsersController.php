@@ -1,14 +1,11 @@
 <?php
 
 class UsersController extends AppController {
-
     public $name = 'Users';
-
     public function beforeFilter() {
         parent::beforeFilter();
         $this->Auth->allow('login', 'logout');
     }
-
     public function isAuthorized($user) {
         if ($user['role'] == 'regular' && in_array($this->action, array('useredit', 'userview', 'cvupload')) && $user['active'] == 1) {
             if ($user['id'] == $this->request->params['pass'][0]) {
@@ -19,7 +16,6 @@ class UsersController extends AppController {
         }
         return parent::isAuthorized($user);
     }
-
     public function login() {
         $this->layout = "loginlayout";
         if ($this->request->is('post')) {
@@ -43,30 +39,23 @@ class UsersController extends AppController {
             }
         }
     }
-
     public function logout() {
         $this->redirect($this->Auth->logout());
     }
-
     public function index() {
-
-
         $this->set('users', $this->User->find('all'));  //Holt den Datensatz aus der Tabelle und setzt ihn für den view zur Verfügung
     }
-
     public function view($id = null) {
         $this->User->id = $id;
         if (!$this->User->exists()) {
             throw new NotFoundException('Ungültiger User');
         }
-
         if (!$id) {
             $this->Session->setFlash('Ungültiger User');
             $this->redirect(array('action' => 'index'));
         }
         $this->set('user', $this->User->read());
     }
-
     public function add() {
         if ($this->request->is('Post')) {
             if ($this->User->save($this->request->data) && $this->User->saveField('confirm_string', $stringToSend = $this->__randomString($length = 10))) {
@@ -84,22 +73,16 @@ class UsersController extends AppController {
             }
         }
     }
-
     public function edit($id = null) {
-
         $this->User->id = $id;
-
         if (!$this->User->exists()) {
             throw new NotFoundException('Ungültiger User');
         }
-
         if ($this->request->is('post') || $this->request->is('put')) {
-
             if ($this->request->data('User')['password'] == "") {
                 unset($this->User->validate['password']);
                 unset($this->request->data('User')['password']);
             }
-
             if ($this->User->save($this->request->data)) {
                 $this->Session->setFlash('<span class="glyphicon glyphicon-floppy-saved" style="font-size:20px;"></span>' . ' Der Benutzer wurde gespeichert!', 'default', array('class' => 'alert alert-success'));
                 $this->redirect(array('action' => 'index'));
@@ -109,12 +92,10 @@ class UsersController extends AppController {
         } else {
             $userdata = $this->User->read();
             unset($userdata['User']['password']);
-
             $this->set('user', $userdata);
             $this->request->data = $userdata;
         }
     }
-
     public function confirm($id = null) {
         if ($id == null) {
             $this->redirect(array('action' => 'index'));
@@ -135,7 +116,6 @@ class UsersController extends AppController {
         }
         $this->redirect(array('action' => 'index'));
     }
-
     public function activate($id = null) {
         $this->User->id = $id;
         if (!$this->User->exists()) {
@@ -150,7 +130,6 @@ class UsersController extends AppController {
         }
         $this->redirect(array('action' => 'index'));
     }
-
     public function __randomString($length = 10) {
         $chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
         srand((double) microtime() * 1000000);
@@ -164,12 +143,9 @@ class UsersController extends AppController {
         }
         return $pass;
     }
-
     public function cvshow() {
-
-        $this->set('users', $this->User->find('all'));
+        $this->set('users', $this->User->find('all', array('conditions' => array("not" => array ( "User.cvpath" => null)))));
     }
-
 //////////////////////////////////////////////////////////////////Funktionen für den Benutzer/////////////////////////////////////////////////
 
     public function userview($id = null) {
@@ -184,9 +160,7 @@ class UsersController extends AppController {
         }
         $this->set('user', $this->User->read());
     }
-
     public function useredit($id = null) {
-
         $this->User->id = $id;
         $user = $this->Auth->user();
         $id = $user['id'];
@@ -195,14 +169,11 @@ class UsersController extends AppController {
         if (!$this->User->exists()) {
             throw new NotFoundException('Ungültiger User');
         }
-
         if ($this->request->is('post') || $this->request->is('put')) {
-
             if ($this->request->data('User')['password'] == "") {
                 unset($this->User->validate['password']);
                 unset($this->request->data('User')['password']);
             }
-
             if ($this->User->save($this->request->data)) {
                 $this->Session->setFlash('<span class="glyphicon glyphicon-ok" style="font-size:20px;"></span>' . ' Änderungen wurde erfolgreich gespeichert!', 'default', array('class' => 'alert alert-success'));
                 $this->redirect($this->Auth->redirect($redirect));
@@ -212,48 +183,40 @@ class UsersController extends AppController {
         } else {
             $userdata = $this->User->read();
             unset($userdata['User']['password']);
-
             $this->set('user', $userdata);
             $this->request->data = $userdata;
         }
     }
-
-    public function cvupload($id = null) {
-    	
-		$this->User->id = $id;
+    public function cvupload($id = null){
+        $this->User->id = $id;
 
         if (!$this->User->exists()) {
             throw new NotFoundException('Ungültiger User');
         }
- if ($this->request->is('post') || $this->request->is('put')) {
-        $file = $this->data['User']['fileInput'];
-        if ($file['error'] === UPLOAD_ERR_OK) {
-            if (move_uploaded_file($file['tmp_name'], APP . 'uploads/CVs' . DS . $file['name'])) {
-                $this->request->data['User']['cvpath'] = APP . 'uploads/CVs' . DS . $file['name'];
-                $this->Session->setFlash('<span class="glyphicon glyphicon-ok" style="font-size:20px;"></span>' . ' CV wurde erfolgreich hochgeladen!', 'default', array('class' => 'alert alert-success'));
-                $path= 'uploads/CVs/'.$file['name'];
-			    $this->User->saveField('cvpath', $path);
-                return true;
+        if ($this->request->is('post') || $this->request->is('put')) {
+            $file = $this->data['User']['fileInput'];
+            if ($file['error'] === UPLOAD_ERR_OK) {
+                if (move_uploaded_file($file['tmp_name'], APP . 'uploads/CVs' . DS . $file['name'])) {
+                    $this->request->data['User']['cvpath'] = APP . 'uploads/CVs' . DS . $file['name'];
+                    $this->Session->setFlash('<span class="glyphicon glyphicon-ok" style="font-size:20px;"></span>' . ' CV wurde erfolgreich hochgeladen!', 'default', array('class' => 'alert alert-success'));
+                    $path = 'uploads/CVs/' . $file['name'];
+                    $this->User->saveField('cvpath', $path);
+                    return true;
+                }
             }
+            return false;
+            $this->Session->setFlash('<span class="glyphicon glyphicon-remove" style="font-size:20px;"></span>' . ' CV konnte nicht hochgeladen werden!', 'default', array('class' => 'alert alert-danger'));
         }
-        return false;
-        $this->Session->setFlash('<span class="glyphicon glyphicon-remove" style="font-size:20px;"></span>' . ' CV konnte nicht hochgeladen werden!', 'default', array('class' => 'alert alert-danger'));
     }
-    }
-
-	 public function download($id = null) {
-	 	
-		$this->User->id = $id;
+    public function download($id = null) {
+        $this->User->id = $id;
 
         if (!$this->User->exists()) {
             throw new NotFoundException('Ungültiger User');
         }
-		
-		$this->User->read();
-        $this->response->file($this->User->data['User']['cvpath'], array('download' => true, 'name' => 'CV '.$this->User->data['User']['first_name'].' '.$this->User->data['User']['family_name'].'.pdf'));
+        $this->User->read();
+        $this->response->file($this->User->data['User']['cvpath'], array('download' => true, 'name' => 'CV ' . $this->User->data['User']['first_name'] . ' ' . $this->User->data['User']['family_name'] . '.pdf'));
         return $this->response;
-	 }
-
+    }
 }
-
 ?>

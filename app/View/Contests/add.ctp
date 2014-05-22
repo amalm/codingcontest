@@ -11,23 +11,22 @@
 </div>
 </div>
 
-<div class="row" style="margin-left:10px; ">  
-<div class="form-group col-sm-5">
-	<label for="inputStart">Start</label>
+	<label for="inputStart" style="padding-left:10px; ">Start</label>
+        <div class="row" style="padding-left:10px; ">
         <div class="input-group date form_datetime col-md-5" data-date="<?php echo (date("Y-m-d")." ".date("H:i"));?>" data-date-format="yyyy-mm-dd HH:ii" data-link-field="inputStart">
 	<?php
 		echo $this->Form->input('start', array('id'=>'inputStart', 'label'=>FALSE,'class'=>'form-control', 'placeholder'=>'Start','size'=>'16', 'type'=>'text'));
 	?>
-        <span class="input-group-addon"><span class="glyphicon glyphicon-remove" title="L&ouml;schen"></span></span>
-        <span class="input-group-addon"><span class="glyphicon glyphicon-th" title="Kalender"></span></span>
+            <span class="input-group-addon"><span class="glyphicon glyphicon-remove" title="L&ouml;schen"></span></span>
+        <span class="input-group-addon"  style="border-bottom-right-radius: 4px; border-top-right-radius: 4px;"><span class="glyphicon glyphicon-th" title="Kalender"></span></span>
 	<input type="hidden" id="inputStart" value="" /><br/>
         </div>
-</div>
-</div>
+        </div>
+        <br>
+        
 
-<div class="row" style="margin-left:10px; ">  
-<div class="form-group col-sm-5">
-	<label for="inputEnd">Ende</label>
+	<label for="inputEnd" style="padding-left:10px; ">Ende</label>
+        <div class="row" style="padding-left:10px; ">
 	<div class="input-group date form_datetime col-md-5" data-date="<?php echo (date("Y-m-d")." ".date("H:i"));?>" data-date-format="yyyy-mm-dd HH:ii" data-link-field="inputEnd">
 	<?php
 		echo $this->Form->input('end', array('id'=>'inputEnd', 'label'=>FALSE,'class'=>'form-control', 'placeholder'=>'Ende', 'size'=>'16', 'type'=>'text'));
@@ -35,9 +34,9 @@
 	<span class="input-group-addon"><span class="glyphicon glyphicon-remove" title="L&ouml;schen"></span></span>
         <span class="input-group-addon"><span class="glyphicon glyphicon-th" title="Kalender"></span></span>
 	</div>
+            </div>
 	<input type="hidden" id="inputEnd" value="" /><br/>
-</div>
-</div>
+
 
 <div class="row" style="margin-left:10px; ">  
 <div class="form-group col-sm-5">
@@ -52,7 +51,7 @@
 <div class="form-group col-sm-5">
 	<label for="inputVisible">Sichtbar</label>
         <?php   
-		echo $this->Form->input('visible', array('id'=>'inputVisible', 'label'=>FALSE, 'class'=>'form-control'));
+		echo $this->Form->input('visible', array('id'=>'inputVisible', 'type'=>'checkbox','class'=>'input-group-addon','label' => FALSE));
 	?>
 </div>
 </div>
@@ -71,10 +70,10 @@
         language:  'de',
         weekStart: 1,
         todayBtn:  0,
-		autoclose: 1,
-		todayHighlight: 1,
-		startView: 2,
-		forceParse: 0,
+            autoclose: 1,
+            todayHighlight: 1,
+            startView: 2,
+            forceParse: 0,
         showMeridian: 0
     });
 </script>

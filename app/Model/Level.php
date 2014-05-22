@@ -1,9 +1,9 @@
-<?php 
+<?php
 class Level extends AppModel {
 	var $name = "Level";
 	var $belongsTo = 'Task';
-        var $hasMany = 'Inputsoutput';
-	
+        var $hasMany = array('Inputsoutput', 'Solution');
+
 	var $validate = array(
 		'description' => array(
 			'notEmpty' => array(
@@ -22,5 +22,5 @@ class Level extends AppModel {
 		    )
 		)
 	);
-	
+
 }

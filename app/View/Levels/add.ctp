@@ -24,8 +24,8 @@
 <div class="row" style="margin-left:25px; ">
 <div class="form-group">
 <button type="submit" class="btn btn-primary">Speichern</button>
- <a href="../" class="btn btn-primary" role="button">Zurück</a>
-
+ <?php echo $this->Html->link('<button type="button" class="btn btn-primary">Zurück</button>',  array('action'=>'index', $levelid), array("escape"=>false)); ?>
+    
 <?php	
 	echo $this->Form->end();
 ?>
