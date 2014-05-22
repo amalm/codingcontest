@@ -3676,3 +3676,13 @@ Stack Trace:
 #8 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LevelsController), Object(CakeRequest), Object(CakeResponse))
 #9 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #10 {main}
+2014-05-23 00:57:07 Error: Fatal Error (1): Call to undefined method UsersController::exists() in [C:\xampp\htdocs\project\lib\Cake\Model\Model.php, line 1727]
+2014-05-23 00:57:07 Error: [FatalErrorException] Call to undefined method UsersController::exists()
+Request URL: /project/users/edit/31
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 1727)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 1727, Array)
+#2 C:\xampp\htdocs\project\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\xampp\htdocs...', 1727, Array)
+#3 C:\xampp\htdocs\project\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
