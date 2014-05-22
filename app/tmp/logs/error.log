@@ -3657,3 +3657,22 @@ Stack Trace:
 #1 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
 #2 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2014-05-23 00:04:31 Error: [MissingTableException] Table inputsoutputs for model Inputsoutput was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'inputsoutputs',
+  'class' => 'Inputsoutput',
+  'ds' => 'default',
+)
+Request URL: /project/levels/index/15
+Stack Trace:
+#0 C:\xampp\htdocs\project\lib\Cake\Model\Model.php(3476): Model->setSource('inputsoutputs')
+#1 C:\xampp\htdocs\project\lib\Cake\Model\Datasource\DboSource.php(1063): Model->getDataSource()
+#2 C:\xampp\htdocs\project\lib\Cake\Model\Model.php(2880): DboSource->read(Object(Level), Array)
+#3 C:\xampp\htdocs\project\lib\Cake\Model\Model.php(2852): Model->_readDataSource('all', Array)
+#4 C:\xampp\htdocs\project\app\Controller\LevelsController.php(13): Model->find('all', Array)
+#5 [internal function]: LevelsController->index('15')
+#6 C:\xampp\htdocs\project\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LevelsController), Array)
+#7 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\project\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LevelsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\project\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}

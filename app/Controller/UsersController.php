@@ -169,6 +169,7 @@ class UsersController extends AppController {
         if (!$this->User->exists()) {
             throw new NotFoundException('Ungültiger User');
         }
+		$this->set('user', $this->User->read());
         if ($this->request->is('post') || $this->request->is('put')) {
             if ($this->request->data('User')['password'] == "") {
                 unset($this->User->validate['password']);
@@ -193,19 +194,20 @@ class UsersController extends AppController {
         if (!$this->User->exists()) {
             throw new NotFoundException('Ungültiger User');
         }
+		$this->set('user', $this->User->read());
         if ($this->request->is('post') || $this->request->is('put')) {
             $file = $this->data['User']['fileInput'];
             if ($file['error'] === UPLOAD_ERR_OK) {
                 if (move_uploaded_file($file['tmp_name'], APP . 'uploads/CVs' . DS . $file['name'])) {
                     $this->request->data['User']['cvpath'] = APP . 'uploads/CVs' . DS . $file['name'];
-                    $this->Session->setFlash('<span class="glyphicon glyphicon-ok" style="font-size:20px;"></span>' . ' CV wurde erfolgreich hochgeladen!', 'default', array('class' => 'alert alert-success'));
+                    $this->Session->setFlash('<span class="glyphicon glyphicon-ok" style="font-size:20px;"></span>' . ' Lebenslauf wurde erfolgreich hochgeladen!', 'default', array('class' => 'alert alert-success'));
                     $path = 'uploads/CVs/' . $file['name'];
                     $this->User->saveField('cvpath', $path);
                     return true;
                 }
             }
             return false;
-            $this->Session->setFlash('<span class="glyphicon glyphicon-remove" style="font-size:20px;"></span>' . ' CV konnte nicht hochgeladen werden!', 'default', array('class' => 'alert alert-danger'));
+            $this->Session->setFlash('<span class="glyphicon glyphicon-remove" style="font-size:20px;"></span>' . ' Lebenslauf konnte nicht hochgeladen werden!', 'default', array('class' => 'alert alert-danger'));
         }
     }
     public function download($id = null) {

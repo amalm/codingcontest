@@ -74,8 +74,8 @@ echo $this->Form->create('User', array('class'=>'form-horizontal', 'novalidate' 
 	
 <div class="row" style="margin-left:25px; ">
 <div class="form-group">
-  <p> <button type="submit" class="btn btn-primary">Speichern</button> 
- <a href="../" class="btn btn-primary" role="button">Zurück</a></p>
+<button type="submit" class="btn btn-primary">Speichern</button>
+<?php echo $this->Html->link('<button type="button" class="btn btn-primary">Zurück</button>', array('action'=>'userview', $user['User']['id']), array('escape'=>false)); ?>
 </div>
     </div>
 </form>
