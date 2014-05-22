@@ -2,6 +2,7 @@
 
 class AppController extends Controller {
 
+    public $helpers = array('Html');
     public $theme = "Bootstrap";
     public $components = array('Session', 'Auth' => array('loginRedirect' => array('controller' => 'Users', 'action' => 'index'), 'logoutRedirect' => array('controller' => 'Users', 'action' => 'login'), 'authError' => 'Sie haben keine Rechte für diese Seite', 'authenticate' => array('Form' => array('fields' => array('username' => 'mail', 'password' => 'password'))), 'authorize' => array('Controller')));
 
