@@ -2,15 +2,15 @@
 <?php if($this->Session->read('Auth.User')) { 
         if($this->Session->read('Auth.User.role')=='admin'){ ?>
           <div class="list-group">
-            <a href="http://localhost/project/contests" class="list-group-item">Contestverwaltung</a>
-            <a href="http://localhost/project/tasks" class="list-group-item">Aufgabenverwaltung</a>
-            <a href="http://localhost/project/users" class="list-group-item">Benutzerverwaltung</a>
-          </div>
-          <div class="list-group">
-            <a class="list-group-item">Statistik</a>
-            <a href="#" class="list-group-item">Contestergebnisse</a>
-            <a href="http://localhost/project/users/cvshow" class="list-group-item">Lebensläufe</a>
-          </div>
+            <?php echo $this->Html->link("Contestverwaltung", array('controller'=>'contests', 'action'=>'index'), array('escape'=>false, 'class' => 'list-group-item')); ?>
+            <?php echo $this->Html->link("Aufgabenverwaltung", array('controller'=>'tasks', 'action'=>'index'), array('escape'=>false, 'class' => 'list-group-item')); ?>
+            <?php echo $this->Html->link("Benutzerverwaltung", array('controller'=>'users', 'action'=>'index'), array('escape'=>false, 'class' => 'list-group-item')); ?>
+        </div>
+            <div class="list-group">
+                <a class="list-group-item">Statistik</a>
+                <a href="#" class="list-group-item">Contestergebnisse</a>
+                <?php echo $this->Html->link("Lebensläufe", array('controller'=>'users', 'action'=>'cvshow'), array('escape'=>false, 'class' => 'list-group-item')); ?>
+            </div>
 <?php } else { ?>
     <?php if($attending){ ?>
     <div class="list-group">
