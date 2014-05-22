@@ -4,19 +4,18 @@ class ContestsController extends AppController {
 
     var $uses = array('Contest', 'Level', 'Task', 'User', 'Relation', 'Inputsoutput', 'Solution');
 
-    public function index() {
-        if ($this->Session->read('Auth.User')) {
-            if ($this->Session->read('Auth.User.role') == 'admin') {
-                    $this->set('contests', $this->Contest->find('all', 
-                        array('conditions' => array('Contest.visible' => 1))));
-            } else {
-                $this->set('contests', $this->Contest->find('all', 
-                        array('conditions' => array('Contest.visible' => 1, 
-                            'Contest.start <=' => date('Y-m-d H:i:s', strtotime("now")), 
-                                'Contest.end >=' => date('Y-m-d H:i:s', strtotime("now"))))));
-            }
+public function index() {
+    if ($this->Session->read('Auth.User')) {
+        if ($this->Session->read('Auth.User.role') == 'admin') {
+                $this->set('contests', $this->Contest->find('all'));
+        } else {
+            $this->set('contests', $this->Contest->find('all', 
+                    array('conditions' => array('Contest.visible' => 1, 
+                        'Contest.start <=' => date('Y-m-d H:i:s', strtotime("now")), 
+                            'Contest.end >=' => date('Y-m-d H:i:s', strtotime("now"))))));
         }
     }
+}
 
     public function add() {
         $this->set('tasks', $this->Task->find('list', array('fields' => array('Task.id', 'Task.name'))));
