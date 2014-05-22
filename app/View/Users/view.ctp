@@ -1,4 +1,4 @@
-<h2> Userdetails </h2>
+<h2> Benutzerdetails </h2>
 <div class="table table-striped">
  <table class="table table-striped">
     <tr><td>Vorname:</td><td><?php echo $user['User']['first_name']; ?></td></tr>

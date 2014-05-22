@@ -37,7 +37,7 @@ echo $this->Form->create('User', array('class'=>'form-horizontal', 'novalidate' 
 
 <div class="row" style="margin-left:10px; ">
   <div class="form-group col-sm-5">
-	<label for="Mail">Mail</label>
+	<label for="Mail">E-Mail</label>
 	<?php 
 		echo $this->Form->input('mail', array('id'=>'Mail', 'type'=>'text','class'=>'form-control', 'placeholder'=>'Mail','label' => FALSE));
 	?>

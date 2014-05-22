@@ -30,10 +30,10 @@ class LevelsController extends AppController {
                 $this->request->data['Level']['task_id'] = $id;
                 $this->request->data['Level']['level'] = $this->Level->find('count', array('conditions' => array('Level.task_id' => $id)))+1;
                 if ($this->__uploadFile() && $this->Level->save($this->request->data)) {
-                    $this->Session->setFlash('Level wurde erfolgreich angelegt', 'default', array('class' => 'alert alert-success'));
+                    $this->Session->setFlash('<span class="glyphicon glyphicon-ok" style="font-size:20px;"></span>' . ' Level wurde erfolgreich angelegt.', 'default', array('class' => 'alert alert-success'));
                     $this->redirect(array('action' => 'index', $id));
                 } else {
-                    $this->Session->setFlash('Level konnte nicht gespeichert werden', 'default', array('class' => 'alert alert-danger'));
+                    $this->Session->setFlash('<span class="glyphicon glyphicon-remove" style="font-size:20px;"></span>' . ' Level konnte nicht gespeichert werden', 'default', array('class' => 'alert alert-danger'));
                 }
             }
         }

@@ -8,17 +8,17 @@ class Level extends AppModel {
 		'description' => array(
 			'notEmpty' => array(
 				'rule' => array('notEmpty'),
-				'message' => 'Levelbeschreibung muss angegeben werden'
+				'message' => 'Levelbeschreibung muss angegeben werden.'
 			),
 			'minimalLength' => array(
 				'rule' => array('minLength', 5),
-				'message' => 'Levelbeschreibung muss minimal 5 Zeichen beinhalten!'
+				'message' => 'Levelbeschreibung muss mindestens 5 Zeichen beinhalten.'
 			)
 		),
 		'fileInput' => array(
 			'fileChecking' => array(
 		        'rule'    => array('extension', array('pdf')),
-			    'message' => 'Es wird nur PDF Format unterstützt'
+			    'message' => 'Es wird nur PDF Format unterstützt.'
 		    )
 		)
 	);

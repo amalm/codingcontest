@@ -143,7 +143,7 @@ class UsersController extends AppController {
         }
         return $pass;
     }
-    public function cvshow() {
+  public function cvshow() {
         $this->set('users', $this->User->find('all', array('conditions' => array("not" => array ( "User.cvpath" => null)))));
     }
 //////////////////////////////////////////////////////////////////Funktionen für den Benutzer/////////////////////////////////////////////////

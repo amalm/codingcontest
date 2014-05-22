@@ -7,9 +7,13 @@ class ContestsController extends AppController {
     public function index() {
         if ($this->Session->read('Auth.User')) {
             if ($this->Session->read('Auth.User.role') == 'admin') {
-                $this->set('contests', $this->Contest->find('all', array('conditions' => array('Contest.visible' => 1))));
+                    $this->set('contests', $this->Contest->find('all', 
+                        array('conditions' => array('Contest.visible' => 1))));
             } else {
-                $this->set('contests', $this->Contest->find('all', array('conditions' => array('Contest.visible' => 1, 'Contest.start <=' => date('Y-m-d H:i:s', strtotime("now")), 'Contest.end >=' => date('Y-m-d H:i:s', strtotime("now"))))));
+                $this->set('contests', $this->Contest->find('all', 
+                        array('conditions' => array('Contest.visible' => 1, 
+                            'Contest.start <=' => date('Y-m-d H:i:s', strtotime("now")), 
+                                'Contest.end >=' => date('Y-m-d H:i:s', strtotime("now"))))));
             }
         }
     }
