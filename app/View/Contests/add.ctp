@@ -4,25 +4,25 @@
 ?>
 <div class="row" style="margin-left:10px; ">  
 <div class="form-group col-sm-5">
-	<label for="inputName">Name</label>
+    <label for="inputName">Name</label>
         <?php 
-		echo $this->Form->input('name', array('id'=>'inputName', 'type'=>'text','class'=>'form-control','placeholder'=>'Contestname','label' => FALSE));
-	?>
+            echo $this->Form->input('name', array('id'=>'inputName', 'type'=>'text','class'=>'form-control','placeholder'=>'Contestname','label' => FALSE));
+        ?>
 </div>
 </div>
 
-	<label for="inputStart" style="padding-left:10px; ">Start</label>
-        <div class="row" style="padding-left:10px; ">
+<label for="inputStart" style="padding-left:10px; ">Start</label>
+    <div class="row" style="padding-left:10px; ">
         <div class="input-group date form_datetime col-md-5" data-date="<?php echo (date("Y-m-d")." ".date("H:i"));?>" data-date-format="yyyy-mm-dd HH:ii" data-link-field="inputStart">
-	<?php
-		echo $this->Form->input('start', array('id'=>'inputStart', 'label'=>FALSE,'class'=>'form-control', 'placeholder'=>'Start','size'=>'16', 'type'=>'text'));
-	?>
+            <?php
+                echo $this->Form->input('start', array('id'=>'inputStart', 'label'=>FALSE,'class'=>'form-control', 'placeholder'=>'Start','size'=>'16', 'type'=>'text'));
+            ?>
             <span class="input-group-addon"><span class="glyphicon glyphicon-remove" title="L&ouml;schen"></span></span>
-        <span class="input-group-addon"  style="border-bottom-right-radius: 4px; border-top-right-radius: 4px;"><span class="glyphicon glyphicon-th" title="Kalender"></span></span>
-	<input type="hidden" id="inputStart" value="" /><br/>
+            <span class="input-group-addon"  style="border-bottom-right-radius: 4px; border-top-right-radius: 4px;"><span class="glyphicon glyphicon-th" title="Kalender"></span></span>
+            <input type="hidden" id="inputStart" value="" /><br/>
         </div>
-        </div>
-        <br>
+    </div>
+<br>
         
 
 	<label for="inputEnd" style="padding-left:10px; ">Ende</label>

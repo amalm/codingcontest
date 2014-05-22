@@ -45,7 +45,7 @@ class User extends AppModel
 		'fileInput' => array(
 			'fileChecking' => array(
 		        'rule'    => array('extension', array('pdf')),
-			    'message' => 'Es wird nur PDF Format unterstützt'
+			    'message' => 'Es wird nur PDF Format unterstützt.'
 		    )
 		)
 	);

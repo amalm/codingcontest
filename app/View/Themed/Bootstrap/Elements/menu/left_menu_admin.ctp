@@ -9,7 +9,7 @@
           <div class="list-group">
             <a class="list-group-item">Statistik</a>
             <a href="#" class="list-group-item">Contestergebnisse</a>
-            <a href="http://localhost/project/users/cvshow" class="list-group-item">Benutzer CVs</a>
+            <a href="http://localhost/project/users/cvshow" class="list-group-item">Lebensläufe</a>
           </div>
 <?php } else { ?>
     <?php if($attending){ ?>
@@ -23,7 +23,7 @@
       <div class="list-group">
         <?php echo $this->Html->link("Contests", array('controller'=>'contests', 'action'=>'index'), array('escape'=>false, 'class' => 'list-group-item')); ?>
         <?php echo $this->Html->link("Persönliche Daten", array('controller'=>'users', 'action'=>'userview', $this->Session->read('Auth.User.id')), array('escape'=>false, 'class' => 'list-group-item'))?>
-      	<?php echo $this->Html->link("CV hochladen", array('controller'=>'users', 'action'=>'cvupload', $this->Session->read('Auth.User.id')), array('escape'=>false, 'class' => 'list-group-item'))?>
+      	<?php echo $this->Html->link("Lebenslauf hochladen", array('controller'=>'users', 'action'=>'cvupload', $this->Session->read('Auth.User.id')), array('escape'=>false, 'class' => 'list-group-item'))?>
       </div>
 <?php }} ?>
 </div>

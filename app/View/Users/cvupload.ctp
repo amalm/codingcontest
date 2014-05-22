@@ -1,14 +1,17 @@
-<h2>CV hochladen</h2>
+<h2>Lebenslauf hochladen</h2>
 <?php 
 	echo $this->Form->create('User', array('class'=>'form-horizontal', 'role' => 'form', 'type' => 'file'));
 ?>
 
 <div class="row" style="margin-left:10px; ">  
 <div class="form-group col-sm-5">
-	<label for="inputFile">Aufgabe</label>
-	<?php
-		echo $this->Form->input('fileInput', array('id'=>'inputFile', 'type' => 'file','class'=>'form-control','label' => FALSE));
+	<span class="btn btn-primary btn-file">
+            Durchsuchen </span><input type="inputFile"> <?php
+		//echo $this->Form->input('fileInput', array('id'=>'inputFile', 'type' => 'file','class'=>'form-control','label' => FALSE));
 	?>
+        
+        
+	
 </div>
     </div>
 
