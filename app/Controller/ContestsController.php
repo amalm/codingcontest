@@ -9,9 +9,9 @@ public function index() {
         if ($this->Session->read('Auth.User.role') == 'admin') {
                 $this->set('contests', $this->Contest->find('all'));
         } else {
-            $this->set('contests', $this->Contest->find('all', 
-                    array('conditions' => array('Contest.visible' => 1, 
-                        'Contest.start <=' => date('Y-m-d H:i:s', strtotime("now")), 
+            $this->set('contests', $this->Contest->find('all',
+                    array('conditions' => array('Contest.visible' => 1,
+                        'Contest.start <=' => date('Y-m-d H:i:s', strtotime("now")),
                             'Contest.end >=' => date('Y-m-d H:i:s', strtotime("now"))))));
         }
     }
@@ -129,6 +129,33 @@ public function index() {
         }
     }
 
+    public function results($id = null){
+        if($id == null){
+            $this->set('contests', $this->Contest->find('all'));
+        } else {
+            if(!isset($this->request->params['pass'][1])){
+                $this->Contest->id = $id;
+                if(!$this->Contest->exists()){
+                    throw new NotFoundException('Contest wurde nicht gefunden');
+                }
+                $this->Contest->read();
+                foreach($this->Contest->data['Relation'] as $relation){
+                    $tmpUser = $this->User->find('all', array('conditions' => array('User.id' => $relation['user_id'])));
+                }
+                $this->set('contestid', $id);
+                $this->set('users', $tmpUser);
+            } else {
+                $this->User->id = $this->request->params['pass'][1];
+                if(!$this->User->exists()){
+                    throw new NotFoundException('User wurde nicht gefunden');
+                }
+                $tmpRelation = $this->Relation->find('all', array('conditions' => array('Relation.user_id' => $this->User->id, 'Relation.contest_id' => $this->request->params['pass'][0])));
+                $this->set('solutions', $tmpRelation[0]['Solution']);
+                $this->set('contestid', $this->request->params['pass'][0]);
+            }
+        }
+    }
+
     public function __uploadFile() {
         $file = $this->request->data['Solution']['file'];
         $date = new DateTime();
@@ -160,5 +187,15 @@ public function index() {
             }
         }
         return true;
+    }
+
+    public function download($id = null){
+        $this->Solution->id = $id;
+        if(!$this->Solution->exists()){
+            throw new NotFoundException('File wurde nicht gefunden');
+        }
+        $this->Solution->read();
+        $this->response->file($this->Solution->data['Solution']['path'], array('download' => true, 'name' => $this->Level->data['Solution']['file_name']));
+        return $this->response;
     }
 }
