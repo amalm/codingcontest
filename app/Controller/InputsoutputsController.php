@@ -17,6 +17,7 @@ class InputsoutputsController extends AppController {
         if(!$this->Level->exists()){
             throw new NotFoundException('Level wurde nicht gefunden');
         }
+        $this->set('inputsoutputs', $this->Inputsoutput->read());
         $this->tmpLevel = $this->Level->find('all', array('conditions' => array('Level.id' => $id)));
         if ($this->request->is('post')){
             $this->request->data['Inputsoutput']['level_id'] = $id;

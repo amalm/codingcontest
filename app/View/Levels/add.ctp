@@ -13,13 +13,20 @@
 </div>
 
 <div class="row" style="margin-left:10px; ">  
-<div class="form-group col-sm-5">
-	<label for="inputFile">Aufgabe</label>
-	<?php
-		echo $this->Form->input('fileInput', array('id'=>'inputFile', 'type' => 'file', 'type'=>'file','class'=>'form-control','label' => FALSE));
-	?>
+    <div class="form-group col-sm-5">
+        <label for="">Aufgabe</label><br>
+        <div class="input-group">
+            <span class="input-group-btn">
+                <span class="btn btn-primary btn-file" style="position: relative; overflow: hidden;">
+	Durchsuchen
+                    <input type="file" name="[fileInput]" style="position: absolute; top: 0; right: 0; min-width: 100%; min-height: 100%; font-size: 999px; text-align: right; filter: alpha(opacity=0); opacity: 0; outline: none; background: white; cursor: inherit; display: block;" required="true"/>   
+                </span>
+            </span>
+            <input class="form-control" style="width: 400px; background-color: white; border-bottom-left-radius: 0; border-top-left-radius: 0;">
+        </div>
+    </div>
 </div>
-</div>
+
     
 <div class="row" style="margin-left:25px; ">
 <div class="form-group">
