@@ -39,7 +39,7 @@ echo $this->Form->create('User', array('class'=>'form-horizontal', 'novalidate' 
   <div class="form-group col-sm-5">
 	<label for="Mail">E-Mail</label>
 	<?php 
-		echo $this->Form->input('mail', array('id'=>'Mail', 'type'=>'text','class'=>'form-control', 'placeholder'=>'Mail','label' => FALSE));
+		echo $this->Form->input('mail', array('id'=>'Mail', 'type'=>'text','class'=>'form-control', 'placeholder'=>'E-Mail','label' => FALSE));
 	?>
 </div>
 </div>
@@ -48,7 +48,7 @@ echo $this->Form->create('User', array('class'=>'form-horizontal', 'novalidate' 
   <div class="form-group col-sm-5">
 	<label for="Password">Neues Passwort</label>
 	<?php 
-		echo $this->Form->input('password', array('id'=>'Password', 'type'=>'text','class'=>'form-control', 'placeholder'=>'Passwort','label' => FALSE));
+		echo $this->Form->input('password', array('id'=>'Password', 'type'=>'text','class'=>'form-control', 'placeholder'=>'Neues Passwort','label' => FALSE));
 	?>
 </div>
 </div>
@@ -57,7 +57,7 @@ echo $this->Form->create('User', array('class'=>'form-horizontal', 'novalidate' 
   <div class="form-group col-sm-5">
 	<label for="Adresse">Adresse</label>
 	<?php 
-		echo $this->Form->input('address', array('id'=>'address', 'type'=>'text','class'=>'form-control', 'placeholder'=>'Neues Passwort bestätigen','label' => FALSE));
+		echo $this->Form->input('address', array('id'=>'address', 'type'=>'text','class'=>'form-control', 'placeholder'=>'Adresse','label' => FALSE));
 	?>
 </div>
 </div>
@@ -66,7 +66,7 @@ echo $this->Form->create('User', array('class'=>'form-horizontal', 'novalidate' 
   <div class="form-group col-sm-5">
 	<label for="PLZ">PLZ</label>
 	<?php 
-		echo $this->Form->input('plz', array('id'=>'plz', 'type'=>'text','class'=>'form-control', 'placeholder'=>'Neues Passwort bestätigen','label' => FALSE));
+		echo $this->Form->input('plz', array('id'=>'plz', 'type'=>'text','class'=>'form-control', 'placeholder'=>'Postleitzahl','label' => FALSE));
 	?>
 </div>
 </div>
