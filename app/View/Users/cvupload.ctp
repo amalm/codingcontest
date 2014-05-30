@@ -37,7 +37,7 @@
                        
                 </span>
             </span>
-            <input class="form-control" style="width: 300px; background-color: white; border-bottom-left-radius: 0; border-top-left-radius: 0;">
+            <input class="form-control" style="width: 400px; background-color: white; border-bottom-left-radius: 0; border-top-left-radius: 0;">
         </div>
     </div>
 </div>

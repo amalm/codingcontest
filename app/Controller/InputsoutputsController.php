@@ -9,6 +9,10 @@ class InputsoutputsController extends AppController {
             $this->redirect(array('controller' => 'tasks', 'action' => 'index'));
         } else {
             $this->set('inputsoutputs', $this->Inputsoutput->find('all', array('conditions' => array('Inputsoutput.level_id' => $id))));
+			$this->set('inputoutputid', $id);
+			$this->Level->id = $id;
+			$this->Level->read();
+			$this->set('taskid', $this->Level->data['Level']['task_id']);
         }
     }
     
@@ -17,6 +21,8 @@ class InputsoutputsController extends AppController {
         if(!$this->Level->exists()){
             throw new NotFoundException('Level wurde nicht gefunden');
         }
+        $this->set('inputsoutputs', $this->Inputsoutput->read());
+		$this->set('levelid', $id);
         $this->tmpLevel = $this->Level->find('all', array('conditions' => array('Level.id' => $id)));
         if ($this->request->is('post')){
             $this->request->data['Inputsoutput']['level_id'] = $id;

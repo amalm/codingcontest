@@ -22,8 +22,7 @@ echo $this->Form->create('Inputsoutput', array('class' => 'form-horizontal', 'ro
 <div class="row" style="margin-left:25px; ">
     <div class="form-group">
         <button type="submit" class="btn btn-primary">Speichern</button>
-
-        <?php
+        <?php echo $this->Html->link('<button type="button" class="btn btn-primary">Zurück</button>', array('action'=>'index', $levelid), array('escape'=>false));
         echo $this->Form->end();
         ?>
     </div>

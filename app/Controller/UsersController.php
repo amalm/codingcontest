@@ -60,12 +60,15 @@ class UsersController extends AppController {
         if ($this->request->is('Post')) {
             if ($this->User->save($this->request->data) && $this->User->saveField('confirm_string', $stringToSend = $this->__randomString($length = 10))) {
                 App::uses('CakeEmail', 'Network/Email');
-                $address = $this->request->data('User')['mail'];   //Holl ich mir die gerade eingegebene Mail
+                $address = $this->request->data('User');   //Holl ich mir die gerade eingegebene Mail
+				$address = $address['mail'];
                 $email = new CakeEmail('gmail');
                 $email->from('reuf.kozlica@gmail.com');
                 $email->to($address);
                 $email->subject('Anmeldung Coding Contest Platform');
-                $email->send("Aktivieren Sie Ihren Account mit dem folgenden Link: http://localhost/project/users/confirm/" . $stringToSend . ", Ihr vorläufiges Passwort ist: " . $this->request->data('User')['password']);
+				$tmp = $this->request->data('User');
+				$tmp = $tmp['password'];
+                $email->send("Aktivieren Sie Ihren Account mit dem folgenden Link: http://test.mgam.at/users/confirm/" . $stringToSend . ", Ihr vorläufiges Passwort ist: " . $tmp);
                 $this->Session->setFlash('<span class="glyphicon glyphicon-ok" style="font-size:20px;"></span>' . ' Benutzer wurde erfolgreich angelegt', 'default', array('class' => 'alert alert-success'));
                 $this->redirect(array('action' => 'index'));
             } else {
@@ -79,13 +82,11 @@ class UsersController extends AppController {
             throw new NotFoundException('Ungültiger User');
         }
         if ($this->request->is('post') || $this->request->is('put')) {
-            if ($this->request->data('User')['password'] == "") {
-                if ($this->User->save($this->request->data, true, array('first_name', 'family_name', 'mail', 'active'))) {
-	                $this->Session->setFlash('<span class="glyphicon glyphicon-floppy-saved" style="font-size:20px;"></span>' . ' Der Benutzer wurde gespeichert!', 'default', array('class' => 'alert alert-success'));
-	                $this->redirect(array('action' => 'index'));
-	            } else {
-	                $this->Session->setFlash('<span class="glyphicon glyphicon-floppy-remove" style="font-size:20px;"></span>' . ' Der Benutzer konnte nicht gespeichert werden!', 'default', array('class' => 'alert alert-danger'));
-	            }
+			$tmp = $this->request->data('User');
+			$tmp = $tmp['password'];
+            if ($tmp == "") {
+                unset($this->User->validate['password']);
+                unset($this->request->data['User']['password']);
             }
             if ($this->User->save($this->request->data)) {
                 $this->Session->setFlash('<span class="glyphicon glyphicon-floppy-saved" style="font-size:20px;"></span>' . ' Der Benutzer wurde gespeichert!', 'default', array('class' => 'alert alert-success'));
@@ -173,11 +174,10 @@ class UsersController extends AppController {
         if (!$this->User->exists()) {
             throw new NotFoundException('Ungültiger User');
         }
-		$this->set('user', $this->User->read());
         if ($this->request->is('post') || $this->request->is('put')) {
-            if ($this->request->data('User')['password'] == "") {
+            if ($this->request->data['User']['password'] == "") {
                 unset($this->User->validate['password']);
-                unset($this->request->data('User')['password']);
+                unset($this->request->data['User']['password']);
             }
             if ($this->User->save($this->request->data)) {
                 $this->Session->setFlash('<span class="glyphicon glyphicon-ok" style="font-size:20px;"></span>' . ' Änderungen wurde erfolgreich gespeichert!', 'default', array('class' => 'alert alert-success'));
@@ -198,20 +198,19 @@ class UsersController extends AppController {
         if (!$this->User->exists()) {
             throw new NotFoundException('Ungültiger User');
         }
-		$this->set('user', $this->User->read());
         if ($this->request->is('post') || $this->request->is('put')) {
             $file = $this->data['User']['fileInput'];
             if ($file['error'] === UPLOAD_ERR_OK) {
                 if (move_uploaded_file($file['tmp_name'], APP . 'uploads/CVs' . DS . $file['name'])) {
                     $this->request->data['User']['cvpath'] = APP . 'uploads/CVs' . DS . $file['name'];
-                    $this->Session->setFlash('<span class="glyphicon glyphicon-ok" style="font-size:20px;"></span>' . ' Lebenslauf wurde erfolgreich hochgeladen!', 'default', array('class' => 'alert alert-success'));
+                    $this->Session->setFlash('<span class="glyphicon glyphicon-ok" style="font-size:20px;"></span>' . ' CV wurde erfolgreich hochgeladen!', 'default', array('class' => 'alert alert-success'));
                     $path = 'uploads/CVs/' . $file['name'];
                     $this->User->saveField('cvpath', $path);
                     return true;
                 }
             }
             return false;
-            $this->Session->setFlash('<span class="glyphicon glyphicon-remove" style="font-size:20px;"></span>' . ' Lebenslauf konnte nicht hochgeladen werden!', 'default', array('class' => 'alert alert-danger'));
+            $this->Session->setFlash('<span class="glyphicon glyphicon-remove" style="font-size:20px;"></span>' . ' CV konnte nicht hochgeladen werden!', 'default', array('class' => 'alert alert-danger'));
         }
     }
     public function download($id = null) {

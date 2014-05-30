@@ -7,8 +7,7 @@
             <?php echo $this->Html->link("Benutzerverwaltung", array('controller'=>'users', 'action'=>'index'), array('escape'=>false, 'class' => 'list-group-item')); ?>
         </div>
             <div class="list-group">
-                <a class="list-group-item">Statistik</a>
-                <a href="#" class="list-group-item">Contestergebnisse</a>
+                <?php echo $this->Html->link("Contestergebnisse", array('controller'=>'contests', 'action'=>'results'), array('escape'=>false, 'class' => 'list-group-item')); ?>
                 <?php echo $this->Html->link("Lebensläufe", array('controller'=>'users', 'action'=>'cvshow'), array('escape'=>false, 'class' => 'list-group-item')); ?>
             </div>
 <?php } else { ?>

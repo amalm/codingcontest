@@ -65,9 +65,9 @@ class DATABASE_CONFIG {
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => 'localhost',
-		'login' => 'root',
-		'password' => '',
-		'database' => 'project',
+		'login' => 'd01a95e8',
+		'password' => 'CCPlat14_4_AUL',
+		'database' => 'd01a95e8',
 		'prefix' => '',
 		'encoding' => 'utf8',
 	);
