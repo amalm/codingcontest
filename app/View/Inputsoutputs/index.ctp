@@ -7,9 +7,7 @@
         <th style="text-align: center;"> Aktion </th>
 	</tr>
 </thead>
-	<?php 
-		if(!empty($inputsoutputs)) {
-		foreach($inputsoutputs as $inputsoutput){ ?>
+	<?php foreach($inputsoutputs as $inputsoutput){ ?>
 	<tr>
             <td><?php echo $inputsoutput['Inputsoutput']['input'];?></td>
             <td><?php echo $inputsoutput['Inputsoutput']['output'];?></td>
@@ -21,10 +19,8 @@
                         array('confirm'=>'Soll der Eintrag wirklich gelöscht werden?', 'escape'=>false)); ?>
             </td>
 	</tr>
-	<?php }} ?>
+	<?php } ?>
 </table>
 <p>
-	<?php echo $this->Html->link('<button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> In- und Output hinzuf&uuml;gen</button>',  array('action'=>'add', $inputoutputid), array("escape"=>false)); ?>
-	<?php echo $this->Html->link('<button type="button" class="btn btn-primary">Zur&uuml;ck</button>',  array('controller' => 'levels', 'action'=>'index', $taskid), array("escape"=>false)); ?>
-	
+<?php echo $this->Html->link('<button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> In- und Output hinzufügen</button>',  array('action'=>'add', $inputsoutputs[0]['Inputsoutput']['level_id']), array("escape"=>false)); ?>
 </p>

@@ -14,23 +14,13 @@
 	<th>Start</th>
 	<th>Offen bis</th>
 	<th style="text-align: center;">Durchf&uuml;hrungszeit</th>
-	<th>Aktion</th>
     </thead>
 	<?php foreach ($contests as $contest){ ?>
 	<tr>
                 <td><?php if($userRole && $userRole=="regular"){ ?><?php echo $this->Html->link($contest['Contest']['name'], array('controller'=>'contests', 'action'=>'participate', $contest['Contest']['id'])) ?><?php } else { echo $contest['Contest']['name']; }?></td>
 		<td><?php echo $contest['Contest']['start'] ?></td>
 		<td><?php echo $contest['Contest']['end'] ?></td>
-		<td style="text-align: center;"><?php echo $contest['Task']['duration']."h" ?></td>
-		<td>
-			<?php 
-				if($contest['Contest']['visible'] == 0){
-					echo $this->Form->PostLink('<span class="glyphicon glyphicon-eye-open" style="font-size:20px" data-toggle="tooltip" data-placement="left" title="Contest sichtbar setzen"></span>', array('action'=>'setVisible', $contest['Contest']['id']), array('confirm'=>'Soll der Contest sichtbar gesetzt werden?', "escape" => false)); 
-				} else {
-					echo $this->Form->PostLink('<span class="glyphicon glyphicon-eye-close" style="font-size:20px" data-toggle="tooltip" data-placement="left" title="Contest unsichtbar setzen"></span>', array('action'=>'setVisible', $contest['Contest']['id']), array('confirm'=>'Soll der Contest unsichtbar gesetzt werden?', "escape" => false)); 
-				}
-			?>
-		</td>
+                <td style="text-align: center;"><?php echo $contest['Task']['duration']."h" ?></td>
 	</tr>
 	<?php } ?>
 </table>
