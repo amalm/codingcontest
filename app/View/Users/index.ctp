@@ -12,7 +12,7 @@
     
 	<?php foreach($users as $user): ?>
     <tr>
-		<td><?php echo $user['User']['first_name']." ".$user['User']['family_name'];?></td>
+		<td><?php echo $user['User']['family_name']." ".$user['User']['first_name'];?></td>
         <td><?php echo $user['User']['mail'];?></td>
         <td style="text-align: center;"><?php echo date('d-m-Y', strtotime($user['User']['registered']));?></td>
         <td style="text-align: center;"> <?php if($user['User']['confirm'] == 1){echo '<span class="glyphicon glyphicon-ok" style="font-size:15px; color:#00CD00;"></span>';} else {echo '<span class="glyphicon glyphicon-remove" style="font-size:15px; color:#fe0802;"></span>';} ?></td>

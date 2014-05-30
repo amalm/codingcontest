@@ -17,7 +17,7 @@
 		
 		        <div class="collapse navbar-collapse">
                             <div class="text-right">
-                                Angemeldet: <?php echo ($vorname); ?> <?php echo ($nachname); ?> <?php echo $this->Html->link('Abmelden', array('controller'=>'users', 'action'=>'logout'));?>
+                                Angemeldet: <?php echo ($nachname); ?> <?php echo ($vorname); ?> <?php echo $this->Html->link('Abmelden', array('controller'=>'users', 'action'=>'logout'));?>
                             </div>
         <?php } else { ?>
         <?php } ?>
