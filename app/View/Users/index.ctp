@@ -38,7 +38,7 @@
    		 </tr>
 	</table>
 
-<?php echo $this->Html->link('<button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Benutzer hinzufügen </button>',  array('action'=>'add'), array("escape"=>false)); 
+<?php echo $this->Html->link('<button type="button" class="btn btn-primary" style="margin-bottom: 15px;"><span class="glyphicon glyphicon-plus"></span> Benutzer hinzufügen </button>',  array('action'=>'add'), array("escape"=>false)); 
 ?>
 
 
